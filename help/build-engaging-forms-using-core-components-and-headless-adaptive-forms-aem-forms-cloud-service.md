@@ -6,7 +6,7 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 100%
 

@@ -4,8 +4,8 @@ description: Forms as a Cloud Service サンドボックスの開発環境のセ
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
-workflow-type: ht
-source-wordcount: '1248'
+workflow-type: tm+mt
+source-wordcount: '1149'
 ht-degree: 100%
 
 ---

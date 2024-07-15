@@ -12,10 +12,10 @@ contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
 hidefromtoc: true
-exl-id: 7c545ca6-cb2d-4d28-b9e8-b6efe3faee00
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '923'
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    プロンプトが表示されたら、資格情報を入力します。リポジトリがローカルコンピューターに複製されます。
 
 
-## 2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加する {#add-adaptive-forms-core-components-dependencies}
+## 2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加 {#add-adaptive-forms-core-components-dependencies}
 
-1. プレーンテキストコードエディターで Git リポジトリフォルダーを開きます。例：VS Code
+1. プレーンテキストコードエディターで Git リポジトリフォルダーを開きます。例：VS Code。
 1. `[AEM Repository Folder]\pom.xml` ファイルを編集用に開きます。
-1. `core.forms.components.version`、`core.forms.components.af.version` および `core.wcm.components.version` のコンポーネントのバージョンを、[コアコンポーネントのドキュメント](https://github.com/adobe/aem-core-forms-components)で指定されているバージョンに置き換えます。コンポーネントが存在しない場合は、これらのコンポーネントを追加します。
+1. `core.forms.components.version`、`core.forms.components.af.version` および `core.wcm.components.version` コンポーネントのバージョンを、[コアコンポーネントのドキュメント](https://github.com/adobe/aem-core-forms-components)で指定されているバージョンに置き換えます。コンポーネントが存在しない場合は、これらのコンポーネントを追加します。
 
    ```XML
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
@@ -202,7 +202,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    >
    >  `${appId}` を appId に置き換えます。
    >
-   >  `${appId}` を見つけるには、`[AEM Repository Folder]/all/pom.xml` ファイル内で `-packages/application/install` を検索します。`-packages/application/install` の前のテキストが `${appId}` です。例えば、次のコードは `myheadlessform` が `${appId}` です。
+   >  `${appId}` を見つけるには、`[AEM Repository Folder]/all/pom.xml` ファイル内で `-packages/application/install` 用語を検索します。`-packages/application/install` 用語の前のテキストが `${appId}` です。例えば、次のコードは `myheadlessform` が `${appId}` です。
    >
    >   ```
    >             <embedded>
@@ -294,7 +294,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. コードを Git リポジトリにコミットするには：
    1. ターミナルまたはコマンドプロンプトを開きます。
-   1. `[AEM Repository Folder]` に移動し、次のコマンドを順番に実行します。
+   1. `[AEM Repository Folder]` に移動し、次のコマンドをリスト順に実行します。
 
       ```Shell
       git add pom.xml
@@ -311,11 +311,11 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 ## よくある質問 {#faq}
 
-### コアコンポーネントとは何ですか？ {#core-components}
+### コアコンポーネントとは {#core-components}
 
 [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、AEM で web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。
 
-### コアコンポーネントを有効にすると追加される機能は？ {#core-components-capabilities}
+### コアコンポーネントの有効化に関しては、どのような機能が追加されますか？ {#core-components-capabilities}
 
 お使いの環境でアダプティブフォームのコアコンポーネントを有効にすると、空白のコアコンポーネントベースのアダプティブフォームテンプレートと Canvas 3.0 テーマが環境に追加されます。お使いの環境でアダプティブフォームのコアコンポーネントを有効にすると、次の操作を実行できます。
 
@@ -326,7 +326,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 ### アダプティブフォームのコアコンポーネントは、自分の環境で有効になっていますか？ {#enable-components}
 
-お使いの環境でアダプティブフォームのコアコンポーネントが有効になっていることを確認するには、次の操作を行います。
+お使いの環境でアダプティブフォームのコアコンポーネントが有効になっていることを確認するには：
 
 1. [AEM Forms as a Cloud Service リポジトリを複製します](#1-clone-your-aem-forms-as-a-cloud-service-git-repository)。
 
@@ -342,6 +342,6 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    * core-forms-components-examples-content
 
 
-   ![all/pom.xml で core-forms-components-af-core アーティファクトを見つける](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+   ![all/pom.xml で core-forms-components-af-core アーティファクトを見つけます](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    依存関係が存在する場合、お使いの環境でアダプティブフォームのコアコンポーネントが有効になります。

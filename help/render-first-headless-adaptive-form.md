@@ -5,8 +5,8 @@ keywords: ヘッドレス, アダプティブフォーム
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
-workflow-type: ht
-source-wordcount: '1560'
+workflow-type: tm+mt
+source-wordcount: '1490'
 ht-degree: 100%
 
 ---

@@ -3,7 +3,7 @@ title: イベントを使用したフォームのヘッドレスアダプティ�
 description: イベントを使用したフォームのヘッドレスアダプティブフォームデータの処理と送信
 hide: false
 source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

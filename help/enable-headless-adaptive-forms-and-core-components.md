@@ -7,7 +7,7 @@ contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
 source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
 
