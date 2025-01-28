@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 100%
@@ -46,7 +46,7 @@ archetype project to deploy the finished Headless adaptive forms and correspondi
 
 ## カスタムフレームワークでヘッドレスアダプティブフォームを使用することはできますか？
 
-ヘッドレスアダプティブフォームは[標準仕様](/help/assets/Headless-Adaptive-Form-Specification.pdf)に基づいています。仕様を拡張して、カスタムコンポーネントの構築に使用できます。例えば、Chakra UI、Vue.js などのコンポーネントです。
+ヘッドレスアダプティブフォームは[標準仕様](/help/assets/headless-adaptive-forms-specification.pdf)に基づいています。仕様を拡張して、カスタムコンポーネントの構築に使用できます。例えば、Chakra UI、Vue.js などのコンポーネントです。
 
 ## ヘッドレスアダプティブフォームはカスケードフィールドをサポートしていますか？
 

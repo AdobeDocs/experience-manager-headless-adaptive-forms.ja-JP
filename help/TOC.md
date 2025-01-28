@@ -5,10 +5,10 @@ user-guide-description: Adobe Experience Manager ヘッドレスアダプティ�
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 6fbc8605163c5f5415cadf5c19c96e1f68a23841
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 100%
 + ヘッドレスアダプティブフォームの作成 {#authoring-headless-adaptive-forms}
    + [アダプティブフォームエディターを使用したヘッドレスアダプティブフォームの作成](create-a-headless-adaptive-form.md)
 + 開発者向けリファレンス {#developer-reference}
+   + [ 開発者ポータル ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [ コードプレイグラウンド ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [よくある質問](faq.md)
 + [トラブルシューティング](troubleshooting.md)

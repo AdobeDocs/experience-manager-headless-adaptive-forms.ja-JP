@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, アーキテクチャ
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 97%
 
 ---
 
@@ -76,6 +76,8 @@ Forms Web SDK は、フォームの様々なフィールドに適用された制
 
 これらのコンポーネントはすべて AEM アーキタイプに含まれています。ヘッドレスアダプティブフォーム用に AEM Archetype 37 以降のプロジェクトを作成する場合は、上記のライブラリの最新バージョンがプロジェクトに含まれます。
 
+* **コードのプレイグラウンド**:[ コードのプレイグラウンド ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) は、ヘッドレスアダプティブFormsの機能を開発者が実験し、学び、テストするために設計されたインタラクティブ環境です。
+
 **起動済みのアプリケーション**：ヘッドレスアダプティブフォームの使用をすぐに開始するのに役立つ、起動済みのアプリケーションもリリースされています。
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Visual Studio Code 拡張機能**：[Visual Studio Code 拡張機能](visual-studio-code-extension-for-headless-adaptive-forms.md)は、有効な JSON 構造を作成するのに役立ちます。これは、JSON 構造のコンポーネントの追加、削除、名前変更などの一般的な機能に加えて、IntelliSense のサポートやフォームの JSON 構造の検証も提供します。
 
-**アダプティブフォームバージョン 2.0 の仕様**：アダプティブフォームバージョン 2.0 の仕様には、ヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約およびメソッドに関する詳細情報が記載されています。仕様は [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) 形式で入手可能です。
-
 **HTTP と JavaScript API**：[HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用すると、ヘッドレスフォームの一覧、取得、検証、送信、送信ステータスの追跡を行うことができます。[JS API](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) は、JavaScript ベースの UI フレームワークでヘッドレスアダプティブフォームを使用するのに役立ちます。
 
 **JSON 式**：JSON 構造をクエリし、ヘッドレスアダプティブフォームのルールを作成するのに役立つ、フォーム式の文法を実装したものです。この文法は、スプレッドシートに似た関数と演算子および JSON クエリ言語である [JMESPath](https://jmespath.org/) をマッシュアップしたものです。[プレイグラウンド](https://opensource.adobe.com/json-formula/dist/index.html)を使用して、JSON 式の構文と機能を調べることができます。
+
+**アダプティブフォームバージョン 2.0 の仕様**：アダプティブフォームバージョン 2.0 の仕様には、ヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約およびメソッドに関する詳細情報が記載されています。仕様は [PDF](/help/assets/headless-adaptive-forms-specification.pdf) 形式で入手可能です。
+
