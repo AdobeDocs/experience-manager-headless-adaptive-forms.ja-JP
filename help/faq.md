@@ -10,7 +10,7 @@ keywords: ヘッドレス, アダプティブフォーム, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
 source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '423'
 ht-degree: 100%
 

@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: Developer
 hide: false
 source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 95%
 + ヘッドレスアダプティブフォームの作成 {#authoring-headless-adaptive-forms}
    + [アダプティブフォームエディターを使用したヘッドレスアダプティブフォームの作成](create-a-headless-adaptive-form.md)
 + 開発者向けリファレンス {#developer-reference}
-   + [ 開発者ポータル ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [ コードプレイグラウンド ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [開発者ポータル](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ja)
+   + [コードのプレイグラウンド](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ja)
    + [ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [よくある質問](faq.md)
 + [トラブルシューティング](troubleshooting.md)

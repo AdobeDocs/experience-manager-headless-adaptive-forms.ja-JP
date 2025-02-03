@@ -10,9 +10,9 @@ keywords: ヘッドレス, アダプティブフォーム, アーキテクチャ
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
 source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '918'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Forms Web SDK は、フォームの様々なフィールドに適用された制
 
 これらのコンポーネントはすべて AEM アーキタイプに含まれています。ヘッドレスアダプティブフォーム用に AEM Archetype 37 以降のプロジェクトを作成する場合は、上記のライブラリの最新バージョンがプロジェクトに含まれます。
 
-* **コードのプレイグラウンド**:[ コードのプレイグラウンド ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) は、ヘッドレスアダプティブFormsの機能を開発者が実験し、学び、テストするために設計されたインタラクティブ環境です。
+* **コードのプレイグラウンド**：[コードのプレイグラウンド](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ja)は、開発者がヘッドレスアダプティブフォームの機能を実験、学習、テストする目的で設計されたインタラクティブな環境です。
 
 **起動済みのアプリケーション**：ヘッドレスアダプティブフォームの使用をすぐに開始するのに役立つ、起動済みのアプリケーションもリリースされています。
 
