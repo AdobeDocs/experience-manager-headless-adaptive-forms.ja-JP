@@ -6,10 +6,10 @@ seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms wi
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ AEM アーキタイプ 41 以降をベースにしたプロジェクトを AEM 6
 
 AEM 6.5 Forms 環境でヘッドレスアダプティブフォームを有効にするには、その前に以下が必要です。
 
-* [AEM 6.5 Forms サービスパック 16（6.5.16.0）以降にアップグレードします](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ja)。
+* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ja)。
 
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 
@@ -48,7 +48,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
       -D appId="myform" ^
       -D groupId="com.myform" ^
       -D includeFormsenrollment="y" ^
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    * Linux または Apple macOS
@@ -62,14 +62,13 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
       -D appId="myform" \
       -D groupId="com.myform" \
       -D includeFormsenrollment="y" \
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
-   上記のコマンドを実行する際は、次の点を考慮してください。
+   上記のコマンドを実行する際は、必ず次の点を考慮してください。
 
    * appTitle、appId、groupId などの、環境に固有の値を反映するようにコマンドを更新します。また、includeFormsenrollment の値を &quot;y&quot; に設定します。フォームポータルを使用する場合は、_includeExamples=y_ オプションを設定して、フォームポータルのコアコンポーネントをプロジェクトに含めます。
 
-   * 「aemVersion」を 6.5.15.0 から他のものに変更しないでください。
 
 1. （アーキタイプバージョン 41 ベースのプロジェクトの場合のみ）AEM アーキタイププロジェクトの作成後に、コアコンポーネントベースのアダプティブフォームのテーマを有効にします。テーマを有効にするには、次の手順を実行します。
 
@@ -93,8 +92,6 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 
    1. [AEM Archetype Project Folder]/pom.xml を編集用に開きます。
    1. `core.forms.components.version` と `core.forms.components.af.version` のバージョンを [Forms コアコンポーネントの最新](https://github.com/adobe/aem-core-forms-components/tree/release/650)バージョンに設定します。
-
-      ![Forms コアコンポーネントの最新バージョンについての言及](/help/assets/latest-forms-component-version.png)
 
    1. ファイルを保存して閉じます。
 
