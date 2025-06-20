@@ -7,9 +7,9 @@ contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
 source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM アーキタイプ 41 以降をベースにしたプロジェクトを AEM 6
 
 AEM 6.5 Forms 環境でヘッドレスアダプティブフォームを有効にするには、その前に以下が必要です。
 
-* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ja)。
+* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
 
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 
@@ -65,7 +65,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
       -D aemVersion="6.5.23" 
    ```
 
-   上記のコマンドを実行する際は、必ず次の点を考慮してください。
+   上記のコマンドを実行する際は、次の点を考慮してください。
 
    * appTitle、appId、groupId などの、環境に固有の値を反映するようにコマンドを更新します。また、includeFormsenrollment の値を &quot;y&quot; に設定します。フォームポータルを使用する場合は、_includeExamples=y_ オプションを設定して、フォームポータルのコアコンポーネントをプロジェクトに含めます。
 
