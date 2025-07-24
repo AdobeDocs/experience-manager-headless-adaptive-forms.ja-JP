@@ -75,7 +75,7 @@ SDK は .zip 形式です。サポートされているバージョンは、aem-
 
    >[!NOTE]
    >
-   > .jar ファイルをダブルクリックして起動しないでください。[エラー](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)が発生します。
+   > .jar ファイルをダブルクリックして起動しないでください。[エラー](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)が発生します。
 
 1. コマンドプロンプトを開きます。
    * Windows の場合は、「**管理者として実行**」オプションを使用して、昇格されたモードでコマンドプロンプトを開きます。

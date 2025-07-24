@@ -24,9 +24,9 @@ Cloud Service 上でヘッドレスアダプティブフォームをビルドし
 * [Node.js 16.13.0 以降 ](https://nodejs.org/ja/download/) をローカルマシンにインストールします。<!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
-* AEM as a Cloud Service プログラムの作成：[プログラムの作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program)記事の手順 1～7 に従って、組織に対応するプログラムを作成します。
+* AEM as a Cloud Service プログラムの作成：[プログラムの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program)記事の手順 1～7 に従って、組織に対応するプログラムを作成します。
 
-* [Cloud Service プログラムのプレリリースチャネル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments) を有効にします。
+* [Cloud Service プログラムのプレリリースチャネル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments) を有効にします。
 
 ## ワークフローのセットアップ
 
@@ -43,7 +43,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -54,7 +54,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
   2.「<b>Cloud Manager</b>」オプションの「<b>起動</b>」をクリックします。組織のプログラムのリストが表示されます。
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -65,7 +65,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
     &#x200B;3. プログラムの「...」アイコンをタップし、「<b>プログラムを編集</b>」オプションを選択します。ダイアログボックスが表示されます。 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/edit-program.png">
     </a>
     <br>
@@ -76,7 +76,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
     &#x200B;4. プログラムを編集ダイアログボックスで「<b>ソリューションとアドオン</b>」タブに移動し、「<b>Forms - デジタル登録</b>」オプションを選択して、「<b>更新</b>」をタップします。 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -102,7 +102,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/git-repo.png">
     </a>
     <br>
@@ -225,7 +225,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -236,7 +236,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
   2.「<b>Cloud Manager</b>」オプションの「<b>起動</b>」をクリックします。組織のプログラムのリストが表示されます。プログラムを開きます。 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -247,7 +247,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
     &#x200B;3. パイプラインの「...」アイコンをタップし、「<b>実行</b>」オプションを選択します。パイプラインを実行するように求められた場合は、「<b> Run </b>」をタップし、パイプライン <b> ステータス </b> が完了 <b> に変わ </b> のを待ちます。  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service プログラム" src="assets/run-build-pipeline.png">
     </a>
     <br>

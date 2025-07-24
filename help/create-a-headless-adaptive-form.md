@@ -45,16 +45,16 @@ AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォーム
 
 **AEM Forms as a Cloud Serviceの場合**
 
-* [AEM Forms as a Cloud Service オーサーインスタンス](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service)または[ローカル AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) 環境へのアクセス
+* [AEM Forms as a Cloud Service オーサーインスタンス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service)または[ローカル AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) 環境へのアクセス
 
 * **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。 また、テーマを定義してアクションを送信するオプションも提供されます。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
    * `blank Adaptive Forms (Core Components)` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
-   * 最初から[新しいアダプティブフォーム（コアコンポーネント）テンプレートを作成する](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)こともできます。
+   * 最初から[新しいアダプティブフォーム（コアコンポーネント）テンプレートを作成する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)こともできます。
 
 * **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。 テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。`Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
 
-* **権限**:[!DNL forms-users] グループにユーザーを追加します。 [!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。 特定のユーザーグループ用のフォームの詳細なリストについては、「[ グループと権限 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks)」を参照してください。
+* **権限**:[!DNL forms-users] グループにユーザーを追加します。 [!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。 特定のユーザーグループ用のフォームの詳細なリストについては、「[ グループと権限 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks)」を参照してください。
 
 
 ## アダプティブフォームの作成 {#create-an-adaptive-form-components}
@@ -79,7 +79,7 @@ AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォーム
 
    * **フォームデータモデル**：[フォームデータモデル](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)を使用すると、異なるデータソースのエンティティやサービスをアダプティブフォームに統合することができます。 作成するアダプティブフォームで、複数のデータソースに対するデータの取得と書き込みが必要になる場合は、フォームデータモデルを選択します。
 
-   * **JSON スキーマ**:[JSON スキーマ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) アダプティブ Formsでは、生成または消費されるデータの構造を表す JSON スキーマを関連付ける機能により、自社のバックエンドシステムとシームレスに統合できます。 この関連付けにより、作成者はスキーマの要素を使用して、アダプティブフォームにコンテンツを動的に追加できます。 オーサリング中に、コンテンツブラウザーの「データモデルオブジェクト」タブからスキーマ要素にすばやくアクセスできます。 新しいアダプティブフォームを作成すると、エディターによってすべてのフィールドが自動的に追加されます。
+   * **JSON スキーマ**:[JSON スキーマ ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) アダプティブ Formsでは、生成または消費されるデータの構造を表す JSON スキーマを関連付ける機能により、自社のバックエンドシステムとシームレスに統合できます。 この関連付けにより、作成者はスキーマの要素を使用して、アダプティブフォームにコンテンツを動的に追加できます。 オーサリング中に、コンテンツブラウザーの「データモデルオブジェクト」タブからスキーマ要素にすばやくアクセスできます。 新しいアダプティブフォームを作成すると、エディターによってすべてのフィールドが自動的に追加されます。
 
    デフォルトでは、関連付けられた JSON スキーマのすべてのフィールドが自動的に選択され、対応するアダプティブフォームコンポーネントに変換されるので、オーサリングプロセスを合理化できます。 ウィザードでは、チェックボックスを使用してアダプティブフォームに含めるフィールドを選択できる、さらに便利な機能が用意されています。
 

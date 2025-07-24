@@ -303,7 +303,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
       git push origin
       ```
 
-1. ファイルが Git リポジトリにコミットされた後、[パイプラインを実行](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment)します。
+1. ファイルが Git リポジトリにコミットされた後、[パイプラインを実行](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/using/code-deployment)します。
 
    パイプラインが正常に実行されると、対応する環境でアダプティブ Forms コアコンポーネントが有効になります。 また、アダプティブフォーム（コアコンポーネント）テンプレートと Canvas 3.0 テーマが、Forms as a Cloud Service 環境に追加され、コアコンポーネントベースのアダプティブフォームをカスタマイズして作成するオプションが提供されます。
 

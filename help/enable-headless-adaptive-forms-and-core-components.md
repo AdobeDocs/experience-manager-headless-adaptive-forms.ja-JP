@@ -22,7 +22,7 @@ AEM アーキタイプ 41 以降をベースにしたプロジェクトを AEM 6
 
 AEM 6.5 Forms環境でヘッドレスアダプティブFormsを有効にする前に、
 
-* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
+* [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
 
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースをインストールします。
 

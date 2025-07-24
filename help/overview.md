@@ -27,7 +27,7 @@ Adobe Experience Manager（AEM）ヘッドレスアダプティブフォーム�
 * 選択したプログラミング言語で高品質のマルチチャネルフォームを作成する。
 * フォームをデスクトップアプリ、モバイルアプリ、web サイトおよびチャットアプリケーションにネイティブに統合します。
 * 独自の UI コンポーネントをフォームアプリケーションで再利用します。
-* [Adobe Experience Manager Formsの機能 ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms) を活用します。
+* [Adobe Experience Manager Formsの機能 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms) を活用します。
 
 さらに、任意の UI フレームワークとプログラミング言語を使用して、フォームをレンダリングする独自のコンポーネントを自由に開発できます。すぐに利用可能な React コンポーネントを使用して、ヘッドレスアダプティブフォームをレンダリングすることもできます。
 

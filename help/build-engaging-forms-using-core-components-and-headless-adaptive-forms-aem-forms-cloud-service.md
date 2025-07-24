@@ -611,10 +611,10 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 * [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [ コアコンポーネントを使用してアダプティブフォームを作成する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [ コアコンポーネントを使用してアダプティブフォームを作成する ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [コアコンポーネントベースの AF のスタイル設定を更新](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [ ヘッドレス React スターターキットの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [ ヘッドレス React スターターキットの使用 ](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
