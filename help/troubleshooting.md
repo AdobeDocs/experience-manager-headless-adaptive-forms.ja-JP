@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 100%
+source-wordcount: '127'
+ht-degree: 58%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ### 問題
 
-`mvn -PautoInstallPackage clean install` または同様のコマンドを使用して AEM アーキタイププロジェクトをデプロイしようとすると、プロジェクトのデプロイに失敗します。
+`mvn -PautoInstallPackage clean install` または同様のコマンドを使用してAEM アーキタイププロジェクトをデプロイすると、プロジェクトのデプロイに失敗します。
 
 ### 理由
 
-この問題が発生する原因としては、node.js または NPM がサポートされていないバージョンであるか、インストールが破損していることが考えられます。
+これは、サポートされていないバージョンか、`node.js` または `NPM` のインストールが破損していることが原因で発生する可能性があります。
 
 ### 解決策
 
 1. [現在インストールされている Node.js](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) を環境から完全に削除します。
 
-1. Node.js 16.13.0 以降を NPM と共にインストールします。
+1. `node.JS 16.13.0` 以降を `NPM` と共にインストールします。
 
 1. コンピューターを再起動します。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ### 問題
 
-`mvn clean install` または同様のコマンドを使用して AEM アーキタイププロジェクトをデプロイしようとすると、コマンドの実行に失敗します。
+`mvn clean install` または同様のコマンドを使用してAEM アーキタイププロジェクトをデプロイすると、コマンドが実行できません。
 
 ### 理由
 

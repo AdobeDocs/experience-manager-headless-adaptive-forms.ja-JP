@@ -5,20 +5,22 @@ description: コアコンポーネントとヘッドレスを使用して魅力�
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '2452'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
 # AEM Forms as a Cloud Service 上でコアコンポーネントとヘッドレスアダプティブフォームを使用して魅力的なフォームを作成する方法 {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
+
 ## ラボの概要 {#lab-overview}
 
-この実践ラボでは、次のことを学習します。
+この実践ラボでは、次のことを学びます。
 
-AEM Forms を使用して、AEM Sites と一貫性のある最新のコアコンポーネントを使って簡単にアダプティブフォームを作成し、アダプティブフォームをヘッドレスフォームとして web、モバイル、チャットに配信することで、オムニチャネルのデータ取得機能を有効にする方法。また、スタイル設定、カスタマイズ、フロントエンド開発に関するベストプラクティスについても学習します。
+AEM Formsを使用して、最新のコアコンポーネントを使用してアダプティブフォームを簡単に作成する方法。 これらのコンポーネントは、AEM Sitesと一貫性があり、アダプティブフォームをヘッドレスフォームとして web、モバイルおよびチャットに配信することで、オムニチャネルのデータ取得機能を有効にします。 また、スタイル設定、カスタマイズ、フロントエンド開発に関するベストプラクティスについても学習します。
 
 ## 重要ポイント {#key-takeaways}
 
@@ -30,7 +32,7 @@ AEM Forms を使用して、AEM Sites と一貫性のある最新のコアコン
 
 ## 前提条件 {#prerequisites}
 
-このハンズオンラボを利用するには：
+この実践ラボを使用するには：
 
 * [Git の最新リリース](https://git-scm.com/downloads)をインストールします。Git を初めて使用する場合は、[Git のインストール](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)を参照してください。
 
@@ -38,7 +40,7 @@ AEM Forms を使用して、AEM Sites と一貫性のある最新のコアコン
 
 * AEM Forms as a Cloud Service 環境での[アダプティブフォームコアコンポーネントの有効化。](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 
-* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) または任意のプレーンテキストエディターをインストールします。ドキュメントの例では、Microsoft Visual Studio Code を使用しています。
+* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) または任意のプレーンテキストエディターをインストールします。このドキュメントの例では、Microsoft Visual Studio Code を使用しています。
 
 
 
@@ -54,8 +56,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
 ### 演習 {#lesson-1-excercise}
 
-1. ブラウザーを開き、Cloud Service オーサー環境の URL を入力します。次に例を示します。
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. ブラウザーを開き、Cloud Service オーサー環境の URL を入力します。<!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Cloud Service オーサー環境にログインします。
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
@@ -83,7 +84,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
 1. フォームの送信エンドポイントを作成します。
 
-   1. 新しいブラウザータブで、<https://requestbin.com/> を開きます。
+   1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
    1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
@@ -94,7 +95,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
    1. レッスン 1 で使用したブラウザータブで、AEM Forms as a Cloud Service web インターフェイスに移動し、フォーム＆ドキュメントに移動します。
       ![](/help/assets/screenshot2028114029.png)
 
-   1. 「**作成**」をタップして、「アダプティブフォーム」を選択します。
+   1. **作成**/**アダプティブフォーム** をクリックします。
       ![](/help/assets/screenshot2028114629.png)
 
    1. 選択画面から、**コアコンポーネントを使用した空白**テンプレートを選択します（下図を参照）。
@@ -106,9 +107,9 @@ AEM Forms as a Cloud Service 環境に慣れる。
    1. 「**送信**」タブをクリックし、「**REST エンドポイントに送信**」カードを選択し、「**POST リクエストの URL**」フィールドで公開 bin を指定します（下図を参照）。
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. 「**作成**」をクリックします。フォームの名前とタイトルを指定します。例えば、**登録**&#x200B;などです。「**作成**」をクリックします。
+   1. 「**作成**」をクリックします。フォームの名前とタイトルを指定します。 例えば、**登録**&#x200B;などです。「**作成**」をクリックします。
 
-   1. アダプティブフォームエディターが開きます。ポップアップまたはダイアログを閉じて、環境設定や情報を表示します。左側のレールにあるコンポーネントブラウザーをクリックし、**ヘッダー**&#x200B;コンポーネントと&#x200B;**フッター**コンポーネントをそれぞれ空白のフォームの上部と下部に追加します。
+   1. アダプティブフォームエディターが開きます。ポップアップまたはダイアログを閉じて、環境設定や情報を表示します。左側のパネルでコンポーネントブラウザーをクリックして、**ヘッダー** コンポーネントと **フッター** コンポーネントをそれぞれ空白のフォームの上部と下部に追加します。
       ![](/help/assets/screenshot2028121929.png)
 
    1. コンポーネントブラウザーからコンポーネントをドラッグ＆ドロップして、次のようなフォームを作成します。
@@ -136,9 +137,9 @@ AEM Forms as a Cloud Service 環境に慣れる。
    1. 「リクエスト bin」タブで、送信されたデータを確認します。
       ![](/help/assets/screenshot2028125829.png)
 
-1. ルールを使用してフォームにインタラクティビティを追加します。
+1. ルールを使用して、フォームにインタラクティブ機能を追加します。
 
-   1. 「**チェックボックスをオンにして 5％オフを受け取る**」コンポーネントをクリックします。オプションツールバーで、ルールアイコンをクリックします。「ルールエディター」オプションが開きます。
+   1. 「**チェックボックスをオンにして 5％オフを受け取る**」コンポーネントをクリックします。オプションツールバーで、ルールアイコンをクリックします。ルールエディターオプションが開きます。
 
    1. ルールを作成します。「**チェックボックスをオンにして 5％オフを受け取ります**」オプションが選択されている場合、クレジットカードを適用するオプションは無効になります。
 
@@ -154,10 +155,10 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
       ![](/help/assets/screenshot2028115729.png)
 
-      フォームの公開 URL は、次のようになります。`https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`
+      フォームの公開済み URL は、`https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html` のようになります。
 
-   1. 公開されたフォームを表示するには、上記の URL のプログラム ID（pXXXXXX）と環境 ID（eXXXXXX）を、お使いの環境の ID に置き換えます。
-
+   1. 公開されたフォームを表示するには、上記の URL のプログラム ID （pXXXXXX）と環境 ID （eXXXXXX）を、の ID に置き換えます
+環境。
 
 ## レッスン 3
 
@@ -219,12 +220,11 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
-1. AEM 環境でローカルユーザーを作成します。
+1. AEMでローカルユーザーを作成します。
 
    >[!NOTE]
-   > ローカルユーザーを作成するには、以下の手順に従います。
-   > `AEM Home`／`Tools`／`Security`／`Users` に移動します。
-   > ユーザーが forms-users グループのメンバーであることを確認してください。
+   > ローカルユーザーを作成するには、`AEM Home`/`Tools`/`Security`/`Users` に移動します。
+   > ユーザーが forms-users グループのメンバーであることを確認します。
 
 
 1. コマンドプロンプトウィンドウで、次のコマンドを実行します。
@@ -237,8 +237,8 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    >[!NOTE]
    >
-   > * `npm notice Run npm nstall -g npm@9.6.0` コマンドを使用して npm をアップデートするように求めるメッセージが表示された場合、メッセージを無視します。
-   > * ワークブックでの指示がない限り、他の npm コマンドを実行しないでください。
+   > * `npm` コマンドを使用して `npm notice Run npm nstall -g npm@9.6.0` をアップデートするように求めるメッセージが表示された場合、メッセージを無視します。
+   > * ワークブックの指示がない限り、他の `npm` コマンドを実行しないでください。
 
 1. 次のコマンドを実行して、フォームをプレビューします。
 
@@ -277,14 +277,14 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    ![](/help/assets/screenshot2028121129.png)
 
-1. コマンドプロンプトで、**Ctrl + C** キーを押して、**Y** キーを押し、**Enter** キー を押して npm プロセスを終了します。次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
+1. コマンドプロンプトで、**Ctrl + C** キーを押して、**Y** キーを押し、**Enter** キーを押して npm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
 
 ## レッスン 4
 
 ### 目的
 
-フォームをヘッドレスフォームとして web／モバイルおよび他のインターフェイスにレンダリングします。
+フォームをヘッドレスフォームとして Web/モバイルおよび他のインターフェイスにレンダリングします。
 
 ### レッスンのコンテキスト
 
@@ -304,7 +304,7 @@ React スタータープロジェクトを使用してローカルリポジト�
    cd c:\git
    ```
 
-1. 次のコマンドを使用して、アダプティブフォームの React スタータープロジェクトを複製します。
+1. 次のコマンドを使用して、アダプティブフォーム React スタータープロジェクトを複製します。
 
    ```Shell
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -329,21 +329,20 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 クラウドサービスのパブリッシュ環境でホストされるフォームをレンダリングするには、次の手順に従います。
 
-1. env_template ファイルを.env ファイルに名前変更します。名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」オプションを選択します。
+1. env_template ファイルを.env ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」オプションを選択します。
 
    ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
 
    ![](/help/assets/screenshot2028117729.png)
 
 1. .env ファイル内の変数に次の値を設定します。変数を更新したら、ファイルを保存します。
-
    * **AEM_URL**：クラウドサービスパブリッシュ環境の URL を指定します。例：`https://publish-p105303-e986623.adobeaemcloud.com`
 
    * **AEM_FORM_PATH**：前のレッスンで作成したアダプティブフォームのパスを指定します。例：`/content/forms/af/registration/`
 
      ![](/help/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
-1. コマンドウィンドウを開き、react-starter-kit-aem-headless-forms ディレクトリにいることを確認し、次のコマンドを実行します。
+1. コマンドウィンドウを開き、**react-starter-kit-aem-headless-forms** ディレクトリにいることを確認し、次のコマンドを実行します。
 
    ```Shell
    npm install
@@ -360,7 +359,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/screenshot2028118129.png)
 
-   上記のコマンドは、ローカル開発サーバーを起動し、AEM から取得したフォーム定義を react-spectrum フロントエンドライブラリを使ってヘッドレスでレンダリングするものです。
+   上記のコマンドは、ローカル開発サーバーを起動し、AEMから取得したフォーム定義を React スペクトルフロントエンドライブラリを使用してヘッドレスにレンダリングするものです。
 
    >[!NOTE]
    >
@@ -371,7 +370,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 このヘッドレスフォームのルールの実行を確認しましょう。
 
-1. 「**チェックボックスをオンにして 5％オフを受け取る**」オプションを選択します。クレジットカードを適用する後続のオプションは無効になります。
+1. 「**チェックボックスをオンにして 5％オフを受け取る**」オプションを選択します。クレジットカードを申請する後続のオプションは無効になります。
 
    ![](/help/assets/screenshot2028126229.png)
 
@@ -381,12 +380,12 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 サーバー上のフォームをビジネスユーザーとして変更し、ヘッドレスフォームに自動的に反映された変更を表示します。
 
-1. ブラウザーで AEM Forms 管理インターフェイスを開きます。例：[https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments)
+1. ブラウザーでAEM Forms Management インターフェイスを開きます。<!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. **お問い合わせ**&#x200B;フォームを選択し、「**編集**」をクリックします。アダプティブフォームエディターでフォームが開きます。
+1. **`contactus`** フォームを選択し、「**編集」をクリックします。**」をクリックします。アダプティブフォームエディターでフォームが開きます。
 
 
-1. 「**電話番号**」フィールドを選択し、ツールバーの&#x200B;**編集アイコン（鉛筆アイコン）**&#x200B;をクリックします。ポップアップツールバーが表示されない場合は、右上の、「**プレビュー**」ボタンの左側にある「**編集**」ボタンをクリックして、編集モードに切り替えます。
+1. 「**電話番号**」フィールドを選択し、ツールバーの&#x200B;**編集アイコン（鉛筆アイコン）**&#x200B;をクリックします。ポップアップツールバーが表示されない場合は、編集モードに切り替えます。 右上の **編集** ボタンをクリックし、左から **プレビュー** ボタンをクリックします。
 
    ![](/help/assets/screenshot2028119629.png)
 
@@ -394,7 +393,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/screenshot2028119729.png)
 
-更新したフォームを公開して、変更をパブリッシュ環境に反映します。
+更新したフォームを公開して、公開済みの環境に変更を反映させます。
 
 1. 「AEM Forms 管理インターフェイス」タブで、登録フォームを選択し、「**非公開**」をクリックします。「**非公開**」ボタンが表示されない場合、手順 3 に進んで変更を直接公開します。
 
@@ -439,7 +438,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
    cd c:\git
    ```
 
-1. 次のコマンドをリストに表示された順序で実行して、mui という名前のフォルダーを作成し、次のコマンドを使用して mui フォルダーに移動します。
+1. 次のコマンドをリストに表示された順序で実行して、`mui` という名前のフォルダーを作成し、次のコマンドを使用して `mui` フォルダーに移動します。
 
    ```Shell
    mkdir mui
@@ -447,7 +446,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
    cd mui
    ```
 
-1. 次のコマンドを使用して、アダプティブフォームの React スタータープロジェクトを複製します。
+1. 次のコマンドを使用して、アダプティブフォーム React スタータープロジェクトを複製します。
 
    ```Shell
    git clone -b mui-lab https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -467,11 +466,11 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 クラウドサービスのパブリッシュ環境でホストされるフォームをレンダリングするには、次の手順に従います。
 
-1. **env_template** ファイルを **.env** ファイルに名前変更します。名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」を選択します。
+1. **env_template** ファイルを **.env** ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」を選択します。
 
    ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
 
-1. .env ファイル内の変数に次の値を設定します。変数を更新したら、ファイルを保存します。**Ctrl + S** キーを使用してファイルを保存します。
+1. .env ファイル内の変数に次の値を設定します。変数を更新したら、ファイルを保存します。 **Ctrl + S** キーを使用してファイルを保存します。
 
    * **AEM_URL**：クラウドサービスパブリッシュ環境の URL を指定します。例：[https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
 
@@ -506,7 +505,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. このフォームレンディションで同じビジネスロジックの実行を評価するには：
 
-   「**チェックボックスをオンにして 5%オフを受け取る**」を選択します。後続のオプション「**We.Finance のコーポレートクレジットカードフォームを申し込みますか？**」が無効になります。
+   「**チェックボックスをオンにして 5%オフを受け取る**」を選択します。後続のオプション **企業クレジットカードフォーム `We.Finance` 申し込みますか？**」が無効になります。
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -518,7 +517,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 ### レッスンのコンテキスト
 
-このレッスンでは、ビジネスユーザーが以前に作成したアダプティブフォームに対して、フロントエンド開発者が Material UI を使用して、様々なコンポーネントの代替表現を作成する方法を学びます。
+このレッスンでは、フロントエンド開発者として、様々なコンポーネントの代替表現を作成する方法を学びます。 ビジネスユーザーが以前に作成したアダプティブフォームには、マテリアル UI を使用します。
 
 ### 演習
 
@@ -532,7 +531,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
    //const Cmp = \'outlined\' === appliedCssClassNames ? OutlinedInput: Input;
    ```
 
-1. 別のバリアントのコンポーネントを使用するために、104 行目に次のコードを追加して、ファイルを保存します。**Ctrl + S** キーを使用してファイルを保存します。
+1. コンポーネントの別のバリアントを使用するために、104 行目に次のコードを追加して、ファイルを保存します。 **Ctrl + S** キーを使用してファイルを保存します。
 
    ```Shell
    const Cmp = OutlinedInput;
@@ -540,7 +539,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
    ![](/help/assets/screenshot2028127629.png)
 
-   「OutlinedInput」バリアントは正しく大文字と小文字を使用する必要があります。さもないと、コンパイルが失敗します。ローカル開発環境のコンパイルは、コマンドプロンプトで自動的に開始されます。次のメッセージが表示されるまで待ちます
+   「OutlinedInput」バリアントは正しく大文字と小文字を使用する必要があります。さもないと、コンパイルが失敗します。 ローカル開発環境のコンパイルは、コマンドプロンプトで自動的に開始されます。次のメッセージが表示されるまで待ちます
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
@@ -563,7 +562,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 +++ アダプティブフォームウィザードは一般に使用できますか？
 
-はい、AEM Forms as a Cloud Service で使用できます。
+はい、AEM Forms as a Cloud Serviceで使用できます。
 
 +++
 
@@ -586,7 +585,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 +++
 
-+++ コアコンポーネントとヘッドレスフォームは AEM 6.5 Forms で利用できますか？
++++ コアコンポーネントとヘッドレスフォームはAEM 6.5 Formsで利用できますか？
 
 はい。アダプティブフォームのコアコンポーネントとヘッドレスフォームは、AEM Forms 6.5 サービスパック 16 以降で使用できます。
 
@@ -595,16 +594,17 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 ## 次の手順
 
-アダプティブフォームの構築方法と、ヘッドレスフォームを使用して複数のチャネルにアダプティブフォームを配信する方法の説明は以上です。新しいスキルを活用してみましょう。優れたデータキャプチャエクスペリエンスを作成し、大規模なエンドユーザーに提供することで、楽しみながら先に進むことができます。
+これで、アダプティブフォームを作成し、ヘッドレスフォームを使用して複数のチャネルにアダプティブフォームを配信する方法がわかりました。 これらのスキルを活用して、ユーザーがどこにいても、スケーラブルで高品質なデータ取得エクスペリエンスを作成します。
+
 
 ## リソース
 
-* [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ja)
+* [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [コアコンポーネントを使用してアダプティブフォームを作成](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=ja)
+* [ コアコンポーネントを使用してアダプティブフォームを作成する ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [コアコンポーネントベースの AF のスタイル設定を更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=ja)
+* [コアコンポーネントベースの AF のスタイル設定を更新](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ja)
+* [ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [ヘッドレス React スターターキットの使用](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=ja)
+* [ ヘッドレス React スターターキットの使用 ](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

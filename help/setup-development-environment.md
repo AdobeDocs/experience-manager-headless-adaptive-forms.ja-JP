@@ -3,17 +3,17 @@ title: AEM ヘッドレスアダプティブフォームの開発環境のセッ
 description: AEM ヘッドレスアダプティブフォームの開発環境のセットアップ
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 69%
 
 ---
 
 
 # ローカル開発環境のセットアップ {#headless-adaptive-forms-setup-development-environment}
 
-ローカル開発環境をセットアップして、ローカルマシン上でヘッドレスアダプティブフォームを作成およびテストできます。開発環境は、AEM SDK と、AEM SDK にインストールされた AEM Forms 機能アーカイブで構成されます。
+ローカル開発環境をセットアップして、ローカルマシン上でヘッドレスアダプティブフォームを作成およびテストできます。 開発環境は、AEM SDKと、AEM SDKにインストールされたAEM Forms機能アーカイブで構成されます。
 <!--
  After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. -- >
 
@@ -40,9 +40,9 @@ To download the supported version of Adobe Experience Manager as a Cloud Service
 
 AEM SDK をインストールするには、ローカルマシンが次の最小要件を満たしている必要があります。
 
-* [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/jp/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+* [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/jp/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 * [Git の最新リリース](https://git-scm.com/downloads)。Git を初めて使用する場合は、[Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) を参照してください。
-* [Node.js 16.13.0 以降](https://nodejs.org/ja/download/)。Node.js を初めて使用する場合は、[How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs) を参照してください。
+* [Node.js 16.13.0 以降 ](https://nodejs.org/ja/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 * [Maven 3.6 以降](https://maven.apache.org/download.cgi)。Maven を初めて使用する場合は、[Installing Apache Maven](https://maven.apache.org/install.html) を参照してください。
 
 ## 開発環境のセットアップ {#headless-adaptive-forms-procedure-to-setup-development-environment}
@@ -50,7 +50,7 @@ AEM SDK をインストールするには、ローカルマシンが次の最小
 新しいローカル開発環境をセットアップし、その環境を使用してヘッドレスアダプティブフォームを開発およびテストするには、次の手順を実行します。
 
 1. [AEM as a Cloud Service SDK をセットアップします](#setup-author-instance)。
-1. [AEM Forms アーカイブ（AEM Forms Cloud Service アドオン）を AEM SDK に追加します](#add-forms-archive)。
+1. [AEM SDKへのAEM Forms アーカイブ（AEM Forms Cloud Service アドオン）の追加 ](#add-forms-archive)。
 
 <!--
 
@@ -59,9 +59,9 @@ AEM SDK をインストールするには、ローカルマシンが次の最小
 
 -->
 
-### 1. AEM as a Cloud Service SDK のセットアップ {#setup-author-instance}
+### &#x200B;1. AEM as a Cloud Service SDK のセットアップ {#setup-author-instance}
 
-AEM as a Cloud Service SDK（AEM SDK）は、ヘッドレスアダプティブフォームを作成およびテストするためのローカルエクスペリエンスを開発者に提供します。AEM as a Cloud Service SDK はヘッドレスアダプティブフォームの作成とプレビューの両方に使用できるので、開発に関連するほとんどの検証をローカルで実行できるようになります。ローカルのオーサーインスタンスをセットアップするには、次の手順を実行します。
+AEM as a Cloud Service SDK（AEM SDK）は、ヘッドレスアダプティブフォームを作成およびテストするためのローカルエクスペリエンスを開発者に提供します。AEM as a Cloud Service SDK はヘッドレスアダプティブフォームの作成とプレビューの両方に使用できるので、開発に関連するほとんどの検証をローカルで実行できるようになります。ローカルのオーサーインスタンスを設定するには：
 
 1. 最新の [!DNL Adobe Experience Manager] as a Cloud Service SDK を[ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)します。「公開日」列を使用すると、ファイルを並べ替えて最新の SDK を簡単に見つけることができます。
 SDK は .zip 形式です。サポートされているバージョンは、aem-sdk-2022.7.8085.20220725T140323Z-220700.zip 以降です。
@@ -70,42 +70,42 @@ SDK は .zip 形式です。サポートされているバージョンは、aem-
 
 
 1. ダウンロードした .zip ファイルをローカルマシン上のディレクトリに展開します。
-1. オーサーインスタンスのインストール場所となるディレクトリをローカルマシン上に作成します。例えば `~/aem-sdk/author` などです。
+1. ローカルマシン上に、オーサーインスタンスのインストール先となるディレクトリを作成します。 例えば `~/aem-sdk/author` などです。
 1. 抽出した SDK ファイルから .jar ファイルをインストール場所にコピーし、ファイルの名前を `aem-author-p4502.jar` に変更します。ファイル名の `p4502` 文字列には、使用するポート番号を指定します。別のポート番号を指定することもできます。
 
    >[!NOTE]
    >
-   > .jar ファイルをダブルクリックして起動しないでください。[エラー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#troubleshooting-double-click)が発生します。
+   > .jar ファイルをダブルクリックして起動しないでください。[エラー](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)が発生します。
 
 1. コマンドプロンプトを開きます。
-   * Windows の場合、「**管理者として実行**」オプションを使用して、管理者特権モードでコマンドプロンプトを開きます。
-   * Linux の場合、必ず root ユーザーとしてターミナルウィンドウを開きます。
+   * Windows の場合は、「**管理者として実行**」オプションを使用して、昇格されたモードでコマンドプロンプトを開きます。
+   * Linux® では、ターミナルウィンドウをルートユーザーとして開きます。
 
-1. コピーした.jar ファイルを含んだインストール場所に移動し、次のコマンドを実行します。
+1. コピーした.jar ファイルを含むインストール場所に移動し、次のコマンドを実行します。
 
    `java -jar aem-author-p4502.jar -r prerelease`
 
    ![ソフトウェア配布ポータルからの AEM Cloud Service SDK のダウンロード](assets/install-sdk.png)
 
-   * `-r prerelease` スイッチを使用すると、プレリリースプログラムおよび限定的なリリースプログラムでのみ利用可能な機能を有効化できます。
+   * `-r prerelease` スイッチを使用すると、プレリリースおよび限定リリースプログラムでのみ使用できる機能を有効にできます。
    * 認知的負荷を軽減するために、ローカル開発のユーザー名とパスワードとして `admin` を使用できます。
 
-   AEM を起動すると、ログインページが web ブラウザーに開きます。また、アドレス `http://localhost:<port>` にある AEM SDK インスタンスのログインページを web ブラウザーで開くこともできます。例えば [http://localhost:4502](http://localhost:4502) などのアドレスです。
+   AEMが起動すると、web ブラウザーにログインページが表示されます。 また、アドレス `http://localhost:<port>` にある AEM SDK インスタンスのログインページを web ブラウザーで開くこともできます。例えば、[http://localhost:4502](http://localhost:4502) です。
 
-1. オーサーインスタンスにログインします。![ヘルプ](/help/assets/Help-icon.svg)アイコン、「Adobe Experience Manager について」の順にタップして、バージョン番号の後に PRERELEASE と表示されていることを確認します。
+1. オーサーインスタンスにログインします。 ![ヘルプ](/help/assets/Help-icon.svg)アイコン、「Adobe Experience Manager について」の順にタップして、バージョン番号の後に PRERELEASE と表示されていることを確認します。
 
    ![ヘルプ](/help/assets/prerelease.png)
 
 番号の後に PRERELEASE と表示されていない場合は、サーバーを停止して `[AEM SDK installation]/crx-quickstart folder` を削除し、`-r prerelease` スイッチを付けて AEM SDK の .jar ファイルを再起動します。その他のオプションについては、[トラブルシューティング](/help/troubleshooting.md)を参照してください。
 
-### 2. AEM SDK への AEM Forms アーカイブ（AEM Forms Cloud Service アドオン）の追加 {#add-forms-archive}
+### &#x200B;2. AEM SDK への AEM Forms アーカイブ（AEM Forms Cloud Service アドオン）の追加 {#add-forms-archive}
 
-AEM Forms as a Cloud Service 機能アーカイブ（AEM Forms Cloud Service アドオン）には、ローカル開発環境でヘッドレスアダプティブフォームを作成するためのツールが用意されています。機能アーカイブをインストールするには、次の手順を実行します。
+AEM Forms as a Cloud Service機能アーカイブ（AEM Forms Cloud Service アドオン）は、ローカル開発環境でヘッドレスアダプティブフォームを作成するためのツールを提供します。 機能アーカイブをインストールするには、次の手順を実行します。
 
-1. 最新の [!DNL AEM Forms] 機能アーカイブ（AEM Forms アドオン）を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20)からダウンロードして展開します。「公開日」列を使用すると、ファイルを並べ替えて最新の SDK を簡単に見つけることができます。サポートされているバージョンは、aem-forms-addon-2022.07.06.02-220600 以降です。
+1. 最新の [!DNL AEM Forms] 機能アーカイブ（AEM Forms アドオン）を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20)からダウンロードして展開します。「公開日」列を使用すると、ファイルを並べ替えて最新の SDK を簡単に見つけることができます。サポートされているバージョンは、aem-forms-addon-2022.07.06.02-220600 以降です。
 
 1. crx-quickstart/install ディレクトリに移動します。フォルダーが存在しない場合は作成します。
-1. AEM SDK インスタンスを停止します。AEM SDK インスタンスを実行しているコマンドプロンプトウィンドウを終了すると、AEM を停止できます。
+1. AEM SDK インスタンスを停止します。AEM SDK インスタンスを実行中のコマンドプロンプトウィンドウを終了して、AEMを停止します。
 1. 手順 1 で展開した [!DNL AEM Forms] アドオン機能アーカイブをファイル `aem-forms-addon-<version>.far` からインストールフォルダーにコピーします。
 1. 次のコマンドを使用して、AEM SDK インスタンスを再起動します。
 
@@ -227,4 +227,4 @@ Adaptive forms renderer component is a react based component. It requires a reac
     ```
  
 -->
-ローカル開発環境の準備が整いました。ヘッドレスアダプティブフォームの作成に進むことができます。
+ローカル開発環境の準備が整いました。次に、ヘッドレスアダプティブフォームを作成します。

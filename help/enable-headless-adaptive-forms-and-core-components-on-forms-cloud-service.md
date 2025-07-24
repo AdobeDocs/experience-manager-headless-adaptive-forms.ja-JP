@@ -1,8 +1,6 @@
 ---
 title: AEM Forms as a Cloud Service でのヘッドレスアダプティブフォームを有効にする
-seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM Forms as a Cloud Service
-description: AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを有効にする方法を、ステップバイステップのガイドで説明します。このチュートリアルでは、AEM Forms 環境でこの強力な機能を簡単に有効にする手順について説明します。
-seo-description: Learn how to enable headless adaptive forms on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+description: AEM Forms as a Cloud Serviceでヘッドレスアダプティブフォームを有効にし、お使いの環境でのセットアップとアクティベーションを簡素化する手順を説明します。
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -13,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 74%
 
 ---
 
@@ -28,29 +26,30 @@ AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを
 
 * 新しい AEM Forms as a Cloud Service プログラムを作成すると、[ヘッドレスアダプティブフォームはご利用の環境で既に有効になっています](#are-adaptive-forms-core-components-enabled-for-my-environment)。
 
-* 古い Forms as a Cloud Service プログラム（コアコンポーネントが[有効になっていない](#enable-components)）がある場合は、[アダプティブフォームコアコンポーネントの依存関係を追加](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)し、そのリポジトリを Cloud Service 環境にデプロイしてヘッドレスアダプティブフォームを有効にすることができます。
+* コアコンポーネントが [ 有効になっていない ](#enable-components) 古いForms as a Cloud Service プログラムを実行している場合は、まず [ アダプティブ Forms コアコンポーネントの依存関係を追加 ](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)Cloud Service リポジトリに追加します。 更新したリポジトリを各環境にデプロイして、ヘッドレスアダプティブフォームを有効にします。
 
-* 既存の Cloud Service 環境に、[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)するオプションがある場合、ヘッドレスアダプティブフォームはご利用の環境で既に有効になっています。また、コアコンポーネントベースのアダプティブフォームを、アダプティブフォームのヘッドレス表現を必要とするチャネル（モバイル、web、ネイティブアプリ、サービスなど）に、ヘッドレスフォームとして提供できます。
-
+* Cloud Serviceで既に [ コアコンポーネントベースのアダプティブフォームを作成 ](create-a-headless-adaptive-form.md) できる場合、ヘッドレスアダプティブフォームは自動的に有効になります。 その後、これらのフォームをヘッドレスエクスペリエンスとして、モバイル、web、ネイティブアプリまたはそれらを必要とするサービスに配信できます。
 
 >[!NOTE]
 >
 >
-> アドビは、開発者が AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることなく、ヘッドレスアダプティブフォームの開発をすぐに開始できるように、アダプティブフォーム[スターターキット（React アプリ）](create-and-publish-a-headless-form.md)を提供しています。[ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
+> Adobeは、開発者がヘッドレスなアダプティブForms開発を素早く開始できるように [ アダプティブForms](create-and-publish-a-headless-form.md) スターターキット（React アプリ）を提供しています。AEM Forms as a Cloud Service環境でヘッドレスなアダプティブFormsを有効にする必要はありません。 [ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
 
 ## AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にする
 
 AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にするには、以下の手順を順番どおりに実行します。
 
-
+<!-- Missing image ALT tag -->
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. AEM Forms as a Cloud Service Git リポジトリを複製する {#clone-git-repository}
+## &#x200B;1. AEM Forms as a Cloud Service Git リポジトリを複製する {#clone-git-repository}
 
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/) にログインし、組織とプログラムを選択します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動し、「**リポジトリ情報にアクセス**」ボタンをクリックして、Git リポジトリにアクセスして管理します。このページには以下の情報が含まれます。
+1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+
+1. **リポジトリ情報にアクセス** ボタンをクリックして、Git リポジトリにアクセスし、管理します。 このページには以下の情報が含まれます。
 
    * Cloud Manager Git リポジトリへの URL。
    * Git リポジトリの資格情報（ユーザー名とパスワード）Git ユーザー名。
@@ -66,7 +65,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    プロンプトが表示されたら、資格情報を入力します。リポジトリがローカルコンピューターに複製されます。
 
 
-## 2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加 {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Git リポジトリにアダプティブフォームコアコンポーネントの依存関係を追加 {#add-adaptive-forms-core-components-dependencies}
 
 1. プレーンテキストコードエディターで Git リポジトリフォルダーを開きます。例：VS Code。
 1. `[AEM Repository Folder]\pom.xml` ファイルを編集用に開きます。
@@ -283,14 +282,14 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. ファイルを保存して閉じます。
 
-## 3. プロジェクトを更新して、最新バージョンのフォームのコアコンポーネントを含める
+## &#x200B;3. Forms コアコンポーネントの最新バージョンを含めるようにプロジェクトを更新します。
 
 1. [AEM アーキタイププロジェクトフォルダー]/pom.xml を編集用に開きます。
 
 
 1. ファイルを保存して閉じます。
 
-## 4. 更新を Git リポジトリにコミットし、パイプラインを実行してリポジトリをデプロイする {#Commit-the-updates-to-your-git-repository}
+## 4.更新を Git リポジトリにコミットし、パイプラインを実行してリポジトリをデプロイする {#Commit-the-updates-to-your-git-repository}
 
 1. コードを Git リポジトリにコミットするには：
    1. ターミナルまたはコマンドプロンプトを開きます。
@@ -304,16 +303,16 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
       git push origin
       ```
 
-1. ファイルが Git リポジトリにコミットされた後、[パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja)します。
+1. ファイルが Git リポジトリにコミットされた後、[パイプラインを実行](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment)します。
 
-   パイプラインが正常に実行されると、対応する環境でアダプティブフォームのコアコンポーネントが有効になります。また、アダプティブフォーム（コアコンポーネント）テンプレートと Canvas 3.0 テーマが、Forms as a Cloud Service 環境に追加され、コアコンポーネントベースのアダプティブフォームをカスタマイズして作成するオプションが提供されます。
+   パイプラインが正常に実行されると、対応する環境でアダプティブ Forms コアコンポーネントが有効になります。 また、アダプティブフォーム（コアコンポーネント）テンプレートと Canvas 3.0 テーマが、Forms as a Cloud Service 環境に追加され、コアコンポーネントベースのアダプティブフォームをカスタマイズして作成するオプションが提供されます。
 
 
 ## よくある質問 {#faq}
 
 ### コアコンポーネントとは {#core-components}
 
-[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、AEM で web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。
+[ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) は、AEM用の標準化された Web コンテンツ管理（WCM）コンポーネントのセットで、開発時間を短縮し、Web サイトのメンテナンスコストを削減します。
 
 ### コアコンポーネントの有効化に関しては、どのような機能が追加されますか？ {#core-components-capabilities}
 

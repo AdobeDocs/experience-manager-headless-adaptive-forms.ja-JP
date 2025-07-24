@@ -1,8 +1,8 @@
 ---
-source-git-commit: 103a0312291d4831249d32e5fea7d20e0fc99d10
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 47%
 
 ---
 # 投稿
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 寄稿者ガイドドキュメント
 
-[寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
+[寄稿者ガイド](https://experienceleague.adobe.com/ja/docs/contributor/contributor-guide/introduction)を参照してください。
 
 ## 質問がある場合
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 ## 投稿者使用許諾契約
 
-このプロジェクトへの第三者によるすべての投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。これにより、アドビはお客様の投稿をプロジェクトの一部として再配布できるようになります。[CLA に署名](http://opensource.adobe.com/cla.html)してください。アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
+コントリビューターは、サードパーティのコントリビューションをこのプロジェクトに送信する前に、コントリビューター使用許諾契約に署名する必要があります。 この契約書は、Adobeに対して、お客様のコントリビューションをプロジェクトの一部として再配布する権限を付与します。 [Adobeに CLA で署名 ](https://opensource.adobe.com/cla.html)。 アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
 
 ## コードのレビュー
 
-提出はすべて、プル要求の形でおこなわれ、プロジェクトコミッターのレビューを受ける必要があります。プル要求の送信について詳しくは、[GitHub のプル要求に関するドキュメント](https://help.github.com/articles/about-pull-requests/)を参照してください。
+すべてのコントリビューションをプルリクエストとして送信します。プロジェクトコミッターはそれらをレビューする必要があります。 プル要求の送信について詳しくは、[GitHub のプル要求に関するドキュメント](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)を参照してください。
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -38,8 +38,8 @@ submitting a pull request!
 
 ## 投稿者からコミッターへ
 
-コミュニティからの投稿を歓迎します。投稿者から一歩進んで、プロジェクトでの完全な書き込みアクセス権と発言権を持つコミッターになる場合は、プロジェクトに招待される必要があります。既存のコミッターは、招待が発行される前に（沈黙が承認を意味する）「怠惰な合意」を得る必要がある内部指名プロセスを採用しています。自分が適格であり、より深く関わっていきたいと思う方は、気兼ねなく既存のコミッターに相談してください。
+Adobeは、投稿に満足し、投稿をレビューします。 プロジェクトにおける完全な書き込み権限と発言権を持つコミッターになりたい場合は、プロジェクトに招待される必要があります。 既存のコミッターは、招待状が発行される前に、内部の指名プロセスで、Lazy Consensus （沈黙は承認とみなす）方法でコンセンサスに到達する必要があります。 コミッターにふさわしい能力があり、より積極的に関与することに関心があると思われる場合は、現在のコミッターの 1 人に連絡して、次のステップについて話し合ってください。
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題は、この問題トラッカーで報告しないでください。代わりに、[アドビのセキュリティエキスパートに問題を提出](https://helpx.adobe.com/jp/security/alertus.html)してください。
+セキュリティ上の問題は、このイシュートラッカーでは報告しないでください。 代わりに、[Adobeのセキュリティエキスパートに問題を提起してください ](https://helpx.adobe.com/jp/security/alertus.html)
