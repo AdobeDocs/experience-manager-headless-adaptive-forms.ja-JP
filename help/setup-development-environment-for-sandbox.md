@@ -40,6 +40,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <tr>
   <td>
   1. <a href="https://experience.adobe.com/" >https://experience.adobe.com/</a> にログインし、「<b>Experience Manager</b>」オプションを選択します。
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +62,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. プログラムの「...」アイコンをタップし、「<b>プログラムを編集</b>」オプションを選択します。ダイアログボックスが表示されます。 
+    &#x200B;3. プログラムの「...」アイコンをタップし、「<b>プログラムを編集</b>」オプションを選択します。ダイアログボックスが表示されます。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +73,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    4. プログラムを編集ダイアログボックスで「<b>ソリューションとアドオン</b>」タブに移動し、「<b>Forms - デジタル登録</b>」オプションを選択して、「<b>更新</b>」をタップします。 
+    &#x200B;4. プログラムを編集ダイアログボックスで「<b>ソリューションとアドオン</b>」タブに移動し、「<b>Forms - デジタル登録</b>」オプションを選択して、「<b>更新</b>」をタップします。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -98,6 +99,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <tr>
   <td>
   1. プログラムのパイプラインボックスで、「<b> リポジトリ情報にアクセス」をタップします。 </b>」をタップします。リポジトリ情報を含んだダイアログが表示されます 
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -117,7 +119,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. ローカルマシンでコマンドプロンプトを開き、フォルダーを作成して次のコマンドを実行し、要求されたリポジトリ資格情報を入力します。
+    &#x200B;3. ローカルマシンでコマンドプロンプトを開き、フォルダーを作成して次のコマンドを実行し、要求されたリポジトリ資格情報を入力します。
  </br>
  <code> git clone [Repository URL] </code> </br></br>
  例： </br> 
@@ -220,6 +222,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <tr>
   <td>
   1. <a href="https://experience.adobe.com/" >https://experience.adobe.com/</a> にログインし、「<b>Experience Manager</b>」オプションを選択します。
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +244,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. パイプラインの「...」アイコンをタップし、「<b>実行</b>」オプションを選択します。パイプラインを実行するように求められた場合は、「<b> Run </b>」をタップし、パイプライン <b> ステータス </b> が完了 <b> に変わ </b> のを待ちます。  
+    &#x200B;3. パイプラインの「...」アイコンをタップし、「<b>実行</b>」オプションを選択します。パイプラインを実行するように求められた場合は、「<b> Run </b>」をタップし、パイプライン <b> ステータス </b> が完了 <b> に変わ </b> のを待ちます。  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

@@ -86,9 +86,11 @@ AEM 6.5 Forms環境について理解します。
 1. フォームの送信エンドポイントを作成します。
 
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
+   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    この特定のエンドポイントは、データを送信および表示するための例として機能します。実際の運用では、独自のエンドポイントまたはデータソースを使用して、キャプチャされたデータを保存します。
@@ -98,12 +100,15 @@ AEM 6.5 Forms環境について理解します。
    1. レッスン 1 で使用したブラウザータブで、AEM Formsの Web インターフェイスに移動し、**Forms** / **Formsとドキュメント** に移動します。
 
    1. 「**作成**」をタップして、「アダプティブフォーム」を選択します。
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. 選択画面から、**コアコンポーネントを含んだ空白**&#x200B;テンプレートを選択し（下図を参照）「**次へ**」をクリックします。
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. `Contact us` を、フォームの&#x200B;**タイトル**&#x200B;として指定します。フォームの&#x200B;**名前**&#x200B;が `contact-us` であることを確認します。
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. 「**作成**」をクリックします。ダイアログボックスが表示されます。
