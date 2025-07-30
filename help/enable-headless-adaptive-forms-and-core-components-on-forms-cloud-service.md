@@ -1,6 +1,6 @@
 ---
-title: AEM Forms as a Cloud Service でのヘッドレスアダプティブフォームを有効にする
-description: AEM Forms as a Cloud Serviceでヘッドレスアダプティブフォームを有効にし、お使いの環境でのセットアップとアクティベーションを簡素化する手順を説明します。
+title: AEM Forms as a Cloud Service でのヘッドレスアダプティブフォームの有効化
+description: AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを有効にして、お使いの環境でのセットアップとアクティベーションを簡素化するためのステップバイステップガイドです。
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -12,13 +12,13 @@ hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを有効にする {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# AEM Forms as a Cloud Service でのヘッドレスアダプティブフォームの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを有効にすると、AEM Forms Cloud Service インスタンスを使用してヘッドレスフォームの作成、公開、複数のチャネルへの配信を開始できるようになります。ヘッドレスアダプティブフォームを使用するには、アダプティブフォームコアコンポーネントを有効にした環境が必要です。
 
@@ -26,14 +26,14 @@ AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを
 
 * 新しい AEM Forms as a Cloud Service プログラムを作成すると、[ヘッドレスアダプティブフォームはご利用の環境で既に有効になっています](#are-adaptive-forms-core-components-enabled-for-my-environment)。
 
-* コアコンポーネントが [ 有効になっていない ](#enable-components) 古いForms as a Cloud Service プログラムを実行している場合は、まず [ アダプティブ Forms コアコンポーネントの依存関係を追加 ](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)Cloud Service リポジトリに追加します。 更新したリポジトリを各環境にデプロイして、ヘッドレスアダプティブフォームを有効にします。
+* コアコンポーネントが[有効になっていない](#enable-components)、古い Forms as a Cloud Service プログラムを実行している場合は、まず Cloud Service リポジトリに [Adaptive Forms コアコンポーネントの依存関係を追加](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)します。更新したリポジトリを各環境にデプロイして、ヘッドレスアダプティブフォームを有効にします。
 
-* Cloud Serviceで既に [ コアコンポーネントベースのアダプティブフォームを作成 ](create-a-headless-adaptive-form.md) できる場合、ヘッドレスアダプティブフォームは自動的に有効になります。 その後、これらのフォームをヘッドレスエクスペリエンスとして、モバイル、web、ネイティブアプリまたはそれらを必要とするサービスに配信できます。
+* Cloud Service 環境で既に[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)できる場合、ヘッドレスアダプティブフォームは自動的に有効になります。その後、これらのフォームをヘッドレスエクスペリエンスとして、モバイル、web、ネイティブアプリまたはフォームを必要とするサービスに配信できます。
 
 >[!NOTE]
 >
 >
-> Adobeは、開発者がヘッドレスなアダプティブForms開発を素早く開始できるように [ アダプティブForms](create-and-publish-a-headless-form.md) スターターキット（React アプリ）を提供しています。AEM Forms as a Cloud Service環境でヘッドレスなアダプティブFormsを有効にする必要はありません。 [ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
+> アドビは、開発者が AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることなく、ヘッドレスアダプティブフォームの開発をすぐに開始できるように、アダプティブフォーム[スターターキット（React アプリ）](create-and-publish-a-headless-form.md)を提供しています。[ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
 
 ## AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にする
 
@@ -49,7 +49,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. **リポジトリ情報にアクセス** ボタンをクリックして、Git リポジトリにアクセスし、管理します。 このページには以下の情報が含まれます。
+1. 「**リポジトリ情報にアクセス**」ボタンをクリックし、Git リポジトリにアクセスして管理します。このページには以下の情報が含まれます。
 
    * Cloud Manager Git リポジトリへの URL。
    * Git リポジトリの資格情報（ユーザー名とパスワード）Git ユーザー名。
@@ -282,14 +282,14 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. ファイルを保存して閉じます。
 
-## &#x200B;3. Forms コアコンポーネントの最新バージョンを含めるようにプロジェクトを更新します。
+## &#x200B;3. プロジェクトを更新して、最新バージョンのフォームのコアコンポーネントを含める
 
 1. [AEM アーキタイププロジェクトフォルダー]/pom.xml を編集用に開きます。
 
 
 1. ファイルを保存して閉じます。
 
-## 4.更新を Git リポジトリにコミットし、パイプラインを実行してリポジトリをデプロイする {#Commit-the-updates-to-your-git-repository}
+## &#x200B;4. 更新を Git リポジトリにコミットし、パイプラインを実行してリポジトリをデプロイする {#Commit-the-updates-to-your-git-repository}
 
 1. コードを Git リポジトリにコミットするには：
    1. ターミナルまたはコマンドプロンプトを開きます。
@@ -305,14 +305,14 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. ファイルが Git リポジトリにコミットされた後、[パイプラインを実行](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/using/code-deployment)します。
 
-   パイプラインが正常に実行されると、対応する環境でアダプティブ Forms コアコンポーネントが有効になります。 また、アダプティブフォーム（コアコンポーネント）テンプレートと Canvas 3.0 テーマが、Forms as a Cloud Service 環境に追加され、コアコンポーネントベースのアダプティブフォームをカスタマイズして作成するオプションが提供されます。
+   パイプラインが正常に実行されると、対応する環境でアダプティブフォームのコアコンポーネントが有効になります。また、アダプティブフォーム（コアコンポーネント）テンプレートと Canvas 3.0 テーマが、Forms as a Cloud Service 環境に追加され、コアコンポーネントベースのアダプティブフォームをカスタマイズして作成するオプションが提供されます。
 
 
 ## よくある質問 {#faq}
 
 ### コアコンポーネントとは {#core-components}
 
-[ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) は、AEM用の標準化された Web コンテンツ管理（WCM）コンポーネントのセットで、開発時間を短縮し、Web サイトのメンテナンスコストを削減します。
+[コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)は、AEM で web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。
 
 ### コアコンポーネントの有効化に関しては、どのような機能が追加されますか？ {#core-components-capabilities}
 

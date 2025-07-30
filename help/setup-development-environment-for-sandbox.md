@@ -1,36 +1,36 @@
 ---
-title: Forms as a Cloud Service Sandbox 用の開発環境のセットアップ
-description: Forms as a Cloud Service Sandbox の開発環境をセットアップします。
+title: Forms as a Cloud Service サンドボックスの開発環境のセットアップ
+description: Forms as a Cloud Service サンドボックスの開発環境をセットアップします。
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Cloud Service 上にヘッドレスアダプティブフォームの開発環境をセットアップする方法
 
-<span class="preview"> の記事は **処理中の作業** です。</span>
+<span class="preview">この記事は&#x200B;**作成中**&#x200B;です。</span>
 
 
 Cloud Service 上でヘッドレスアダプティブフォームをビルドしテストする準備ができたら、Cloud Service プログラムのフォームを有効にし、作業を開始してください。
 
 ## 事前準備
 
-* ローカルマシンに [ 最新バージョンの Git](https://git-scm.com/downloads) をインストールします。 Git を初めて使用する場合は、[Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) を参照してください。Git リポジトリーを使用して、開発環境で開発されたフォームとカスタムコードをCloud Serviceローカル開発環境にプッシュします。
+* [Git の最新バージョン](https://git-scm.com/downloads)をローカルマシンにインストールします。Git を初めて使用する場合は、[Git のインストール](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)を参照してください。Git リポジトリを使用して、ローカル開発環境で開発したフォームとカスタムコードを Cloud Service 開発環境にプッシュします。
 
-* [Node.js 16.13.0 以降 ](https://nodejs.org/ja/download/) をローカルマシンにインストールします。<!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
+* [Node.js 16.13.0 以降](https://nodejs.org/ja/download/)をローカルマシンにインストールします。<!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
 * AEM as a Cloud Service プログラムの作成：[プログラムの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program)記事の手順 1～7 に従って、組織に対応するプログラムを作成します。
 
-* [Cloud Service プログラムのプレリリースチャネル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments) を有効にします。
+* [Cloud Service プログラムのプレリリースチャネル](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments)を有効にします。
 
 ## ワークフローのセットアップ
 
-Forms as a Cloud Service サンドボックスでヘッドレスアダプティブフォームを有効にするには、AEM Cloud Service プログラム用 `Forms - Digital enrolment` ソリューションを有効にします。 次に、ローカルマシンに基づいてアーキタイプ 37 以降のプロジェクトを作成し、Forms as a Cloud Service環境にプッシュします。 詳しい手順は次のとおりです。
+Forms as a Cloud Service サンドボックスでヘッドレスアダプティブフォームを有効にするには、AEM Cloud Service プログラムの `Forms - Digital enrolment` ソリューションを有効にします。次に、ローカルマシンに Archetype 37 以降に基づくプロジェクトを作成し、Forms as a Cloud Service 環境にプッシュします。詳しい手順は次のとおりです。
 
 ![Forms as a Cloud Service サンドボックスの開発環境をセットアップするためのワークフロー](assets/FORMS-HLAF-SANDBOX-PRODUCTION-ENR.png)
 
@@ -40,7 +40,6 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <tr>
   <td>
   1. <a href="https://experience.adobe.com/" >https://experience.adobe.com/</a> にログインし、「<b>Experience Manager</b>」オプションを選択します。
-
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -62,7 +61,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    &#x200B;3. プログラムの「...」アイコンをタップし、「<b>プログラムを編集</b>」オプションを選択します。ダイアログボックスが表示されます。 
+    3. プログラムの「...」アイコンをタップし、「<b>プログラムを編集</b>」オプションを選択します。ダイアログボックスが表示されます。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -73,7 +72,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    &#x200B;4. プログラムを編集ダイアログボックスで「<b>ソリューションとアドオン</b>」タブに移動し、「<b>Forms - デジタル登録</b>」オプションを選択して、「<b>更新</b>」をタップします。 
+    4. プログラムを編集ダイアログボックスで「<b>ソリューションとアドオン</b>」タブに移動し、「<b>Forms - デジタル登録</b>」オプションを選択して、「<b>更新</b>」をタップします。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -84,9 +83,9 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 </table>
 
-### &#x200B;2. プログラムの Git リポジトリをローカルマシンにクローンします
+### &#x200B;2. プログラムの Git リポジトリのクローンをローカルマシン上に作成する
 
-すべてのAEM as a Cloud Service プログラムには Git リポジトリがあります。 カスタムコードとアセットをローカルマシンからCloud Service環境にアップロードできます。 セットアップ中、Adobeは Git リポジトリを使用して、ヘッドレスアダプティブフォーム関連のコード、テンプレート、その他の情報をローカルマシンからCloud Service プログラムに取り込みます。 ローカルマシン上にCloud Service Git リポジトリをクローンすることは、ローカルマシンからCloud Serviceにカスタムコードとコンテンツを取り込むための最初の手順です。
+どの AEM as a Cloud Service プログラムにも Git リポジトリがあります。Git リポジトリを使用すると、カスタムコードとアセットをローカルマシンから Cloud Service 環境にアップロードできます。セットアップ時に、アドビでは Git リポジトリを使用して、ヘッドレスアダプティブフォーム関連のコードやテンプレートなどの情報をローカルマシンから Cloud Service プログラムに取り込みます。カスタムコードとコンテンツをローカルマシンから Cloud Service に取り込むための最初の手順は、ローカルマシン上で Cloud Service の Git リポジトリのクローンを作成することです。
 
 >[!INFO]
 >
@@ -98,8 +97,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <table style="table-layout:fixed">
 <tr>
   <td>
-  1. プログラムのパイプラインボックスで、「<b> リポジトリ情報にアクセス」をタップします。 </b>」をタップします。リポジトリ情報を含んだダイアログが表示されます 
-
+  1. プログラムのパイプラインボックスで、「<b>リポジトリ情報にアクセス</b>」をタップします。リポジトリ情報を含んだダイアログが表示されます 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -119,7 +117,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    &#x200B;3. ローカルマシンでコマンドプロンプトを開き、フォルダーを作成して次のコマンドを実行し、要求されたリポジトリ資格情報を入力します。
+    3. ローカルマシンでコマンドプロンプトを開き、フォルダーを作成して次のコマンドを実行し、要求されたリポジトリ資格情報を入力します。
  </br>
  <code> git clone [Repository URL] </code> </br></br>
  例： </br> 
@@ -161,9 +159,9 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
 * `appTitle` を設定して、タイトルとコンポーネントグループを定義します。
 * `appId` を設定して、Maven アーティファクト ID、コンポーネントフォルダー名、設定フォルダー名、コンテンツフォルダー名およびクライアントライブラリ名を定義します。
-* `groupId` を設定して、Maven groupId と Java™ Source パッケージを定義します。
-* `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を組み込みます。
-* `includeFormsheadless=y` オプションを使用して、Forms コアコンポーネントとヘッドレスアダプティブフォーム機能を含めるために必要な依存関係を含めます。 このオプションを有効にすると、以下が組み込まれます。
+* `groupId` を設定して、Maven グループ ID と Java™ ソースパッケージを定義します。
+* 「`includeFormsenrollment=y`」オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を組み込みます。
+* `includeFormsheadless=y` オプションを使用して、ヘッドレスアダプティブフォーム機能の追加に必要な Forms コアコンポーネントおよび依存関係を組み込みます。このオプションを有効にすると、以下が組み込まれます。
    * [コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)を含んだ **Blank With Core Components** テンプレート。
    * フロントエンド React モジュール `ui.frontend.react.forms.af`。これは、React アプリでヘッドレスアダプティブフォームをレンダリングするのに役立ちます。
 
@@ -172,7 +170,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
 +++ Apple macOS または Linux®
 
-1. ターミナルをルートユーザーとして開きます。 管理者権限でコマンドを実行できるようになります。ターミナルウィンドウを開いた後に `sudo root` コマンドを使用して、管理者権限でコマンドを実行することもできます。
+1. ターミナルをルートユーザーとして開きます。管理者権限でコマンドを実行できるようになります。ターミナルウィンドウを開いた後に `sudo root` コマンドを使用して、管理者権限でコマンドを実行することもできます。
 1. 以下のコマンドを実行します。
 
    ```shell
@@ -190,9 +188,9 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 ™™™
 * `appTitle` を設定して、タイトルとコンポーネントのグループを定義します。
 * `appId` を設定して、Maven アーティファクト ID、コンポーネントフォルダー名、設定フォルダー名、コンテンツフォルダー名およびクライアントライブラリ名を定義します。
-* `groupId` を設定して、Maven groupId と Java™ Source パッケージを定義します。
-* `includeFormsenrollment=y` オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を組み込みます。
-* `includeFormsheadless=y` オプションを使用して、Forms コアコンポーネントとヘッドレスアダプティブフォーム機能を含めるために必要な依存関係を含めます。 このオプションを有効にすると、以下が組み込まれます。
+* `groupId` を設定して、Maven グループ ID と Java™ ソースパッケージを定義します。
+* 「`includeFormsenrollment=y`」オプションを使用して、アダプティブフォームの作成に必要なフォーム固有の設定、テーマ、テンプレート、コアコンポーネントおよび依存関係を組み込みます。
+* `includeFormsheadless=y` オプションを使用して、ヘッドレスアダプティブフォーム機能の追加に必要な Forms コアコンポーネントおよび依存関係を組み込みます。このオプションを有効にすると、以下が組み込まれます。
    * [コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)を含んだ **Blank With Core Components** テンプレート。
    * フロントエンド React モジュール `ui.frontend.react.forms.af`。これは、React アプリでヘッドレスアダプティブフォームをレンダリングするのに役立ちます。
 
@@ -202,11 +200,11 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 
 ### &#x200B;4. AEM アーキタイプベースのプロジェクトを Cloud Service 環境にプッシュする
 
-1. Git リポジトリのコンテンツを、アーキタイプベースのプロジェクトのコンテンツに置き換えます。
+1. Git リポジトリの内容を、アーキタイプベースのプロジェクトの内容で置き換えます。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3409809/)
 
-1. コマンドプロンプトを開き、Git リポジトリフォルダーに移動して、以下のコマンドをリストに記載された順序で実行し、置き換えられたコンテンツをCloud Service環境にアップロードします。 次のコマンドを使用してコンテンツをCloud Service リポジトリにプッシュする代わりに、ビジュアルエディターを使用することもできます。
+1. コマンドプロンプトを開き、Git リポジトリフォルダーに移動し、次のコマンドをリストした順に実行して、置き換えた内容を Cloud Service 環境にアップロードします。下記のコマンドを使用する代わりに、ビジュアルエディターを使用して、内容を Cloud Service リポジトリにプッシュすることもできます。
 
    ```
       git add .
@@ -222,7 +220,6 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 <tr>
   <td>
   1. <a href="https://experience.adobe.com/" >https://experience.adobe.com/</a> にログインし、「<b>Experience Manager</b>」オプションを選択します。
-
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -244,7 +241,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    &#x200B;3. パイプラインの「...」アイコンをタップし、「<b>実行</b>」オプションを選択します。パイプラインを実行するように求められた場合は、「<b> Run </b>」をタップし、パイプライン <b> ステータス </b> が完了 <b> に変わ </b> のを待ちます。  
+    3. パイプラインの「...」アイコンをタップし、「<b>実行</b>」オプションを選択します。パイプラインを実行するように求められた場合は、「<b>実行</b>」をタップし、パイプラインの「<b>ステータス</b>」が<b>完了</b>に変わるまで待ちます。  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -255,4 +252,4 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 </table>
 
-これで、使用中の環境でヘッドレスアダプティブフォームを使用する準備が整いました。これで、フォームの JSON 定義をCloud Service環境にアップロードできます。 次に、ヘッドレスアダプティブフォームを基に作成し、[getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition/operation/getForm) およびその他の REST API を使用して、アプリケーションまたはサービスでヘッドレスアダプティブフォームを使用します。
+これで、使用中の環境でヘッドレスアダプティブフォームを使用する準備が整いました。フォームの JSON 定義を Cloud Service 環境にアップロードできるようになりました。次に、これに基づいてヘッドレスアダプティブフォームを作成し、[getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition/operation/getForm) およびその他の REST API を使用して、アプリケーションまたはサービスでヘッドレスアダプティブフォームを使用します。

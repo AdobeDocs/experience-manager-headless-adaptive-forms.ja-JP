@@ -1,14 +1,14 @@
 ---
 title: AEM 6.5 Forms でのヘッドレスアダプティブフォームの有効化
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM 6.5 Forms
-description: Adobeのステップバイステップガイドを使用して、AEM 6.5 Formsでヘッドレスアダプティブフォームを有効にする方法を説明します。 このチュートリアルでは、この強力な機能を web サイトに簡単に統合し、ユーザーエクスペリエンスを向上させるプロセスを順を追って説明します。
+description: アドビの手順ガイドを使用して、AEM 6.5 Forms でヘッドレスアダプティブフォームを有効にする方法を説明します。このチュートリアルでは、この強力な機能を web サイトに簡単に統合しユーザーエクスペリエンスを向上させるためのプロセスについて順を追って説明します。
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 71%
 
 AEM 6.5 Forms 環境でヘッドレスアダプティブフォームを有効にするには、AEM アーキタイプ 41 以降をベースにしたプロジェクトをセットアップして、すべてのオーサーインスタンスとパブリッシュインスタンスにデプロイします。
 
-AEM アーキタイプ 41 以降をベースにしたプロジェクトを AEM 6.5 Forms インスタンスにデプロイすると、[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)できるようになります。これらのフォームは JSON 形式で表現され、`Headful` とアダプティブFormsの両方で使用され、モバイル、web、ネイティブアプリを含む様々なチャネルで、より柔軟にカスタマイズ `Headless` きます。
+AEM アーキタイプ 41 以降をベースにしたプロジェクトを AEM 6.5 Forms インスタンスにデプロイすると、[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)できるようになります。これらのフォームは JSON 形式で表現され、`Headful` アダプティブフォームと `Headless` アダプティブフォームの両方として使用されるので、モバイル、web、ネイティブアプリなどの様々なチャネルをまたいで、より柔軟に使用でき、カスタマイズが可能です。
 
 ## 前提条件 {#prerequisites}
 
-AEM 6.5 Forms環境でヘッドレスアダプティブFormsを有効にする前に、
+AEM 6.5 Forms 環境でヘッドレスアダプティブフォームを有効にするには、その前に以下が必要です。
 
 * [AEM 6.5 Forms サービスパック 16 （6.5.16.0）以降へのアップグレード](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)。
 
@@ -28,7 +28,7 @@ AEM 6.5 Forms環境でヘッドレスアダプティブFormsを有効にする�
 
 * プレーンテキストエディターをインストールします。例えば Microsoft Visual Studio Code などです。
 
-## 最新のAEM アーキタイプベースのプロジェクトの作成とデプロイ
+## 最新の AEM アーキタイプをベースにしたプロジェクトの作成とデプロイ
 
 AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetype)をベースにしたプロジェクトを作成し、すべてのオーサーインスタンスとパブリッシュインスタンスにデプロイするには：
 
@@ -66,7 +66,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 
    上記のコマンドを実行する際は、次の点を考慮してください。
 
-   * appTitle、appId、groupId などの、環境に固有の値を反映するようにコマンドを更新します。また、includeFormsenrollment の値を `y` に設定します。 フォームポータルを使用する場合は、_includeExamples=y_ オプションを設定して、フォームポータルのコアコンポーネントをプロジェクトに含めます。
+   * appTitle、appId、groupId などの、環境に固有の値を反映するようにコマンドを更新します。また、includeFormsenrollment の値を `y` に設定します。フォームポータルを使用する場合は、_includeExamples=y_ オプションを設定して、フォームポータルのコアコンポーネントをプロジェクトに含めます。
 
 
 1. （アーキタイプバージョン 41 ベースのプロジェクトの場合のみ）AEM アーキタイププロジェクトの作成後に、コアコンポーネントベースのアダプティブフォームのテーマを有効にします。テーマを有効にするには、次の手順を実行します。
@@ -87,7 +87,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 
    1. ファイルを保存して閉じます。
 
-1. プロジェクトを更新して、Forms コアコンポーネントの最新バージョンを含めます。
+1. 最新バージョンの Forms コアコンポーネントを含めるようにプロジェクトを更新します。
 
    1. [AEM Archetype Project Folder]/pom.xml を編集用に開きます。
    1. `core.forms.components.version` と `core.forms.components.af.version` のバージョンを [Forms コアコンポーネントの最新](https://github.com/adobe/aem-core-forms-components/tree/release/650)バージョンに設定します。
@@ -117,7 +117,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 >
 >
 >
->パッケージマネージャーを使用してパッケージをインストールするために、パブリッシュインスタンスでログインダイアログボックスにアクセスする際に問題が発生した場合は、URL `http://[Publish Server URL]`:[PORT]/system/console からログインしてみてください。 このプロセスでは、パブリッシュインスタンスにログインするためのアクセス権が提供され、インストールプロセスを続行できます。
+>パブリッシュインスタンスのログインダイアログボックスにアクセスして、パッケージマネージャーでパッケージをインストールできない場合は、次の URL を使用してログインしてみてください：`http://[Publish Server URL]`:[PORT]/system/console。このプロセスにより、パブリッシュインスタンスにログインするためのアクセス権が付与され、インストールプロセスを続行できます。
 
 
 お使いの環境でコアコンポーネントが有効になります。空のコアコンポーネントベースのアダプティブフォームテンプレートと Canvas 3.0 テーマが使用中の環境にデプロイされ、[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)できるようになります。
@@ -126,7 +126,7 @@ AEM アーキタイプ 41 [以降](https://github.com/adobe/aem-project-archetyp
 
 ### コアコンポーネントとは
 
-[ コアコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction) は、AEM用の標準化された Web コンテンツ管理（WCM）コンポーネントのセットで、開発時間を短縮し、Web サイトのメンテナンスコストを削減します。
+[コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/introduction)は、AEM で web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。
 
 ### コアコンポーネントを有効にすると、どのような機能が追加されますか？
 

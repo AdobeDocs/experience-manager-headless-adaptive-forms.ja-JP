@@ -1,12 +1,12 @@
 ---
-title: AEM ヘッドレスアダプティブFormsの概要
+title: AEM ヘッドレスアダプティブフォームの概要
 description: AEM ヘッドレスアダプティブフォームの概要。
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -15,20 +15,20 @@ ht-degree: 55%
 
 Experience Manager ヘッドレスアダプティブフォームの早期導入リリースへようこそ。リソースと手順に目を通して、このリリースの基本を理解し、リリースを最大限に活用してください。
 
-Adobe Experience Manager ヘッドレスアダプティブフォームを使用して、React、Angularなどのフロントエンドフレームワークを持つフォームアプリケーションを作成します。 アダプティブ Forms Web SDKを使用して、状況の管理、検証、追加のタッチポイントとの統合を行います。
+Adobe Experience Manager ヘッドレスアダプティブフォームを使用して、React、Angular などのフロントエンドフレームワークでフォームアプリケーションを作成します。状態管理、検証、追加のタッチポイントとの統合には、アダプティブフォーム Web SDK を使用します。
 
 
 この早期導入リリースでは、[ローカル開発環境](setup-development-environment.md)でヘッドレスアダプティブフォームを使用できるようになります。ローカル開発環境を使用して、ヘッドレスアダプティブフォームを作成およびテストできます。
 
-ヘッドレスアダプティブフォームは継続的に改善されます。 最新の開発状況を確認するには、このページに定期的にアクセスしてください。このページでは、次の情報を提供します。
+ヘッドレスアダプティブフォームは継続的に改善されています。最新の開発状況を確認するには、このページに定期的にアクセスしてください。このページでは、次の情報が確認できます。
 
-* アーリーアクセス
+* 早期アクセス
 * 最新リリース
 * 新機能
 * 改善
-* バグの修正
-* 廃止される機能
-* 特記事項
+* バグ修正
+* 非推奨の機能
+* 特別な手順
 * 将来の変更プラン
 
 <!-- 
@@ -60,7 +60,7 @@ AEM Forms as a Cloud Service SDK は、ヘッドレスアダプティブフォ�
 
 ### Forms Web SDK
 
-Forms Web SDKは、フォームの様々なフィールドに適用される制約を検証する API と、フォームの JSON 構造を UI フレームワークに接続するためのフックを提供します。 また、アプリケーションへのヘッドレスアダプティブフォームの統合に役立つ、ヘッドレスアダプティブフォーム用の React Renderer も提供します。Web SDKの次のコンポーネントを使用できます。
+Forms Web SDK は、フォームの様々なフィールドに適用される制約を検証するための API と、フォームの JSON 構造を UI フレームワークに接続するためのフックを提供します。また、アプリケーションへのヘッドレスアダプティブフォームの統合に役立つ、ヘッドレスアダプティブフォーム用の React Renderer も提供します。Web SDK の次のコンポーネントが利用可能です。
 
 * **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -70,21 +70,21 @@ Forms Web SDKは、フォームの様々なフィールドに適用される制�
 
 #### ストーリーブック
 
-[ ストーリーブック ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) は、ヘッドレスアダプティブフォームの様々なコンポーネントの概要を提供します。 また、サポートされているすべてのコンポーネント、対応するプロパティおよび制約のリストも提供します。
+[ストーリーブック](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)は、ヘッドレスアダプティブフォームの様々なコンポーネントの概要を示します。また、サポートされているすべてのコンポーネント、対応するプロパティおよび制約のリストも提供します。
 
 ### Forms コアコンポーネント
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-コアコンポーネントは、フォームの開発時間を短縮しメンテナンスコストを削減するのに役立つ、標準化された一連の web コンテンツ管理（WCM）コンポーネントです。 Forms コンテナコンポーネントはコアコンポーネントです。これは、Forms as a Cloud Service SDKのアダプティブFormsエディターにヘッドレスアダプティブフォームの JSON 構造を埋め込み、レンダリングするのに役立ちます。
+コアコンポーネントは、フォームの開発時間の短縮とメンテナンスコストの削減に役立つ、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。Forms コンテナコンポーネントはコアコンポーネントです。Forms as a Cloud Service SDK のアダプティブフォームエディターでヘッドレスアダプティブフォームの JSON 構造を埋め込んでレンダリングするのに役立ちます。
 
 ### アダプティブフォーム V2 仕様
 
-ヘッドレスアダプティブフォームの仕様では、ヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約および方法に関する詳細情報を提供します。 仕様は [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) 形式で入手可能です。
+ヘッドレスアダプティブフォームの仕様では、ヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約およびメソッドに関する詳細情報が提供されます。仕様は [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) 形式で入手可能です。
 
 ### HTTP API と JS API
 
-[HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用すると、ヘッドレスフォームの送信ステータスをリスト、取得、検証、送信および追跡できます。<!-- URL is 404! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
+[HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用すると、ヘッドレスフォームの一覧、取得、検証、送信、送信ステータスの追跡を行うことができます。<!-- URL is 404! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 ### Visual Studio Code 拡張機能
 

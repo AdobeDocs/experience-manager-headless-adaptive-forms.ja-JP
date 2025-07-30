@@ -1,11 +1,11 @@
 ---
 title: イベントを使用したフォームのヘッドレスアダプティブフォームデータの処理と送信
-description: イベントを使用して、フォームのヘッドレスアダプティブフォームデータを処理して送信します。
+description: イベントを使用してフォームのヘッドレスアダプティブフォームデータの処理と送信を行います。
 hide: false
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 71%
 
 ## イベントを使用したデータモデルとの通信
 
-## イベントを使用したデータソースへのデータの送信
+## イベントを使用したデータソースへのデータ送信

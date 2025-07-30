@@ -1,6 +1,6 @@
 ---
 title: Google マテリアル UI の React コンポーネントを使用したヘッドレスフォームのレンダリング
-description: Google マテリアル UI の React コンポーネントを使用してヘッドレスフォームをレンダリングする方法を説明します。この包括的なガイドでは、カスタムのヘッドレスアダプティブFormsコンポーネントを作成し、Google Material-UI React コンポーネントをマッピングおよび使用してヘッドレスアダプティブフォームのスタイルを設定する手順を順を追って説明します。
+description: Google マテリアル UI の React コンポーネントを使用してヘッドレスフォームをレンダリングする方法を説明します。この包括的なガイドでは、カスタムのヘッドレスアダプティブフォームコンポーネントを作成してマッピングし、Google マテリアル UI の React コンポーネントを使用してヘッドレスアダプティブフォームのスタイルを設定する手順を説明します。
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 hide: false
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 51%
 
 <!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
 
-組織の要件やガイドラインに従って、カスタムコンポーネントを作成および実装して、ヘッドレスアダプティブフォームの外観と機能（動作）をカスタマイズできます。
+カスタムコンポーネントを作成および実装して、組織の要件やガイドラインに従ってヘッドレスアダプティブフォームの外観と機能（動作）をカスタマイズできます。
 
-これらのコンポーネントの主な目的は、フォームフィールドの外観やスタイルを制御することと、それらのフィールドを通じて収集されたデータをフォームモデルインスタンス内に格納することです。混乱を招くような場合でも、心配はいりません。これらの目的については、すぐに詳しく説明します。 ここからは、カスタムコンポーネントの作成、これらのコンポーネントを使用したフォームのレンダリング、REST エンドポイントへのデータの保存と送信を行うためのイベントの使用の初期手順に焦点を当てます。
+これらのコンポーネントの主な目的は、フォームフィールドの外観やスタイルを制御することと、それらのフィールドを通じて収集されたデータをフォームモデルインスタンス内に格納することです。わかりにくいと思われるかもしれませんが、心配はいりません。これらの目的については、後ほど詳しく説明します。ここでは、カスタムコンポーネントを作成し、それらのコンポーネントを使用してフォームをレンダリングし、イベントを使用してデータの格納と REST エンドポイントへの送信を行う、最初の手順に的を絞ります。
 
-このチュートリアルでは、Google Material UI コンポーネントを使用して、カスタム React コンポーネントを使用してヘッドレスアダプティブフォームをレンダリングする方法を示します。 ただし、このライブラリに限定されず、React コンポーネントライブラリを自由に使用したり、独自のカスタムコンポーネントを開発したりできます。
+このチュートリアルでは、Google マテリアル UI コンポーネントを使用して、カスタム React コンポーネントを使用したヘッドレスアダプティブフォームのレンダリング方法を説明します。ただし、このライブラリに限定されず、任意の React コンポーネントライブラリを自由に使用したり、独自のカスタムコンポーネントを開発したりできます。
 
-この記事を読み終えると、_スターターキットを使用してヘッドレスフォームを作成して公開する_ で作成した [ お問い合わせ ](create-and-publish-a-headless-form.md) フォームの記事は、次のように変わります。
+この記事の最後には、[スターターキットを使用したヘッドレスフォームの作成と公開](create-and-publish-a-headless-form.md)の記事で作成した&#x200B;_お問い合わせ_&#x200B;フォームは、次のように変わります。
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -39,7 +39,7 @@ Google マテリアル UI コンポーネントを使用してフォームをレ
 
 デフォルトでは、スターターキットは[アドビの Spectrum](https://spectrum.adobe.com/) コンポーネントを使用しています。これを、[Google マテリアル UI](https://mui.com/) を使用するように設定します。
 
-1. スターターキットが実行中でないことを確認します。スターターキットを停止するには、ターミナルを開き、**react-starter-kit-aem-headless-forms** に移動して、Ctrl + C キーを押します（Windows、Mac、Linux® でも同じです）。
+1. スターターキットが実行中でないことを確認します。スターターキットを停止するには、ターミナルを開き、**react-starter-kit-aem-headless-forms** に移動して Ctrl + C キーを押します（Windows、Mac および Linux® で同じです）。
 
    ターミナルを閉じようとしないでください。ターミナルを閉じても、スターターキットは停止しません。
 
@@ -56,12 +56,12 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
 
 ## &#x200B;2. カスタム React コンポーネントを作成する
 
-デフォルトの [ テキスト入力 ](https://spectrum.adobe.com/page/text-field/) コンポーネントを [Google Material UI テキストフィールド ](https://mui.com/material-ui/react-text-field/) コンポーネントに置き換えるカスタムコンポーネントを作成します。
+デフォルトの[テキスト入力](https://spectrum.adobe.com/page/text-field/)コンポーネントを [Google マテリアル UI のテキストフィールド](https://mui.com/material-ui/react-text-field/)コンポーネントに置き換えるカスタムコンポーネントを作成します。
 
-ヘッドレスフォーム定義で使用するコンポーネントタイプ（[fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) または `:type`）ごとに個別のコンポーネントが必要です。 例えば、前のセクションで作成したお問い合わせフォームでは、Name、Email および Phone の各フィールドは `text-input` タイプ（[fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)）であり、Message フィールドは `multiline-input` タイプ（[&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)）です。
+ヘッドレスフォーム定義で使用されるコンポーネントタイプ（[fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) または `:type`）ごとに別のコンポーネントが必要です。例えば、前のセクションで作成したお問い合わせフォームでは、Name、Email および Phone の各フィールドは `text-input` タイプ（[fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)）であり、Message フィールドは `multiline-input` タイプ（[&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)）です。
 
 
-[fieldType:&quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) プロパティを使用するすべてのフォームフィールドを [ マテリアル UI テキストフィールド ](https://mui.com/material-ui/react-text-field/) コンポーネントでオーバーレイするカスタムコンポーネントを作成してみましょう。
+[fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) プロパティを使用するすべてのフォームフィールドを[マテリアル UI のテキストフィールド](https://mui.com/material-ui/react-text-field/)コンポーネントでオーバーレイするカスタムコンポーネントを作成しましょう。
 
 
 そのカスタムコンポーネントを作成し、カスタムコンポーネントを [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) プロパティにマッピングするには：
@@ -69,7 +69,7 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
 1. コードエディターで **react-starter-kit-aem-headless-forms** ディレクトリを開き、`\react-starter-kit-aem-headless-forms\src\components` に移動します。
 
 
-1. **`slider`** フォルダーまたは **`richtext`** フォルダーのコピーを作成し、コピーしたフォルダーの名前を **materialtextfield** に変更します。 `slider` と `richtext` は、スターターアプリで使用できる 2 つのサンプルのカスタムコンポーネントです。 これらのコンポーネントを使用して、独自のカスタムコンポーネントを作成できます。
+1. **`slider`** または **`richtext`** フォルダーのコピーを作成し、コピーしたフォルダーの名前を **materialtextfield** に変更します。`slider` と `richtext` は、スターターアプリで使用できる 2 つのサンプルカスタムコンポーネントです。これらのコンポーネントを使用して、独自のカスタムコンポーネントを作成できます。
 
    ![VSCode の materialtextfield カスタムコンポーネント](/help/assets/richtext-custom-component-in-vscode.png)
 
@@ -113,9 +113,9 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
 
 ## &#x200B;3. カスタムコンポーネントをヘッドレスフォームフィールドにマッピングする
 
-サードパーティのライブラリコンポーネントを使用してフォームフィールドをレンダリングするプロセスをマッピングと呼びます。 各（[fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)）を、サードパーティライブラリの対応するコンポーネントにマッピングします。
+サードパーティのライブラリコンポーネントを使用してフォームフィールドをレンダリングするプロセスは、マッピングと呼ばれます。各（[fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)）を、サードパーティライブラリの対応するコンポーネントにマッピングします。
 
-マッピング関連情報はすべて `mappings.ts` ファイルに追加されます。`...mappings` ファイル内の `mappings.ts` ステートメントは、デフォルトのマッピングを参照し、（[fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) または `:type`）を [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/) コンポーネントでオーバーレイします。
+マッピング関連情報はすべて `mappings.ts` ファイルに追加されます。`mappings.ts` ファイル内の `...mappings` ステートメントでは、([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) または `:type`) を [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/) コンポーネントでオーバーレイするデフォルトのマッピングを参照しています。
 
 最後の手順で作成した `materialtextfield` コンポーネントのマッピングを追加するには：
 
@@ -154,14 +154,14 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
    ![](assets/material-text-field-form-rendetion.png)
 
 
-   同様に、メッセージ（「fieldType」:「multiline-input」）のカスタムコンポーネントを作成し、サービス（「fieldType」:「number-input」）フィールドを評価できます。 メッセージのカスタムコンポーネントについて次の Git リポジトリを複製し、サービスフィールドを評価できます。
+   同様に、Message（&quot;fieldType&quot;: &quot;multiline-input&quot;）フィールド用と Rate the Service フィールド（&quot;fieldType&quot;: &quot;number-input&quot;）用のカスタムコンポーネントを作成することができます。Message フィールドと Rate the Service フィールドのカスタムコンポーネント用に次の Git リポジトリのクローンを作成できます。
 
    [https://github.com/singhkh/react-starter-kit-aem-headless-forms](https://github.com/singhkh/react-starter-kit-aem-headless-forms)
 
 ## 次の手順
 
-Google マテリアル UI を使用したカスタムコンポーネントでフォームをレンダリングすることに成功しました。「送信」ボタン（対応するGoogle Material UI コンポーネントにマッピング済み）をクリックしてフォームを送信したことがありますか？ まだであれば、まず試してみてください。
+Google マテリアル UI を使用したカスタムコンポーネントでフォームをレンダリングすることに成功しました。「Submit」ボタン（対応する Google マテリアル UI コンポーネントにマッピングされている）をクリックして、フォームを送信してみましたか？ まだであれば、まず試してみてください。
 
-フォームはデータを任意のデータソースに送信しますか？ そうでなくても、ご心配なく。これは、ランタイムライブラリと通信するようにフォームが設定されていないためです。
+フォームはデータを任意のデータソースに送信しますか？ そうでなくても、ご心配なく。その理由は、フォームがランタイムライブラリと通信するように設定されていないからです。
 
-ランタイムライブラリと通信できるようにフォームを設定するには、どうすればよいでしょうか？ すべてを詳細に説明する記事が近日公開予定です。 どうぞお楽しみに。
+ランタイムライブラリと通信できるようにフォームを設定するには、どうすればよいでしょうか？すべてを詳しく説明する記事が近日リリース予定です。 どうぞお楽しみに。

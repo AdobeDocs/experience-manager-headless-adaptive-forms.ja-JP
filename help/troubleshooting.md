@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 58%
 
 ### 問題
 
-`mvn -PautoInstallPackage clean install` または同様のコマンドを使用してAEM アーキタイププロジェクトをデプロイすると、プロジェクトのデプロイに失敗します。
+`mvn -PautoInstallPackage clean install` または同様のコマンドを使用して AEM アーキタイププロジェクトをデプロイしようとすると、プロジェクトのデプロイに失敗します。
 
 ### 理由
 
-これは、サポートされていないバージョンか、`node.js` または `NPM` のインストールが破損していることが原因で発生する可能性があります。
+この問題が発生する原因としては、`node.js` または `NPM` がサポートされていないバージョンであるか、インストールが破損していることが考えられます。
 
 ### 解決策
 
@@ -41,7 +41,7 @@ ht-degree: 58%
 
 ### 問題
 
-`mvn clean install` または同様のコマンドを使用してAEM アーキタイププロジェクトをデプロイすると、コマンドが実行できません。
+`mvn clean install` または同様のコマンドを使用して AEM アーキタイププロジェクトをデプロイしようとすると、コマンドの実行に失敗します。
 
 ### 理由
 

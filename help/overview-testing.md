@@ -1,6 +1,6 @@
 ---
 title: AEM ヘッドレスアダプティブフォームの概要
-description: フォームを 1 回作成すると、CMS、React、SPA、web、モバイル、Alexa、WhatsApp などに配信され、AEM ヘッドレスアダプティブフォームを使用して高速で拡張性の高いデータ取得が可能になります。
+description: フォームを 1 回で作成すると、AEM ヘッドレスアダプティブフォームを使用して CMS、React、SPA、web、モバイル、Alexa、WhatsApp などに配信され、高速でスケーラブルなデータキャプチャが可能になります。
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -11,24 +11,24 @@ hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # はじめに
 
-Adobe Experience Manager（AEM）ヘッドレスアダプティブフォームは、Adobe Experience Manager プラットフォーム内でヘッドレス web フォームを作成および管理するためのソリューションです。この機能により、組織は、従来のグラフィカルユーザーインターフェイスの代わりに API を使用してアクセスおよび操作できるインタラクティブフォームを作成、公開および管理できるようになります。AEM ヘッドレスアダプティブFormsを使用すると、フォームの開発と導入において高い柔軟性と拡張性を実現できるほか、特定のニーズに合わせてフォームのデザインと機能をカスタマイズできるので、ユーザーエクスペリエンスが向上します。 このソリューションは、AEMの機能とヘッドレステクノロジーを活用して、様々なユースケースやアプリケーション向けの web フォームを作成、管理およびデプロイするための堅牢なプラットフォームを提供します。
+Adobe Experience Manager（AEM）ヘッドレスアダプティブフォームは、Adobe Experience Manager プラットフォーム内でヘッドレス web フォームを作成および管理するためのソリューションです。この機能により、組織は、従来のグラフィカルユーザーインターフェイスの代わりに API を使用してアクセスおよび操作できるインタラクティブフォームを作成、公開および管理できるようになります。AEM ヘッドレスアダプティブフォームを使用すると、フォームの開発とデプロイメントにおける柔軟性とスケーラビリティが高まると共に、フォームのデザインと機能を特定のニーズに合わせてカスタマイズできるので、ユーザーエクスペリエンスを向上させることができます。このソリューションでは、AEM とヘッドレステクノロジーの機能を使用して、様々なユースケースやアプリケーションに合わせて web フォームを作成、管理およびデプロイできる堅牢なプラットフォームを提供します。
 
 ![任意の web サイト、アプリケーションまたは非視覚的なインタラクション内にフォームを作成し、ネイティブにレンダリングする](/help/assets/headless-forms-for-any-device.jpeg)
 
-ヘッドレスアダプティブフォームは次のような場合に役立ちます。
+ヘッドレスアダプティブフォームは、次の操作に役立ちます。
 
-* 選択したプログラミング言語で高品質のマルチチャネルフォームを作成する。
-* フォームをデスクトップアプリ、モバイルアプリ、web サイトおよびチャットアプリケーションにネイティブに統合します。
-* 独自の UI コンポーネントをフォームアプリケーションで再利用します。
-* [Adobe Experience Manager Formsの機能 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms) を使用する。
+* 高品質のマルチチャネルフォームを好みのプログラミング言語で作成。
+* デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合。
+* フォームアプリケーションで独自の UI コンポーネントを再利用。
+* [Adobe Experience Manager Forms の機能](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)を活用。
 
 さらに、任意の UI フレームワークとプログラミング言語を使用して、フォームをレンダリングする独自のコンポーネントを自由に開発できます。すぐに利用可能な React コンポーネントを使用して、ヘッドレスアダプティブフォームをレンダリングすることもできます。
 
