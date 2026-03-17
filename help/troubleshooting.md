@@ -7,11 +7,11 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '127'
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '152'
 ht-degree: 100%
 
 ---
@@ -49,4 +49,4 @@ ht-degree: 100%
 
 ### 解決策
 
-[Git の最新リリース](https://git-scm.com/downloads)をダウンロードしてインストールします。Git を初めて使用する場合は、[Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) を参照してください。
+[Git の最新リリース](https://git-scm.com/downloads)をダウンロードしてインストールします。 Git を初めて使用する場合は、[Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) を参照してください。

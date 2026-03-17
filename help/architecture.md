@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, アーキテクチャ
-hide: false
+index: true
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 94%
@@ -37,7 +37,8 @@ You can use the React renderer component shipped with Headless adaptive forms to
 
 A typical Headless adaptive forms architecture constitutes an Adobe Experience Manager Server, JSON structure of forms, various frontend apps for channel-specific form renditions.
 
-![Architecture](/help/assets/headless-af-architecture.png) -->
+![Architecture](/help/assets/headless-af-architecture.png) 
+-->
 
 ### ヘッドレスアダプティブフォーム実装のコンポーネント
 
@@ -50,7 +51,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **ヘッドレスアダプティブフォーム**：ヘッドレスアダプティブフォームは .json ファイルで表されます。 JSON 構造は、フォームのコンポーネント、制約および構造を定義します。
 
-**フロントエンドアプリ**：SPA（単一ページアプリケーション）、モバイルアプリ、JavaScript アプリなどのフロントエンドアプリは、クライアントでヘッドレスアダプティブフォーム（JSON 表現のフォーム）を使用しフォームをレンダリングします。 ヘッドレスアダプティブフォームに付属している React レンダラーコンポーネントを使用して、アダプティブフォームをレンダリングしたり、独自のカスタムコンポーネントを作成してヘッドレスアダプティブフォームをネイティブにレンダリングしたりできます。 モバイルおよびオフラインフォームのネイティブなユースケースでは、独自のアプリを作成し、API を使用してフォーム定義を取得することをお勧めします。[&#x200B; モバイルフォームのベストプラクティス &#x200B;](mobile-forms-best-practices.md) を参照してください。
+**フロントエンドアプリ**：SPA（単一ページアプリケーション）、モバイルアプリ、JavaScript アプリなどのフロントエンドアプリは、クライアントでヘッドレスアダプティブフォーム（JSON 表現のフォーム）を使用しフォームをレンダリングします。 ヘッドレスアダプティブフォームに付属している React レンダラーコンポーネントを使用して、アダプティブフォームをレンダリングしたり、独自のカスタムコンポーネントを作成してヘッドレスアダプティブフォームをネイティブにレンダリングしたりできます。 モバイルおよびオフラインフォームのネイティブなユースケースでは、独自のアプリを作成し、API を使用してフォーム定義を取得することをお勧めします。[ モバイルフォームのベストプラクティス ](mobile-forms-best-practices.md) を参照してください。
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -80,9 +81,11 @@ Forms Web SDK は、フォームの様々なフィールドに適用された制
 
 **起動済みのアプリケーション**：ヘッドレスアダプティブフォームの使用をすぐに開始するのに役立つ、起動済みのアプリケーションもリリースされています。
 
-<!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
+<!-- 
+**View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
-Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. -->
+Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. 
+-->
 
 **ストーリーブック**：[ストーリーブック](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)は、ヘッドレスアダプティブフォームの様々なコンポーネントの概要を示します。 また、サポートされているすべてのコンポーネント、対応するプロパティおよび制約のリストも提供します。
 

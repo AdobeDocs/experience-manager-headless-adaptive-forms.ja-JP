@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: モバイルフォーム，ネイティブアプリ，オフラインフォーム，ヘッドレス API
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 8%
@@ -24,7 +24,7 @@ ht-degree: 8%
 
 次の機能を備えたネイティブモバイルアプリケーション（iOSまたはAndroid）を作成します。
 
-1. **ヘッドレスフォーム定義を取得します** - [&#x200B; ヘッドレスアダプティブ Forms API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用して、フォームの JSON をオンデマンドで取得します（例えば、ユーザーがフォームを開いたり、アプリ内でフォームに移動したりする場合）。 使用可能なフォームを一覧表示し、ID でフォーム定義を取得できます。
+1. **ヘッドレスフォーム定義を取得します** - [ ヘッドレスアダプティブ Forms API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用して、フォームの JSON をオンデマンドで取得します（例えば、ユーザーがフォームを開いたり、アプリ内でフォームに移動したりする場合）。 使用可能なフォームを一覧表示し、ID でフォーム定義を取得できます。
 
 2. **アプリでフォームをレンダリング** – 好みの UI フレームワーク（React Native、ネイティブビューなど）を使用して、JSON からフォームをレンダリングします。 スタックに適合するForms Web SDKと既存のヘッドレスアダプティブフォーム React コンポーネントを使用することも、同じ JSON 構造を使用する独自のレンダラーを構築することもできます。
 
@@ -34,8 +34,8 @@ ht-degree: 8%
 
 ## 概要 {#getting-started}
 
-* [AEM ヘッドレスアダプティブフォームの概要 &#x200B;](overview.md) – 機能と概念。
-* [&#x200B; ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/) - フォームをプログラムによってリスト化、取得、検証および送信します。
-* [&#x200B; アーキテクチャ &#x200B;](architecture.md) - ヘッドレスアダプティブフォームの仕組みと、フロントエンドアプリによるヘッドレスアダプティブフォームの消費方法。
+* [AEM ヘッドレスアダプティブフォームの概要 ](overview.md) – 機能と概念。
+* [ ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/) - フォームをプログラムによってリスト化、取得、検証および送信します。
+* [ アーキテクチャ ](architecture.md) - ヘッドレスアダプティブフォームの仕組みと、フロントエンドアプリによるヘッドレスアダプティブフォームの消費方法。
 
-統合の手順については、[&#x200B; ヘッドレスフォームの作成と公開 &#x200B;](create-and-publish-a-headless-form.md) および [&#x200B; 開発者ポータル &#x200B;](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ja) を参照してください。
+統合の手順については、[ ヘッドレスフォームの作成と公開 ](create-and-publish-a-headless-form.md) および [ 開発者ポータル ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ja) を参照してください。

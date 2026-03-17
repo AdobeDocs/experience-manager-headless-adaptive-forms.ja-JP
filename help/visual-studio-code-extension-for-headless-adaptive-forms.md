@@ -7,18 +7,18 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, Visual Studio Code 拡張機能
-hide: false
+index: true
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '196'
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '231'
 ht-degree: 100%
 
 ---
 
 # ヘッドレスアダプティブフォーム用の Microsoft Visual Studio Code 拡張機能
 
-Microsoft® Visual Studio Code を IDE（統合開発環境）として使用する場合は、Microsoft Visual Studio Code 用のアダプティブフォーム拡張機能を使用できます。この拡張機能の特長は次のとおりです。
+Microsoft® Visual Studio Code を IDE（統合開発環境）として使用する場合は、Microsoft Visual Studio Code 用のアダプティブフォーム拡張機能を使用できます。 この拡張機能の特長は次のとおりです。
 
 * Visual Studio Code にアダプティブフォーム用の IntelliSense 機能を追加します。
 * ヘッドレスアダプティブフォームコンポーネントの JSON 構文の検証とオートコンプリートに役立ちます。
@@ -35,7 +35,7 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
 
 ## 前提条件
 
-* [Microsoft Visual Studio Code 1.62.0 以降](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version)をダウンロードしてインストールします。古いバージョンがある場合や、どのバージョンもインストールされていない場合は、[Microsoft web サイト](https://code.visualstudio.com/docs/setup/setup-overview)から最新バージョンをダウンロードしてください。Apple macOS のコマンドラインから Visual Studio を使用するには、[コマンドラインからの起動](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)を参照してください。
+* [Microsoft Visual Studio Code 1.62.0 以降](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version)をダウンロードしてインストールします。 古いバージョンがある場合や、どのバージョンもインストールされていない場合は、[Microsoft web サイト](https://code.visualstudio.com/docs/setup/setup-overview)から最新バージョンをダウンロードしてください。 Apple macOS のコマンドラインから Visual Studio を使用するには、[コマンドラインからの起動](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)を参照してください。
 * [アダプティブフォームビルダー拡張機能](/help/assets/adaptive-form-builder-0.12.0.vsix)をダウンロードします。
 
 ## 拡張機能のインストール
