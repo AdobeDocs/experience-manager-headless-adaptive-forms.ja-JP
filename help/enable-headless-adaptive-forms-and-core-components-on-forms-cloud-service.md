@@ -9,9 +9,8 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 96%
@@ -65,7 +64,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    プロンプトが表示されたら、資格情報を入力します。 リポジトリがローカルコンピューターに複製されます。
 
 
-## &#x200B;2. アダプティブ Forms コアコンポーネントの依存関係を Git リポジトリに追加する {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Git リポジトリにアダプティブ Forms コアコンポーネントの依存関係を追加する {#add-adaptive-forms-core-components-dependencies}
 
 1. プレーンテキストコードエディターで Git リポジトリフォルダーを開きます。 例：VS Code。
 1. `[AEM Repository Folder]\pom.xml` ファイルを編集用に開きます。
@@ -289,7 +288,7 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
 
 1. ファイルを保存して閉じます。
 
-## &#x200B;4. 更新内容を Git リポジトリにコミットし、パイプラインを実行してリポジトリをデプロイします {#Commit-the-updates-to-your-git-repository}
+## &#x200B;4. Git リポジトリに更新をコミットし、パイプラインを実行してリポジトリをデプロイします {#Commit-the-updates-to-your-git-repository}
 
 1. コードを Git リポジトリにコミットするには：
    1. ターミナルまたはコマンドプロンプトを開きます。
