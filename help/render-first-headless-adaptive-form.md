@@ -4,9 +4,21 @@ description: 初めてのヘッドレスアダプティブフォームを作成�
 keywords: ヘッドレス, アダプティブフォーム
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/QzzuB8TzXgkumIu6mdap5ruodWqz7nbXP2XtSJbxPPE
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: ae478996-b206-4712-9b0c-dc78a2644453
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: 1619
 ht-degree: 93%
 
 ---
@@ -105,7 +117,7 @@ Adobe Experience Manager ヘッドレスアダプティブフォームにより�
 
 ### &#x200B;2. プロジェクトを AEM SDK にデプロイする {#deploy-the-project-to-a-local-development-environment}
 
-プロジェクトをAEM SDK インスタンスにデプロイすると、ヘッドレスアダプティブForms機能、コアコンポーネントを含んだ **空白** テンプレート、およびプロジェクトに含まれるその他のリソースが開発環境に追加されます。<!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> AEM SDK インスタンスにデプロイするには：
+プロジェクトをAEM SDK インスタンスにデプロイすると、ヘッドレスアダプティブForms機能、コアコンポーネントを含む&#x200B;**空白** テンプレート、およびプロジェクトに含まれているその他のリソースが開発環境に追加されます。<!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> AEM SDK インスタンスにデプロイするには：
 
 1. コマンドプロンプトを開きます。 Windows を使用している場合は、管理者権限でコマンドプロンプトを開きます（コマンドプロンプトまたは [Git bash シェル](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)を管理者として実行します）。
 
@@ -128,7 +140,7 @@ Adobe Experience Manager ヘッドレスアダプティブフォームにより�
 <!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#coding-against-the-right-aem-version) article : -->
 
 
-### &#x200B;3. ヘッドレスアダプティブフォームの JSON スキーマを作成して、AEM SDK インスタンスにアップロードします {#create-add-json-representation-of-headless-adaptive-forms}
+### &#x200B;3. ヘッドレスアダプティブフォームのJSON スキーマを作成し、AEM SDK インスタンスにアップロードします {#create-add-json-representation-of-headless-adaptive-forms}
 
 ヘッドレスアダプティブフォームは、JSON ファイルとして表されます。 [ストーリーブック](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact)からサンプルフォームを入手するか、またはアーキタイププロジェクト（`[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`）に含まれているサンプルフォームを使用できます。 このドキュメントでは、ストーリーブックの [introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) フォームを使用しています。 これは、ヘッドレスアダプティブフォームの使用をすぐに開始するのに役立つ単一フィールドフォームです。<!-- The [specifications](/help/assets/headless-adaptive-forms-specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
@@ -205,7 +217,7 @@ If you are on Windows, run the above with Administrative privileges (Run command
 
 **コアコンポーネント付きブランク**&#x200B;テンプレートが表示されない場合は、[AEM アーキタイププロジェクトが正常にデプロイされている](#deploy-the-project-to-a-local-development-environment)ことを確認します。
 
-### &#x200B;5. JSON スキーマを使用するようにアダプティブフォームを設定します {#configure-adaptive-form-to-use-the-JSON-representation}
+### &#x200B;5. JSON スキーマを使用するようにアダプティブフォームを設定する {#configure-adaptive-form-to-use-the-JSON-representation}
 
 前の手順で作成したアダプティブフォームは内容が空です。 JSON スキーマを使用するようにアダプティブフォームを設定します。
 
