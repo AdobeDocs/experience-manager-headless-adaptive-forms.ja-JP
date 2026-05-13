@@ -137,7 +137,7 @@ Adobe Experience Manager ヘッドレスアダプティブフォームにより�
    依存関係を解決してプロジェクトをデプロイするのに時間がかかる場合があります。 プロジェクトのデプロイに失敗した場合は、一般的な問題とその解決方法に関する[トラブルシューティング](troubleshooting.md)の記事を参照してください。
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. ヘッドレスアダプティブフォームのJSON スキーマを作成し、AEM SDK インスタンスにアップロードします {#create-add-json-representation-of-headless-adaptive-forms}
@@ -193,10 +193,10 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing).
 -->
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ja#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. コアコンポーネント付きブランクテンプレートに基づいてアダプティブフォームを作成する {#create-adaptive-form-with-blank-with-core-components-template}
 
