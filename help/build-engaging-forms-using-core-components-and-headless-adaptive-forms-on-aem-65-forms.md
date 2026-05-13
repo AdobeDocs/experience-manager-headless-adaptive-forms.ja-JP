@@ -9,10 +9,14 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 98%
+source-wordcount: 2311
+ht-degree: 95%
 
 ---
 
@@ -88,7 +92,7 @@ AEM 6.5 Forms 環境を理解します。
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
+   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    この特定のエンドポイントは、データを送信および表示するための例として機能します。 実際の運用では、独自のエンドポイントまたはデータソースを使用して、キャプチャされたデータを保存します。
@@ -190,7 +194,7 @@ AEM 6.5 Forms 環境を理解します。
 
    * **AEM_URL**：**パブリッシュ**&#x200B;インスタンスの URL を指定します。 例：`https://localhost:4502/`
 
-   * **AEM_ADAPTIVE_FORM**：フォームの名前を指定します。 例：`contact-us`
+   * **AEM_ADAPTIVE_FORM**：フォームの名前を指定します。 例えば、`contact-us` のように指定します。
 
    </br>
 
@@ -340,7 +344,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 1. ブラウザーで AEM Forms 管理インターフェイスを開きます。 例：[http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)。
 
-1. **お問い合わせ** フォームを選択し、**編集** をクリックします。 アダプティブFormsエディターでフォームが開きます。
+1. **お問い合わせ** フォームを選択し、**編集**&#x200B;をクリックします。 アダプティブFormsエディターでフォームが開きます。
 
 
 1. 「**連絡先番号**」フィールドを選択し、ツールバーの&#x200B;**編集アイコン（鉛筆アイコン）**&#x200B;をクリックします。 ポップアップツールバーが表示されない場合は、編集モードに切り替えます。 右上の「**編集**」ボタンをクリックし、左にある「**プレビュー**」ボタンをクリックします。
@@ -365,8 +369,8 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. **react-starter-kit-aem-headless-forms** プロジェクトの起動に使用するコマンドプロンプトウィンドウを開き、**CTRL + C** キーを押し、
-「**Y**」を入力して、Enter キーを押して npm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
+1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**を押してから
+**Y**&#x200B;と入力し、Enter キーを押してnpm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
 
@@ -499,7 +503,8 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   この変更は、エンドユーザーに対して AEM Forms Server のフォーム定義に変更を加えずに行われ、検討中のヘッドレスチャネルに固有のものです。 例えば、このラボの web チャネルです。
+   この変更は、AEM Forms Serverのフォーム定義に変更を加えることなく、エンドユーザーに対して行われ、ヘッドレスに固有のものです
+検討中のチャネル： 例えば、このラボの web チャネルです。
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -529,11 +534,11 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 ## リソース
 
-* [アダプティブフォームコアコンポーネントの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [アダプティブフォームのコアコンポーネントの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [コアコンポーネントを使用してアダプティブフォームを作成する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [コアコンポーネントを使用したアダプティブフォームの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [コアコンポーネントベースの AF のスタイル設定を更新](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [コアコンポーネントベースのAFのスタイルを更新する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [ヘッドレスアダプティブフォーム](https://experienceleague.adobe.com/ja/docs/experience-manager-headless-adaptive-forms/using/overview)
 

@@ -9,13 +9,18 @@ level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, アーキテクチャ
 index: true
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/Ox-1cxb5UK-oWcWzrRKcRAzCVaAGhUjQsjtnaURJXiw
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04fid: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: 994
 ht-degree: 94%
 
 ---
-
 
 # ヘッドレスアダプティブフォームの仕組み
 
@@ -51,7 +56,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **ヘッドレスアダプティブフォーム**：ヘッドレスアダプティブフォームは .json ファイルで表されます。 JSON 構造は、フォームのコンポーネント、制約および構造を定義します。
 
-**フロントエンドアプリ**：SPA（単一ページアプリケーション）、モバイルアプリ、JavaScript アプリなどのフロントエンドアプリは、クライアントでヘッドレスアダプティブフォーム（JSON 表現のフォーム）を使用しフォームをレンダリングします。 ヘッドレスアダプティブフォームに付属している React レンダラーコンポーネントを使用して、アダプティブフォームをレンダリングしたり、独自のカスタムコンポーネントを作成してヘッドレスアダプティブフォームをネイティブにレンダリングしたりできます。 モバイルおよびオフラインフォームのネイティブなユースケースでは、独自のアプリを作成し、API を使用してフォーム定義を取得することをお勧めします。[&#x200B; モバイルフォームのベストプラクティス &#x200B;](mobile-forms-best-practices.md) を参照してください。
+**フロントエンドアプリ**：SPA（単一ページアプリケーション）、モバイルアプリ、JavaScript アプリなどのフロントエンドアプリは、クライアントでヘッドレスアダプティブフォーム（JSON 表現のフォーム）を使用しフォームをレンダリングします。 ヘッドレスアダプティブフォームに付属しているReact レンダラーコンポーネントを使用して、アダプティブフォームをレンダリングしたり、独自のカスタムコンポーネントを構築してヘッドレスアダプティブフォームをネイティブにレンダリングしたりできます。 ネイティブのモバイルフォームとオフラインフォームのユースケースの場合、推奨されるアプローチは、独自のアプリを構築し、APIを介してフォーム定義を取得することです。[ モバイルフォームのベストプラクティス ](mobile-forms-best-practices.md)を参照してください。
 
 <!-- ### Understanding Headless adaptive forms definition -->
 

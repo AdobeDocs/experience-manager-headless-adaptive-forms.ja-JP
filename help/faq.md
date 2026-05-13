@@ -9,9 +9,14 @@ level: Beginner, Intermediate
 keywords: ヘッドレス, アダプティブフォーム, FAQ
 index: true
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/GqYwqgwHe82HXLvljMyGW4PDOkmi7Xg2MKjYxibsFnY
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: 837
 ht-degree: 58%
 
 ---
@@ -87,28 +92,28 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 はい - Visual Studio Code 拡張機能を使用すると、JSON でヘッドレスアダプティブフォームを手動で作成できます。
 
-## モバイルフォームとオフラインフォームで推奨されるアプローチを教えてください。 {#mobile-offline-forms}
+## モバイルフォームとオフラインフォームに推奨されるアプローチは何ですか？ {#mobile-offline-forms}
 
-独自のネイティブアプリを作成し、ヘッドレスなアダプティブ Forms API を介してフォーム定義を取得します。 オプションで、オフラインサポート（ローカルストレージや同期など）を実装できます。 推奨されるアプローチと API へのリンクについては、[&#x200B; モバイルフォームのベストプラクティス &#x200B;](mobile-forms-best-practices.md) を参照してください。
+独自のネイティブアプリを構築し、ヘッドレスアダプティブForms APIを使用してフォーム定義を取得します。 オプションで、オフラインサポート（ローカルストレージや同期など）を実装できます。 推奨されるアプローチとAPIへのリンクについては、[ モバイルフォームのベストプラクティス ](mobile-forms-best-practices.md)を参照してください。
 
-## AEM FormsでGraphQLやヘッドレス API を使用する方法
+## GraphQLやヘッドレス APIをAEM Formsでどのように使用しますか？
 
-AEM ヘッドレスアダプティブFormsは、GraphQLではなく、**HTTP/REST API** を使用します。 アプリはこれらの API を呼び出し、フォームの一覧表示、フォーム定義（JSON）の取得、送信ステータスの検証、送信および追跡を行います。 完全なリファレンスには [&#x200B; ヘッドレスアダプティブフォーム HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/) を使用します。 フォームの取得とレンダリングの方法については、[&#x200B; アーキテクチャ &#x200B;](architecture.md) および [&#x200B; ヘッドレスフォームについて &#x200B;](understanding-headless-forms.md) を参照してください。
+AEM ヘッドレスアダプティブ Formsでは、GraphQLではなく&#x200B;**HTTP/REST API**&#x200B;を使用します。 アプリはこれらのAPIを呼び出して、フォームのリスト、フォーム定義（JSON）の取得、検証、送信、送信ステータスの追跡を行います。 完全な参照には、[ ヘッドレスアダプティブフォーム HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/)を使用します。 フォームの取得およびレンダリング方法については、[ アーキテクチャ ](architecture.md)および[ ヘッドレスフォームについて](understanding-headless-forms.md)を参照してください。
 
-## Adobe AEM Formsで React コンポーネントを使用してヘッドレスフォームを実装し、スタイルを設定する方法を教えてください。
+## Adobe AEM FormsでReact コンポーネントを使用してヘッドレスフォームを実装し、スタイルを設定するにはどうすればよいですか？
 
-独自の React コンポーネントおよび CSS （または Material UI などの UI ライブラリ）を使用して、ヘッドレスフォームを実装し、スタイルを設定します。 フォームロジック（ステート、検証、ルール）は、Forms Web SDKとフォーム JSON から取得されます。アプリによって、それをレンダリングする UI が提供されます。
+独自のReact コンポーネントとCSS （またはマテリアル UIなどのUI ライブラリ）を使用して、ヘッドレスフォームを実装し、スタイルを設定します。 フォームロジック（ステート、検証、ルール）は、Forms Web SDKおよびフォーム JSONから取得されます。アプリは、それをレンダリングするUIを提供します。
 
-* React UI ライブラリを使用してヘッドレスフォームのスタイルを設定するには、[&#x200B; カスタム React ライブラリを使用してヘッドレスフォームをレンダリングする &#x200B;](use-google-material-ui-react-components-to-render-a-headless-form.md) を参照してください。
-* カスタム React コンポーネントを作成してフォームフィールドにマッピングするには、[&#x200B; カスタムコンポーネントを使用したヘッドレスフォームのレンダリング &#x200B;](developing-for-headless-forms-using-your-own-components.md) を参照してください。
+* React UI ライブラリを使用してヘッドレスフォームのスタイルを設定するには、[ カスタム react ライブラリを使用してヘッドレスフォームをレンダリングする](use-google-material-ui-react-components-to-render-a-headless-form.md)を参照してください。
+* カスタム React コンポーネントを構築してフォームフィールドにマッピングするには、[ カスタムコンポーネントを使用してヘッドレスフォームをレンダリングする](developing-for-headless-forms-using-your-own-components.md)を参照してください。
 
-ヘッドレスフォームを使用するタイミング、状態の管理、検証などの概念については、[&#x200B; ヘッドレスフォームについて &#x200B;](understanding-headless-forms.md) を参照してください。
+ヘッドレスフォームを使用するタイミング、状態管理、検証などの概念については、[ ヘッドレスフォームについて](understanding-headless-forms.md)を参照してください。
 
-## カスタム CSS、テーマ、ルールエディター、ヘッドレスフォームを使用してAEM Formsを実装およびカスタマイズする方法を教えてください。
+## カスタム CSS、テーマ、ルールエディター、ヘッドレスフォームを使用して、AEM Formsを実装およびカスタマイズするにはどうすればよいですか？
 
-**ヘッドレスフォーム：** スタイル設定とルックアンドフィールは、完全に自分で制御できます。 独自の React （または他の）コンポーネントと独自の CSS を使用します。組み込みのテーマはありません。 [&#x200B; カスタム React ライブラリを使用したヘッドレスフォームのレンダリング &#x200B;](use-google-material-ui-react-components-to-render-a-headless-form.md)、および [&#x200B; カスタムコンポーネントを使用したヘッドレスフォームのレンダリング &#x200B;](developing-for-headless-forms-using-your-own-components.md) を参照して、ヘッドレスフォームの実装とスタイル設定を行います。
+**ヘッドレスフォーム：** スタイル設定とルックアンドフィールは完全にユーザーの管理下にあります。 独自のReact （または他の）コンポーネントと独自のCSSを使用します。組み込みのテーマはありません。 [ カスタム react ライブラリを使用してヘッドレスフォームをレンダリング ](use-google-material-ui-react-components-to-render-a-headless-form.md)および[ カスタムコンポーネントを使用してヘッドレスフォームをレンダリング ](developing-for-headless-forms-using-your-own-components.md)し、ヘッドレスフォームを実装およびスタイル設定するを参照してください。
 
-**クラシック AEM Forms（テーマ、ルールエディター、ビジュアルエディター）:** カスタム CSS、テーマエディターおよびルールエディターは、クラシック（ヘッドレス以外）のアダプティブ Formsのオーサリングエクスペリエンスに適用されます。 これらのトピックについては、Experience Leagueの [AEM Forms ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-forms.html) を参照してください。
+**Classic AEM Forms（テーマ、ルールエディター、ビジュアルエディター）:** カスタム CSS、テーマエディター、ルールエディターは、従来の（ヘッドレスではない）アダプティブ Forms オーサリングエクスペリエンスに適用されます。 これらのトピックについては、Experience Leagueの[AEM Forms ドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-forms.html)を参照してください。
 
 ## ヘッドレスアダプティブフォームを CRM に接続してデータを読み書きできますか？
 

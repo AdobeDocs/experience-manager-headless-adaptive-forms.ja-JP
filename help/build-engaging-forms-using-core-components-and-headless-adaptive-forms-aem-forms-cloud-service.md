@@ -5,10 +5,14 @@ description: コアコンポーネントとヘッドレスを使用して魅力�
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 97%
+source-wordcount: 2629
+ht-degree: 93%
 
 ---
 
@@ -85,7 +89,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 1. フォームの送信エンドポイントを作成します。
 
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
-   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
+   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -95,10 +99,10 @@ AEM Forms as a Cloud Service 環境に慣れる。
    1. レッスン 1 で使用したブラウザータブで、AEM Forms as a Cloud Service web インターフェイスに移動し、フォーム＆ドキュメントに移動します。
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **作成**／**アダプティブフォーム**&#x200B;をクリックします。
+   1. **作成**／**アダプティブフォーム**をクリックします。
       ![](/help/assets/screenshot2028114629.png)
 
-   1. 選択画面から、**コアコンポーネントを使用した空白**&#x200B;テンプレートを選択します（下図を参照）。
+   1. 選択画面から、**コアコンポーネントを使用した空白**テンプレートを選択します（下図を参照）。
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. 「**スタイル**」タブをクリックし、「**wknd-theme**」テーマを選択します（下図を参照）。
@@ -109,7 +113,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    1. 「**作成**」をクリックします。 フォームの名前とタイトルを指定します。 例えば、**登録**&#x200B;などです。 「**作成**」をクリックします。
 
-   1. アダプティブフォームエディターが開きます。 ポップアップまたはダイアログを閉じて、環境設定や情報を表示します。 左側のパネルにあるコンポーネントブラウザーをクリックし、**ヘッダー**&#x200B;コンポーネントと&#x200B;**フッター**&#x200B;コンポーネントをそれぞれ空白のフォームの上部と下部に追加します。
+   1. アダプティブフォームエディターが開きます。 ポップアップまたはダイアログを閉じて、環境設定や情報を表示します。 左側のパネルにあるコンポーネントブラウザーをクリックし、**ヘッダー**&#x200B;コンポーネントと&#x200B;**フッター**コンポーネントをそれぞれ空白のフォームの上部と下部に追加します。
       ![](/help/assets/screenshot2028121929.png)
 
    1. コンポーネントブラウザーからコンポーネントをドラッグ＆ドロップして、次のようなフォームを作成します。
@@ -157,7 +161,8 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
       フォームの公開 URL は、次のようになります。`https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`
 
-   1. 公開されたフォームを表示するには、上記の URL のプログラム ID（pXXXXXX）と環境 ID（eXXXXXX）を、お使いの環境の ID に置き換えます。
+   1. 公開されたフォームを表示するには、上記のURLのプログラム ID （pXXXXXX）と環境ID （eXXXXXX）を
+環境：
 
 ## レッスン 3
 
@@ -406,8 +411,8 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. **react-starter-kit-aem-headless-forms** プロジェクトの起動に使用するコマンドプロンプトウィンドウを開き、**CTRL + C** キーを押し、
-「**Y**」を入力して、Enter キーを押して npm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
+1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**を押してから
+**Y**&#x200B;と入力し、Enter キーを押してnpm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
 
@@ -493,7 +498,8 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
    ![](/help/assets/screenshot2028127129.png)
 
-   このコマンドは、ローカル開発サーバーを起動し、Google Material UI フロントエンドライブラリを使用して、AEM から取得したフォーム定義をヘッドレスにレンダリングします。
+   このコマンドは、ローカル開発サーバーを起動し、AEMから取得したフォーム定義をGoogleを使用してヘッドレスでレンダリングします
+マテリアル UI フロントエンドライブラリ。
 
    >[!NOTE]
    >
@@ -548,7 +554,8 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
    ![](/help/assets/screenshot2028127729.png)
 
 
-   この変更は、エンドユーザーに対して AEM Forms Server のフォーム定義に変更を加えずに行われ、検討中のヘッドレスチャネルに固有のものです。 例えば、このラボの web チャネルです。
+   この変更は、AEM Forms Serverのフォーム定義に変更を加えることなく、エンドユーザーに対して行われ、ヘッドレスに固有のものです
+検討中のチャネル： 例えば、このラボの web チャネルです。
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
