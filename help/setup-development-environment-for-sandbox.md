@@ -4,10 +4,14 @@ description: Forms as a Cloud Service サンドボックスの開発環境をセ
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
 source-wordcount: 1369
@@ -66,7 +70,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. プログラムの場合は、... アイコンをタップし、「<b> プログラムを編集</b>」オプションを選択します。 ダイアログボックスが表示されます。 
+    &#x200B;3. プログラムの場合は、... アイコンをタップし、「<b> プログラムを編集</b>」オプションを選択します。 ダイアログボックスが表示されます。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -77,7 +81,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    4. プログラムを編集ダイアログボックスで、「<b> ソリューションとアドオン」タブ </b>に移動し、「<b> Forms - デジタル登録</b>」オプションを選択して、<b> アップデート </b>」をタップします。 
+    &#x200B;4. プログラムを編集ダイアログボックスで、「<b> ソリューションとアドオン」タブ </b>に移動し、「<b> Forms - デジタル登録</b>」オプションを選択して、<b> アップデート </b>」をタップします。 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -122,7 +126,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. ローカルマシンで、コマンドプロンプトを開いてフォルダーを作成し、次のコマンドを実行して、尋ねられたリポジトリ認証情報を指定します。
+    &#x200B;3. ローカルマシンで、コマンドプロンプトを開いてフォルダーを作成し、次のコマンドを実行して、尋ねられたリポジトリ認証情報を指定します。
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     例えば， </br> 
@@ -248,7 +252,7 @@ Forms as a Cloud Service サンドボックスでヘッドレスアダプティ�
 </tr>
 <tr>
   <td>
-    3. パイプラインの場合は、... アイコンをタップし、「<b>実行</b>」オプションを選択します。 パイプラインを実行するように求められた場合は、「<b>実行</b>」をタップし、パイプラインの「<b>ステータス</b>」が<b>完了</b>に変わるまで待ちます。  
+    &#x200B;3. パイプラインの場合は、... アイコンをタップし、「<b>実行</b>」オプションを選択します。 パイプラインを実行するように求められた場合は、「<b>実行</b>」をタップし、パイプラインの「<b>ステータス</b>」が<b>完了</b>に変わるまで待ちます。  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

@@ -10,9 +10,15 @@ topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
 TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
 source-wordcount: 2311
@@ -92,7 +98,7 @@ AEM 6.5 Forms 環境を理解します。
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
+   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    この特定のエンドポイントは、データを送信および表示するための例として機能します。 実際の運用では、独自のエンドポイントまたはデータソースを使用して、キャプチャされたデータを保存します。
@@ -369,7 +375,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**を押してから
+1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**&#x200B;を押してから
 **Y**&#x200B;と入力し、Enter キーを押してnpm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
