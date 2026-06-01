@@ -6,16 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
-ht-degree: 93%
+source-wordcount: 2589
+ht-degree: 92%
 
 ---
 
@@ -66,13 +63,13 @@ AEM Forms as a Cloud Service 環境に慣れる。
 1. ブラウザーを開き、Cloud Service オーサー環境の URL を入力します。<!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Cloud Service オーサー環境にログインします。
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. AEM Forms UI に移動するには、**Forms／フォームとドキュメント**&#x200B;をクリックします。
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    環境設定や情報に関連するポップアップを解除します。 使用可能なすべてのフォームが表示されます。
 
@@ -92,20 +89,20 @@ AEM Forms as a Cloud Service 環境に慣れる。
 1. フォームの送信エンドポイントを作成します。
 
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
-   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. ウィザードインターフェイスを使用してアダプティブフォームを作成します。
 
    1. レッスン 1 で使用したブラウザータブで、AEM Forms as a Cloud Service web インターフェイスに移動し、フォーム＆ドキュメントに移動します。
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **作成**／**アダプティブフォーム**&#x200B;をクリックします。
+   1. **作成**／**アダプティブフォーム**をクリックします。
       ![](/help/assets/screenshot2028114629.png)
 
-   1. 選択画面から、**コアコンポーネントを使用した空白**&#x200B;テンプレートを選択します（下図を参照）。
+   1. 選択画面から、**コアコンポーネントを使用した空白**テンプレートを選択します（下図を参照）。
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. 「**スタイル**」タブをクリックし、「**wknd-theme**」テーマを選択します（下図を参照）。
@@ -116,21 +113,21 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    1. 「**作成**」をクリックします。 フォームの名前とタイトルを指定します。 例えば、**登録**&#x200B;などです。 「**作成**」をクリックします。
 
-   1. アダプティブフォームエディターが開きます。 ポップアップまたはダイアログを閉じて、環境設定や情報を表示します。 左側のパネルにあるコンポーネントブラウザーをクリックし、**ヘッダー**&#x200B;コンポーネントと&#x200B;**フッター**&#x200B;コンポーネントをそれぞれ空白のフォームの上部と下部に追加します。
+   1. アダプティブフォームエディターが開きます。環境設定や情報に関するポップアップやダイアログを閉じる。左側のパネルのコンポーネントブラウザーをクリックし、空白フォームの上部と下部にそれぞれ&#x200B;**ヘッダー**&#x200B;と&#x200B;**フッター**のコンポーネントを追加します。
       ![](/help/assets/screenshot2028121929.png)
 
    1. コンポーネントブラウザーからコンポーネントをドラッグ＆ドロップして、次のようなフォームを作成します。
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. フォームに検証機能を追加します。
 
    1. **電話番号**&#x200B;コンポーネントをクリックして、ポップアップメニューを表示します。 **レンチアイコン**&#x200B;をクリックして、フィールドを設定します。
 
-   1. **「検証」タブ**&#x200B;を開き、フィールドに&#x200B;**必須**&#x200B;とマークを付け、「**完了**」をクリックします。 成功メッセージが表示されます。
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. **検証タブ**&#x200B;を開き、**必須** フィールドにマークを付け、**完了**をクリックします。成功メッセージが表示されます。
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. フォームをプレビューして送信します.
 
@@ -183,7 +180,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
 1. 管理者権限でコマンドプロンプトまたはシェルを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. コマンドプロンプトで、次のコマンドを使用して **c:\git** フォルダーに移動します。
 
@@ -209,15 +206,15 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
 1. 「**親フォルダー内のすべてのファイルの作成者を信頼する**」を選択し、「**はい、私は作成者を信頼します**」をクリックします。
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. クラウドサービスのパブリッシュ環境でホストされているフォームをレンダリングするには、`env_template` ファイルの名前を変更します。  ファイル名を変更するには、**env_template** ファイルを右クリックして、「**名前を変更**」オプションを選択します。
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. .env ファイルの変数に次の値を設定して、ファイルを保存します。
 
@@ -225,7 +222,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    * **AEM_ADAPTIVE_FORM**：フォームのパスを指定します。 例えば、フォームのパスが `/content/forms/af/registration` の場合、この変数の値は `registration` になります。
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. AEM 環境でローカルユーザーを作成します。
 
@@ -265,12 +262,12 @@ AEM Forms as a Cloud Service 環境に慣れる。
    >`npm run live` コマンドを実行した後、ブラウザーで 3～4 分以上空白の画面が表示される場合は、ブラウザーの URL の `localhost` を 127.0.0.1 に変更して **Enter** キーを押します。
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. Visual Studio Code で、`PROJECT\src\site\_variables.scss` ファイルを開きます。 `$error` のカラーは赤の網掛けです。
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. ブラウザーでフォームを送信して、「**名前（名）**」フィールドが赤くなるのを確認します。
 
@@ -278,7 +275,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
 1. **$error** の色を **#5736eb** に設定して、ファイルを保存します。
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. ブラウザーを更新し、フォームを送信します。 名フィールドのエラーカラーが、それに応じて変更されました。
 
@@ -303,7 +300,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 1. 管理者権限でコマンドプロンプトを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. コマンドプロンプトで、次のコマンドを使用して **c:\git** フォルダーに移動します。
 
@@ -332,13 +329,13 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    Visual Studio Code ウィンドウが開きます。
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 クラウドサービスのパブリッシュ環境でホストされるフォームをレンダリングするには、次の手順に従います。
 
 1. env_template ファイルを.env ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」オプションを選択します。
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -414,7 +411,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**&#x200B;を押してから
+1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**を押してから
 **Y**&#x200B;と入力し、Enter キーを押してnpm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
@@ -436,7 +433,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. 管理者権限でコマンドプロンプトを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. コマンドプロンプトで、次のコマンドを使用して **c:\git** フォルダーに移動します。
@@ -475,7 +472,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. **env_template** ファイルを **.env** ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」を選択します。
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. .env ファイル内の変数に次の値を設定します。 変数を更新したら、ファイルを保存します。 **Ctrl + S** キーを使用してファイルを保存します。
 
@@ -514,7 +511,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
    「**チェックボックスをオンにして 5%オフを受け取る**」を選択します。 後続のオプション **法人向けクレジットカードのフォーム `We.Finance`に申し込みますか？** 無効になります。
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## レッスン 6
 
@@ -560,7 +557,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
    この変更は、AEM Forms Serverのフォーム定義に変更を加えることなく、エンドユーザーに対して行われ、ヘッドレスに固有のものです
 検討中のチャネル： 例えば、このラボの web チャネルです。
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
