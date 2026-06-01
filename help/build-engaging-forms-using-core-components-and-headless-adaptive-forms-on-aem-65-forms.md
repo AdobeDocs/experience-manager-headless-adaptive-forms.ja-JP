@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
-ht-degree: 95%
+source-wordcount: 2301
+ht-degree: 94%
 
 ---
 
@@ -66,20 +66,20 @@ AEM 6.5 Forms 環境を理解します。
 
 ### 演習 {#lesson-1-excercise}
 
-1. ブラウザーを開き、オーサー環境の URL を入力します。 例：
+1. ブラウザーを開き、オーサー環境のURLを入力します。例：
    [https://localhost:4502](https://localhost:4502)。
 
 1. ログインした後、AEM Forms UI に移動します。 **Forms** をクリックします。
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. **フォームとドキュメント**&#x200B;をクリックします。 環境設定や情報に関連するポップアップを解除します。
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    使用可能なすべてのフォームが表示されます。
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## レッスン 2
 
@@ -96,10 +96,10 @@ AEM 6.5 Forms 環境を理解します。
 1. フォームの送信エンドポイントを作成します。
 
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    この特定のエンドポイントは、データを送信および表示するための例として機能します。 実際の運用では、独自のエンドポイントまたはデータソースを使用して、キャプチャされたデータを保存します。
 
@@ -108,13 +108,13 @@ AEM 6.5 Forms 環境を理解します。
    1. レッスン 1 で使用したブラウザータブで、AEM Forms web インターフェイスに移動し、**フォーム**／**フォームとドキュメント**&#x200B;に移動します。
 
    1. 「**作成**」をタップして、「アダプティブフォーム」を選択します。
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. 選択画面から、**コアコンポーネントを含んだ空白**&#x200B;テンプレートを選択し（下図を参照）「**次へ**」をクリックします。
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. `Contact us` を、フォームの&#x200B;**タイトル**&#x200B;として指定します。 フォームの&#x200B;**名前**&#x200B;が `contact-us` であることを確認します。
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+   1. `Contact us`をフォームの&#x200B;**タイトル**&#x200B;として指定します。フォームの&#x200B;**名前**&#x200B;が`contact-us`であることを確認してください。
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. 「**作成**」をクリックします。 ダイアログボックスが表示されます。
 
@@ -122,11 +122,11 @@ AEM 6.5 Forms 環境を理解します。
 
    1. コンポーネントブラウザーを開き、パネルコンポーネントを画面の中央にドラッグ＆ドロップします。
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. コンポーネントブラウザーからコンポーネントをドラッグ＆ドロップして、次のようなフォームを作成します。
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. コンテンツブラウザーを開いて、コンテナのガイドプロパティアイコンをクリックし、「**送信**」タブを開きます。
@@ -135,7 +135,7 @@ AEM 6.5 Forms 環境を理解します。
 
    1. 「**POSTリクエストを有効にする**」オプションを選択し、「**POST リクエストの URL**」テキストボックスにレッスン 2 で作成した REST エンドポイントを指定して、「**完了**」アイコンをクリックします。
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. アダプティブフォームを公開します。
 
@@ -159,7 +159,7 @@ AEM 6.5 Forms 環境を理解します。
 
 1. 管理者権限でコマンドプロンプトまたはシェルを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. コマンドプロンプトで、次のコマンドを使用して `c:\git` フォルダーに移動します。
 
@@ -182,25 +182,25 @@ AEM 6.5 Forms 環境を理解します。
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. 「**親フォルダー内のすべてのファイルの作成者を信頼する**」を選択し、「**はい、私は作成者を信頼します**」をクリックします。
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. `env_template` ファイルの名前を .env に変更します。  ファイル名を変更するには、**env_template** ファイルを右クリックして、「**名前を変更**」オプションを選択します。
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. .env ファイルの変数に次の値を設定して、ファイルを保存します。
 
    * **AEM_URL**：**パブリッシュ**&#x200B;インスタンスの URL を指定します。 例：`https://localhost:4502/`
 
-   * **AEM_ADAPTIVE_FORM**：フォームの名前を指定します。 例えば、`contact-us` のように指定します。
+   * **AEM_ADAPTIVE_FORM**：フォームの名前を指定します。 例：`contact-us`
 
    </br>
 
@@ -235,12 +235,12 @@ AEM 6.5 Forms 環境を理解します。
    >`npm run live` コマンドを実行した後、ブラウザーで 3～4 分以上空白の画面が表示される場合は、ブラウザーの URL の `localhost` を 127.0.0.1 に変更して **Enter** キーを押します。
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. Visual Studio Code で、`PROJECT\src\site\_variables.scss` ファイルを開きます。 `$error` のカラーは赤の網掛けです。
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. ブラウザーでフォームを送信して、「**名前（名）**」フィールドが赤くなるのを確認します。
 
@@ -271,7 +271,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 1. 管理者権限でコマンドプロンプトを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. コマンドプロンプトで、次のコマンドを使用して `c:\git`フォルダーに移動します。
 
@@ -300,13 +300,13 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    Visual Studio Code ウィンドウが開きます。
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 パブリッシュ環境でホストされるフォームをレンダリングするには、次の手順に従います。
 
 1. env_template ファイルを.env ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」オプションを選択します。
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +355,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
 1. 「**連絡先番号**」フィールドを選択し、ツールバーの&#x200B;**編集アイコン（鉛筆アイコン）**&#x200B;をクリックします。 ポップアップツールバーが表示されない場合は、編集モードに切り替えます。 右上の「**編集**」ボタンをクリックし、左にある「**プレビュー**」ボタンをクリックします。
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. ラベルを「**携帯電話番号**」に変更します フォーム内の空のスペースをクリックすると、フォームに加えた変更が保存されます。
 
@@ -397,7 +397,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. 管理者権限でコマンドプロンプトを開きます。
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. コマンドプロンプトで、次のコマンドを使用して `c:\git` フォルダーに移動します。
 
@@ -435,7 +435,7 @@ Material UI スタータープロジェクトを使用してローカルリポ�
 
 1. **env_template** ファイルを **.env** ファイルに名前変更します。 名前を変更するには、**env_template** ファイルを右クリックし、「**名前を変更**」を選択します。
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. .env ファイル内の変数に次の値を設定します。 変数を更新したら、ファイルを保存します。 **Ctrl + S** キーを使用してファイルを保存します。
 
@@ -506,7 +506,7 @@ Material UI コンポーネントのバリエーションを使用して、ヘ�
 
 1. 自動的に更新されない場合は、ブラウザーを更新し、テキスト入力コンポーネントが別のバリアントを使用していることを確認します。
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    この変更は、AEM Forms Serverのフォーム定義に変更を加えることなく、エンドユーザーに対して行われ、ヘッドレスに固有のものです
