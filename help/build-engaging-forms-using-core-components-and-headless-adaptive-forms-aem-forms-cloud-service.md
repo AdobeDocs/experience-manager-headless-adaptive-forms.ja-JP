@@ -6,9 +6,12 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
 source-wordcount: 2589
@@ -89,7 +92,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 1. フォームの送信エンドポイントを作成します。
 
    1. 新しいブラウザータブで、<https://pipedream.com/requestbin> を開きます。
-   1. **公開 bin を作成**をクリックし、エンドポイント URL をコピーします。
+   1. **公開 bin を作成**&#x200B;をクリックし、エンドポイント URL をコピーします。
       ![](/help/assets/screenshot2028114329.png){width="50%"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
@@ -99,10 +102,10 @@ AEM Forms as a Cloud Service 環境に慣れる。
    1. レッスン 1 で使用したブラウザータブで、AEM Forms as a Cloud Service web インターフェイスに移動し、フォーム＆ドキュメントに移動します。
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **作成**／**アダプティブフォーム**をクリックします。
+   1. **作成**／**アダプティブフォーム**&#x200B;をクリックします。
       ![](/help/assets/screenshot2028114629.png)
 
-   1. 選択画面から、**コアコンポーネントを使用した空白**テンプレートを選択します（下図を参照）。
+   1. 選択画面から、**コアコンポーネントを使用した空白**&#x200B;テンプレートを選択します（下図を参照）。
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. 「**スタイル**」タブをクリックし、「**wknd-theme**」テーマを選択します（下図を参照）。
@@ -113,7 +116,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    1. 「**作成**」をクリックします。 フォームの名前とタイトルを指定します。 例えば、**登録**&#x200B;などです。 「**作成**」をクリックします。
 
-   1. アダプティブフォームエディターが開きます。環境設定や情報に関するポップアップやダイアログを閉じる。左側のパネルのコンポーネントブラウザーをクリックし、空白フォームの上部と下部にそれぞれ&#x200B;**ヘッダー**&#x200B;と&#x200B;**フッター**のコンポーネントを追加します。
+   1. アダプティブフォームエディターが開きます。環境設定や情報に関するポップアップやダイアログを閉じる。左側のパネルのコンポーネントブラウザーをクリックし、空白フォームの上部と下部にそれぞれ&#x200B;**ヘッダー**&#x200B;と&#x200B;**フッター**&#x200B;のコンポーネントを追加します。
       ![](/help/assets/screenshot2028121929.png)
 
    1. コンポーネントブラウザーからコンポーネントをドラッグ＆ドロップして、次のようなフォームを作成します。
@@ -124,7 +127,7 @@ AEM Forms as a Cloud Service 環境に慣れる。
 
    1. **電話番号**&#x200B;コンポーネントをクリックして、ポップアップメニューを表示します。 **レンチアイコン**&#x200B;をクリックして、フィールドを設定します。
 
-   1. **検証タブ**&#x200B;を開き、**必須** フィールドにマークを付け、**完了**をクリックします。成功メッセージが表示されます。
+   1. **検証タブ**&#x200B;を開き、**必須** フィールドにマークを付け、**完了**&#x200B;をクリックします。成功メッセージが表示されます。
       ![](/help/assets/screenshot2028123529.png){width="50%"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%"}
@@ -411,7 +414,7 @@ React スタータープロジェクトを使用してローカルリポジト�
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**を押してから
+1. **react-starter-kit-aem-headless-forms** プロジェクトの開始に使用するコマンド プロンプト ウィンドウを開き、**CTRL+C**&#x200B;を押してから
 **Y**&#x200B;と入力し、Enter キーを押してnpm プロセスを終了します。 次の一連の演習と競合しないように、npm サーバーを停止することが重要です。
 
 1. Visual Studio Code とコマンドプロンプトウィンドウを閉じます。
