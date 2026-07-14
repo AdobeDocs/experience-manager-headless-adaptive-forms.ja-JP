@@ -9,22 +9,18 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
-source-wordcount: 943
-ht-degree: 96%
+source-wordcount: 946
+ht-degree: 95%
 
 ---
+
 
 # AEM Forms as a Cloud Service でのヘッドレスアダプティブフォームの有効化 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -33,23 +29,18 @@ AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを
 ## 検討事項
 
 * 新しい AEM Forms as a Cloud Service プログラムを作成すると、[ヘッドレスアダプティブフォームはご利用の環境で既に有効になっています](#are-adaptive-forms-core-components-enabled-for-my-environment)。
-
 * コアコンポーネントが[有効になっていない](#enable-components)、古い Forms as a Cloud Service プログラムを実行している場合は、まず Cloud Service リポジトリに [Adaptive Forms コアコンポーネントの依存関係を追加](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)します。 更新したリポジトリを各環境にデプロイして、ヘッドレスアダプティブフォームを有効にします。
-
 * Cloud Service 環境で既に[コアコンポーネントベースのアダプティブフォームを作成](create-a-headless-adaptive-form.md)できる場合、ヘッドレスアダプティブフォームは自動的に有効になります。 その後、これらのフォームをヘッドレスエクスペリエンスとして、モバイル、web、ネイティブアプリまたはフォームを必要とするサービスに配信できます。
 
 >[!NOTE]
 >
->
-> アドビは、開発者が AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることなく、ヘッドレスアダプティブフォームの開発をすぐに開始できるように、アダプティブフォーム[スターターキット（React アプリ）](create-and-publish-a-headless-form.md)を提供しています。 [ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
+>アドビは、開発者が AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることなく、ヘッドレスアダプティブフォームの開発をすぐに開始できるように、アダプティブフォーム[スターターキット（React アプリ）](create-and-publish-a-headless-form.md)を提供しています。 [ヘッドレスフォームを開発するための簡単なハンズオン](create-and-publish-a-headless-form.md)の後、Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にすることができます。
 
 ## AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にする
 
 AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にするには、以下の手順を順番どおりに実行します。
 
-<!-- Missing image ALT tag -->
-![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
-
+![ フォーム画像を有効にする](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. AEM Forms as a Cloud Service Git リポジトリのクローン {#clone-git-repository}
 
@@ -207,18 +198,18 @@ AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォー
    >[!NOTE]
    >
    >
-   >  `${appId}` を appId に置き換えます。
+   >`${appId}` を appId に置き換えます。
    >
-   >  `${appId}` を見つけるには、`[AEM Repository Folder]/all/pom.xml` ファイル内で `-packages/application/install` 用語を検索します。 `-packages/application/install` 用語の前のテキストが `${appId}` です。 例えば、次のコードは `myheadlessform` が `${appId}` です。
+   >`${appId}` を見つけるには、`[AEM Repository Folder]/all/pom.xml` ファイル内で `-packages/application/install` 用語を検索します。 `-packages/application/install` 用語の前のテキストが `${appId}` です。 例えば、次のコードは `myheadlessform` が `${appId}` です。
    >
-   >   ```
-   >             <embedded>
-   >                     <groupId>com.myheadlessform</groupId>
-   >                     <artifactId>myheadlessform.ui.apps<artifactId>
-   >                     <type>zip</type>
-   >                   <target>/apps/myheadlessform-packages/application install</target>
-   >             </embedded>
-   >   ```
+   >```
+   >         <embedded>
+   >                 <groupId>com.myheadlessform</groupId>
+   >                 <artifactId>myheadlessform.ui.apps<artifactId>
+   >                 <type>zip</type>
+   >               <target>/apps/myheadlessform-packages/application install</target>
+   >         </embedded>
+   >```
 
 1. `[AEM Repository Folder]/all/pom.xml` ファイルの `<dependencies>` セクションに、次の依存関係を追加し、ファイルを保存します。
 
