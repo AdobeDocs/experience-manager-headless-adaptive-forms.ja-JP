@@ -5,7 +5,8 @@ user-guide-description: Adobe Experience Manager ヘッドレスアダプティ�
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+nudge: true
+source-git-commit: 2b4840d39f7e98684003a941e96f45dede196f23
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 75%
@@ -16,7 +17,7 @@ ht-degree: 75%
 # Adobe Experience Manager ヘッドレスアダプティブフォーム {#using}
 
 + [概要](overview.md)
-+ {hide-from-toc}[概要テスト &#x200B;](overview-testing.md)
++ {hide-from-toc}[概要テスト ](overview-testing.md)
 + [アーキテクチャ](architecture.md)
 + [ヘッドレスフォームについて – 概念とFAQ](understanding-headless-forms.md)
 + クイックセットアップ {#quick-setup}
@@ -29,7 +30,7 @@ ht-degree: 75%
    + [スターターキットを使用したヘッドレスフォームの作成と公開](create-and-publish-a-headless-form.md)
    + [カスタム React ライブラリを使用したヘッドレスフォームのレンダリング](use-google-material-ui-react-components-to-render-a-headless-form.md)
    + [カスタムコンポーネントを使用したヘッドレスフォームのレンダリング](developing-for-headless-forms-using-your-own-components.md)
-   + {hide-from-toc}[&#x200B; イベントを使用してフォームデータを処理および送信](use-events-to-handle-and-submit-form-data.md)
+   + {hide-from-toc}[ イベントを使用してフォームデータを処理および送信](use-events-to-handle-and-submit-form-data.md)
    + [モバイルフォームのベストプラクティス](mobile-forms-best-practices.md)
 + ヘッドレスアダプティブフォームの作成 {#authoring-headless-adaptive-forms}
    + [アダプティブフォームエディターを使用したヘッドレスアダプティブフォームの作成](create-a-headless-adaptive-form.md)
