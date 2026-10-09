@@ -53,7 +53,7 @@ Adobe Experience Manager（AEM）ヘッドレスアダプティブフォーム�
 * フォームアプリケーションで独自の UI コンポーネントを再利用。
 * [Adobe Experience Manager Forms の機能](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)を活用。
 
-モバイルフォームとオフラインフォームのユースケースの場合は、独自のネイティブアプリを構築し、ヘッドレスアダプティブForms APIを介してフォーム定義を取得することをお勧めします。 詳しくは、[ モバイルフォームのベストプラクティス ](mobile-forms-best-practices.md)を参照してください。
+モバイルフォームとオフラインフォームのユースケースの場合は、独自のネイティブアプリを構築し、ヘッドレスアダプティブForms APIを介してフォーム定義を取得することをお勧めします。 詳しくは、[&#x200B; モバイルフォームのベストプラクティス &#x200B;](mobile-forms-best-practices.md)を参照してください。
 
 さらに、任意の UI フレームワークとプログラミング言語を使用して、フォームをレンダリングする独自のコンポーネントを自由に開発できます。 すぐに利用可能な React コンポーネントを使用して、ヘッドレスアダプティブフォームをレンダリングすることもできます。
 

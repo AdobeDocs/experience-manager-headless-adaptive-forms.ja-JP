@@ -54,7 +54,7 @@ AEM Forms as a Cloud Service でヘッドレスアダプティブフォームを
 
 AEM Forms as a Cloud Service 環境でヘッドレスアダプティブフォームを有効にするには、以下の手順を順番どおりに実行します。
 
-![ フォーム画像を有効にする](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
+![&#x200B; フォーム画像を有効にする](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. AEM Forms as a Cloud Service Git リポジトリのクローン {#clone-git-repository}
 

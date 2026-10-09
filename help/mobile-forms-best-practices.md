@@ -41,7 +41,7 @@ ht-degree: 8%
 
 次のことを実現するネイティブモバイルアプリケーション（iOSまたはAndroid）を構築します。
 
-1. **ヘッドレスフォーム定義を取得します** - [ ヘッドレスアダプティブForms API](https://opensource.adobe.com/aem-forms-af-runtime/api/)を使用して、必要に応じてフォーム JSONを取得します（例えば、ユーザーがフォームを開いたり、アプリでフォームに移動したりする場合）。 使用可能なフォームを一覧表示し、IDでフォーム定義を取得できます。
+1. **ヘッドレスフォーム定義を取得します** - [&#x200B; ヘッドレスアダプティブForms API](https://opensource.adobe.com/aem-forms-af-runtime/api/)を使用して、必要に応じてフォーム JSONを取得します（例えば、ユーザーがフォームを開いたり、アプリでフォームに移動したりする場合）。 使用可能なフォームを一覧表示し、IDでフォーム定義を取得できます。
 
 2. **アプリ内でフォームをレンダリングします** – 好みのUI フレームワーク（React Nativeやネイティブビューなど）を使用して、JSONからフォームをレンダリングします。 Forms Web SDKと既存のヘッドレスアダプティブフォーム React コンポーネントを、スタックに合わせて使用したり、同じJSON構造を使用する独自のレンダラーを構築したりできます。
 
@@ -52,7 +52,7 @@ ht-degree: 8%
 ## 概要 {#getting-started}
 
 * [AEM ヘッドレスアダプティブフォームの概要](overview.md) – 機能と概念。
-* [ ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/) - フォームのリスト、取得、検証、送信をプログラムで行います。
-* [ アーキテクチャ ](architecture.md) - ヘッドレスアダプティブフォームの仕組みとフロントエンドアプリでの利用方法。
+* [&#x200B; ヘッドレスアダプティブフォーム API](https://opensource.adobe.com/aem-forms-af-runtime/api/) - フォームのリスト、取得、検証、送信をプログラムで行います。
+* [&#x200B; アーキテクチャ &#x200B;](architecture.md) - ヘッドレスアダプティブフォームの仕組みとフロントエンドアプリでの利用方法。
 
-ステップバイステップの統合については、[ ヘッドレスフォームの作成と公開](create-and-publish-a-headless-form.md)および[開発者ポータル ](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ja)を参照してください。
+ステップバイステップの統合については、[&#x200B; ヘッドレスフォームの作成と公開](create-and-publish-a-headless-form.md)および[開発者ポータル &#x200B;](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ja)を参照してください。

@@ -59,7 +59,7 @@ AEM ヘッドレスアダプティブFormsでは、フォームはAdobe Experien
 | **状態と検証** | ライブラリコンポーネントに関連付け | API/フックを介して公開。任意のUIがそれにバインドできます |
 | **チャネル** | 通常はweb （1つのフレームワーク） | 同じフォーム定義を使用して、web、モバイル、チャットなどを促進できます。 |
 
-AEM ヘッドレスアダプティブ Formsを使用すると、AEMで[ フォームを作成して公開できます](create-and-publish-a-headless-form.md)。任意のクライアント（React、Angular、ネイティブモバイル、チャットボット）は[ フォーム JSON](architecture.md)を取得し、そのチャネルに適したUIでレンダリングできます。
+AEM ヘッドレスアダプティブ Formsを使用すると、AEMで[&#x200B; フォームを作成して公開できます](create-and-publish-a-headless-form.md)。任意のクライアント（React、Angular、ネイティブモバイル、チャットボット）は[&#x200B; フォーム JSON](architecture.md)を取得し、そのチャネルに適したUIでレンダリングできます。
 
 ### UI ベースのフォームソリューションの代わりにヘッドレスフォームを使用する必要があるのはなぜですか？
 
@@ -91,7 +91,7 @@ AEM ヘッドレスアダプティブ Formsを使用すると、AEMで[ フォ�
 
 * **関心の分離** - フォーム構造、ルール、検証は、データとロジック レイヤーに存在します。UI レイヤーは、ユーザーのアクションのみをレンダリングおよびディスパッチします。 これにより、テストの安定性と再利用を向上できます。
 * **チャネルの独立性** - 1つのフォーム定義で異なるUI （React web、React Native、Angular、音声など）を操作できます。 AEM ヘッドレスアダプティブFormsは、次の目的のために構築されています：[React、SPA、web、モバイルなど、様々な目的で一度構築すれば](overview.md)。
-* **コードを使用しないオーサリング** - ビジネスユーザーは、[ アダプティブフォームエディター](create-a-headless-adaptive-form.md)でフィールドとルールを変更できます。開発者は、コンテンツの変更のために再デプロイする必要はありません。
+* **コードを使用しないオーサリング** - ビジネスユーザーは、[&#x200B; アダプティブフォームエディター](create-a-headless-adaptive-form.md)でフィールドとルールを変更できます。開発者は、コンテンツの変更のために再デプロイする必要はありません。
 * **既存のスタックとの統合** - デザインシステム、状態管理、ルーティングを維持します。ヘッドレスレイヤーでは、フォームの状態、検証、送信のみを処理します。
 
 ## 導入と技術的な質問 {#implementation-technical}
@@ -104,7 +104,7 @@ AEM ヘッドレスアダプティブFormsでは、ステートは&#x200B;**Form
 * **React バインダー** - React コンポーネントが現在の状態とハンドラーを受け取るように、コントローラーにフック（`useRuleEngine`など）を提供します。同じ状態は、コア APIを介してReact以外のUIで使用できます。
 * **状態**&#x200B;には、フィールド値、可視性、有効性、およびフォームモデルで定義されているすべてのカスタムプロパティが含まれます。
 
-UI コンポーネントは、状態とハンドラー（例：`[state, handlers] = useRuleEngine(props)`）を受け取ります。ユーザーが操作を行うと、`state`からレンダリングして`handlers`を呼び出します。 ランタイムは、フォームの定義とルールに合わせて状態を維持します。 [ アーキテクチャ ](architecture.md)および[ カスタムコンポーネントを使用してヘッドレスフォームをレンダリング ](developing-for-headless-forms-using-your-own-components.md)するを参照してください。
+UI コンポーネントは、状態とハンドラー（例：`[state, handlers] = useRuleEngine(props)`）を受け取ります。ユーザーが操作を行うと、`state`からレンダリングして`handlers`を呼び出します。 ランタイムは、フォームの定義とルールに合わせて状態を維持します。 [&#x200B; アーキテクチャ &#x200B;](architecture.md)および[&#x200B; カスタムコンポーネントを使用してヘッドレスフォームをレンダリング &#x200B;](developing-for-headless-forms-using-your-own-components.md)するを参照してください。
 
 ### ヘッドレスフォーム設定での検証の仕組み
 
@@ -123,7 +123,7 @@ UIに検証ロジックを実装しません。ランタイムによって提供
 * スキーマからヘッドレスアダプティブフォーム JSONを&#x200B;**派生または生成**&#x200B;して（例：JSON スキーマをフォーム JSONに変換して）、信頼できる唯一の情報源がスキーマの検証とフォーム構造の両方を促進できるようにします。
 * フォーム JSON以外の&#x200B;**カスタム検証**&#x200B;では、イベントハンドラーまたは送信前に独自の検証ツール（Yup/Zod/Joi）を実行し、結果をフォームの状態またはブロック送信にプッシュできます。 統合ポイントは、状態と送信に使用するフック/APIと同じです。
 
-[ アダプティブ Forms仕様](/help/assets/headless-adaptive-forms-specification.pdf)と[JSON式](architecture.md)は、ランタイムで使用されるルールと制約モデルを定義します。
+[&#x200B; アダプティブ Forms仕様](/help/assets/headless-adaptive-forms-specification.pdf)と[JSON式](architecture.md)は、ランタイムで使用されるルールと制約モデルを定義します。
 
 ### 非同期検証（ユーザー名の可用性など）を処理するにはどうすればよいですか？
 
@@ -133,15 +133,15 @@ UIに検証ロジックを実装しません。ランタイムによって提供
 * **カスタムコンポーネント**&#x200B;では、同じステート/ハンドラーフックを使用してバックエンド（ユーザー名可用性APIなど）を呼び出し、フィールドの有効性を更新するか、UIで表示するランタイム APIまたはローカル状態を介してエラーを表示します。
 * または、ぼかし時または送信する前に&#x200B;**チェックを実行し、非同期チェックに失敗した場合は、カスタムメッセージでフィールドの状態を「無効」に設定します。**
 
-正確なパターンは、アプリが[ ビジネスルールプロセッサー](architecture.md)およびカスタムコンポーネントとどのように統合されるかによって異なります。
+正確なパターンは、アプリが[&#x200B; ビジネスルールプロセッサー](architecture.md)およびカスタムコンポーネントとどのように統合されるかによって異なります。
 
 ### ヘッドレスフォームを使用してAPIにデータを送信するにはどうすればよいですか？
 
 送信はUIから切り離されます。
 
-* **AEM送信アクション** - AEMでフォームを設定して、REST エンドポイント、メール、または統合（Microsoft Dynamics、Salesforceなど）に送信します。 フォームは、実際のHTTP/バックエンド呼び出しを処理するAEMを通じて送信されます。 [ イベントを使用してフォームデータを処理および送信する](use-events-to-handle-and-submit-form-data.md)を参照してください。
+* **AEM送信アクション** - AEMでフォームを設定して、REST エンドポイント、メール、または統合（Microsoft Dynamics、Salesforceなど）に送信します。 フォームは、実際のHTTP/バックエンド呼び出しを処理するAEMを通じて送信されます。 [&#x200B; イベントを使用してフォームデータを処理および送信する](use-events-to-handle-and-submit-form-data.md)を参照してください。
 * **クライアントサイドの送信** - アプリは、送信をリッスンしたり、ランタイム状態からフォームデータを収集したり、独自のAPIに送信したりできます。 [HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/)のドキュメントリスト、取得、検証、送信、送信状態の追跡。
-* **事前入力** - データはREST エンドポイントまたはサーバーサイドを介して事前入力できるため、フォームが読み込まれると、状態が既に入力されます。 [ ストーリーブック – 事前入力の例](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data)を参照してください。
+* **事前入力** - データはREST エンドポイントまたはサーバーサイドを介して事前入力できるため、フォームが読み込まれると、状態が既に入力されます。 [&#x200B; ストーリーブック – 事前入力の例](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data)を参照してください。
 
 ## UIとデザイン制御 {#ui-design-control}
 
@@ -149,9 +149,9 @@ UIに検証ロジックを実装しません。ランタイムによって提供
 
 はい。 これがヘッドレスフォームの主な利点です。 AEM ヘッドレスアダプティブFormsの場合：
 
-* 独自のコンポーネントを&#x200B;**マップ**&#x200B;して、フォームモデル（フィールドタイプまたはリソースタイプ別）にマッピングします。 [ カスタムコンポーネントを使用してヘッドレスフォームをレンダリング ](developing-for-headless-forms-using-your-own-components.md)および[Google Material UI React コンポーネントを使用してヘッドレスフォームをレンダリング ](use-google-material-ui-react-components-to-render-a-headless-form.md)を参照してください。
+* 独自のコンポーネントを&#x200B;**マップ**&#x200B;して、フォームモデル（フィールドタイプまたはリソースタイプ別）にマッピングします。 [&#x200B; カスタムコンポーネントを使用してヘッドレスフォームをレンダリング &#x200B;](developing-for-headless-forms-using-your-own-components.md)および[Google Material UI React コンポーネントを使用してヘッドレスフォームをレンダリング &#x200B;](use-google-material-ui-react-components-to-render-a-headless-form.md)を参照してください。
 * ランタイムは&#x200B;**状態とハンドラー**&#x200B;を提供します。コンポーネントはデザインシステムを使用してレンダリングされ、ハンドラーを呼び出して、フォームロジックが同期したままになります。
-* **React Spectrum**、Material UI、Chakra UI、または任意のカスタムコンポーネントライブラリを使用できます。[仕様](/help/assets/headless-adaptive-forms-specification.pdf)は、カスタムコンポーネント（Chakra UI、Vue.jsなど）用に拡張できます。 [FAQ - カスタムフレームワーク ](faq.md#is-it-possible-to-use-headless-adaptive-forms-with-custom-frameworks)を参照してください。
+* **React Spectrum**、Material UI、Chakra UI、または任意のカスタムコンポーネントライブラリを使用できます。[仕様](/help/assets/headless-adaptive-forms-specification.pdf)は、カスタムコンポーネント（Chakra UI、Vue.jsなど）用に拡張できます。 [FAQ - カスタムフレームワーク &#x200B;](faq.md#is-it-possible-to-use-headless-adaptive-forms-with-custom-frameworks)を参照してください。
 
 ### ヘッドレスフォームはアクセシビリティサポート（ARIA、キーボード処理）を提供しますか？
 
@@ -171,21 +171,21 @@ UIに検証ロジックを実装しません。ランタイムによって提供
 * 値、表示、および有効性には&#x200B;**state**&#x200B;を使用します。値とトリガーの検証を更新するには、**ハンドラー**&#x200B;を使用します。
 * 選択したUI ライブラリで日付選択またはカスタムドロップダウンをレンダリングします。変更の際には、フォームの状態が正しいままになるように、新しい値でハンドラーを呼び出します。
 
-フィールドタイプとリソースタイプ別のマッピングについては、[ カスタムコンポーネントを使用してヘッドレスフォームをレンダリング ](developing-for-headless-forms-using-your-own-components.md)するを参照してください。
+フィールドタイプとリソースタイプ別のマッピングについては、[&#x200B; カスタムコンポーネントを使用してヘッドレスフォームをレンダリング &#x200B;](developing-for-headless-forms-using-your-own-components.md)するを参照してください。
 
 ### フィールド（ダイナミックフォーム）を動的に追加または削除できますか？
 
 フォーム構造は、サーバーから返された&#x200B;**フォーム JSON**&#x200B;によって定義されます。 動的な動作は、次の方法で実現されます。
 
-* **形式のJSON**&#x200B;のルール – 式に基づいて値を表示/非表示、有効/無効、または設定します。 [ ビジネスルールプロセッサー](architecture.md)はこれらのルールを実行します。コンポーネントは`state.visible`などに反応します。
+* **形式のJSON**&#x200B;のルール – 式に基づいて値を表示/非表示、有効/無効、または設定します。 [&#x200B; ビジネスルールプロセッサー](architecture.md)はこれらのルールを実行します。コンポーネントは`state.visible`などに反応します。
 * **サーバー駆動構造** – 異なるユーザーまたはコンテキストは、異なるフォーム JSONを受け取ることができます（例：異なるステップまたはセクション）。そのため、「動的」とは、「リクエストごとに異なるフォーム定義」を意味します。
 * **クライアントサイドの変更** - アプリがフォームモデルを変更できる場合（繰り返し可能な構造の項目の追加や削除など）、ランタイムはそれを反映できます。正確な機能は、フォームスキーマとランタイム APIによって異なります。
 
-[ ストーリーブック ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)には、動的な動作の例が含まれています。
+[&#x200B; ストーリーブック &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)には、動的な動作の例が含まれています。
 
 ### コンディショナルフィールド（入力に基づいて表示/非表示）を処理するにはどうすればよいですか？
 
-条件付き表示は、ビジネスルールプロセッサーによって評価されるJSON フォームの&#x200B;**ルール**&#x200B;によって駆動されます。 条件を定義します（例：「フィールド AがXに等しい場合、フィールド Bを表示」）。ランタイムの更新状態（例：`state.visible`）。 コンポーネントは、**状態**&#x200B;を尊重する必要があります（例：`if (!state.visible) return null;`）。 状態からのレンダリング以外に、表示/非表示に追加のUI ロジックは必要ありません。 カスケーディングと条件付きの動作は、[ アダプティブ Formsの仕様](/help/assets/headless-adaptive-forms-specification.pdf)で文書化され、[ ストーリーブック – カスケーディングフィールド ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down)で説明されています。 [FAQ - カスケーディングフィールド ](faq.md#do-headless-adaptive-forms-support-cascading-fields)も参照してください。
+条件付き表示は、ビジネスルールプロセッサーによって評価されるJSON フォームの&#x200B;**ルール**&#x200B;によって駆動されます。 条件を定義します（例：「フィールド AがXに等しい場合、フィールド Bを表示」）。ランタイムの更新状態（例：`state.visible`）。 コンポーネントは、**状態**&#x200B;を尊重する必要があります（例：`if (!state.visible) return null;`）。 状態からのレンダリング以外に、表示/非表示に追加のUI ロジックは必要ありません。 カスケーディングと条件付きの動作は、[&#x200B; アダプティブ Formsの仕様](/help/assets/headless-adaptive-forms-specification.pdf)で文書化され、[&#x200B; ストーリーブック – カスケーディングフィールド &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down)で説明されています。 [FAQ - カスケーディングフィールド &#x200B;](faq.md#do-headless-adaptive-forms-support-cascading-fields)も参照してください。
 
 ## パフォーマンスおよびスケーラビリティ {#performance-scalability}
 
