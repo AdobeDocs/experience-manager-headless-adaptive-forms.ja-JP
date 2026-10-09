@@ -1,6 +1,6 @@
 ---
 title: Google マテリアル UI の React コンポーネントを使用したヘッドレスフォームのレンダリング
-description: Google マテリアル UI の React コンポーネントを使用してヘッドレスフォームをレンダリングする方法を説明します。 この包括的なガイドでは、カスタムのヘッドレスアダプティブフォームコンポーネントを作成してマッピングし、Google マテリアル UI の React コンポーネントを使用してヘッドレスアダプティブフォームのスタイルを設定する手順を説明します。
+description: Google Material-UI React コンポーネントを使用してヘッドレスフォームをレンダリングする方法を説明します。 この包括的なガイドでは、カスタムのヘッドレスアダプティブフォームコンポーネントを作成してマッピングし、Google Material-UI React コンポーネントを使用してヘッドレスアダプティブフォームのスタイルを設定する手順を説明します。
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -8,23 +8,33 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-TQID: https://experienceleague.adobe.com/xj-VI30ga7Ige8ljIaoCD0IWQt-jHzo4hsqOcH4ibGs
+TQID: 'https://experienceleague.adobe.com/xj-VI30ga7Ige8ljIaoCD0IWQt-jHzo4hsqOcH4ibGs'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Beginner
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1060'
 ht-degree: 98%
-
 ---
-
 # カスタム React ライブラリを使用したヘッドレスフォームのレンダリング
 
 <!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
@@ -60,7 +70,7 @@ Google マテリアル UI コンポーネントを使用してフォームをレ
     
 ```
 
-Google マテリアル UI の npm ライブラリがインストールされ、スターターキットの依存関係にライブラリが追加されます。 これで、マテリアル UI コンポーネントを使用して、フォームコンポーネントをレンダリングできるようになりました。
+Google マテリアル UI の npm ライブラリがインストールされ、それらのライブラリがスターターキットの依存関係として追加されます。 これで、マテリアル UI コンポーネントを使用して、フォームコンポーネントをレンダリングできるようになりました。
 
 
 ## &#x200B;2. カスタム React コンポーネントの作成
@@ -163,7 +173,7 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
    ![](assets/material-text-field-form-rendetion.png)
 
 
-   同様に、Message（&quot;fieldType&quot;: &quot;multiline-input&quot;）フィールド用と Rate the Service フィールド（&quot;fieldType&quot;: &quot;number-input&quot;）用のカスタムコンポーネントを作成することができます。 Message フィールドと Rate the Service フィールドのカスタムコンポーネント用に次の Git リポジトリのクローンを作成できます。
+   同様に、メッセージ（&quot;fieldType&quot;: &quot;multiline-input&quot;）フィールド用とサービスの評価（&quot;fieldType&quot;: &quot;number-input&quot;）フィールド用のカスタムコンポーネントを作成することができます。 Message フィールドと Rate the Service フィールドのカスタムコンポーネント用に次の Git リポジトリのクローンを作成できます。
 
    [https://github.com/singhkh/react-starter-kit-aem-headless-forms](https://github.com/singhkh/react-starter-kit-aem-headless-forms)
 
@@ -171,6 +181,6 @@ Google マテリアル UI の npm ライブラリがインストールされ、�
 
 Google マテリアル UI を使用したカスタムコンポーネントでフォームをレンダリングすることに成功しました。 「Submit」ボタン（対応する Google マテリアル UI コンポーネントにマッピングされている）をクリックして、フォームを送信してみましたか？ まだであれば、まず試してみてください。
 
-フォームはデータを任意のデータソースに送信しますか？ そうでなくても、 ご心配なく。 その理由は、フォームがランタイムライブラリと通信するように設定されていないからです。
+フォームはデータをいずれかのデータソースに送信しますか？ そうでなくても、 ご心配なく。 その理由は、フォームがランタイムライブラリと通信するように設定されていないからです。
 
 ランタイムライブラリと通信できるようにフォームを設定するには、どうすればよいでしょうか？ すべてを詳しく説明する記事が近日リリース予定です。 どうぞお楽しみに。

@@ -3,13 +3,14 @@ title: AEM ヘッドレスアダプティブフォームの開発環境のセッ
 description: AEM ヘッドレスアダプティブフォームの開発環境のセットアップ
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 90%
-
+source-wordcount: '805'
+ht-degree: 89%
 ---
-
 
 # ローカル開発環境のセットアップ {#headless-adaptive-forms-setup-development-environment}
 
@@ -19,7 +20,7 @@ ht-degree: 90%
  After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. 
 -->
 
-ヘッドレスアダプティブフォームを使用するために、React、Git および Maven を使用してアプリケーションを構築するための知識が必要です。
+ヘッドレスアダプティブフォームを使用するには、react、Git、Mavenを使用してアプリケーションを構築するための知識が必要です。
 
 <!-- 
 
@@ -66,7 +67,7 @@ AEM SDK をインストールするには、ローカルマシンが次の最小
 
 AEM as a Cloud Service SDK（AEM SDK）は、ヘッドレスアダプティブフォームを作成およびテストするためのローカルエクスペリエンスを開発者に提供します。 AEM as a Cloud Service SDK はヘッドレスアダプティブフォームの作成とプレビューの両方に使用できるので、開発に関連するほとんどの検証をローカルで実行できるようになります。 ローカルのオーサーインスタンスをセットアップするには、次の手順を実行します。
 
-1. 最新の [!DNL Adobe Experience Manager] as a Cloud Service SDK を[ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)します。 「公開日」列を使用すると、ファイルを並べ替えて最新の SDK を簡単に見つけることができます。
+1. 最新の [!DNL Adobe Experience Manager] as a Cloud Service SDK を[ダウンロード](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)します。 「公開日」列を使用すると、並べ替えて最新の SDK を簡単に見つけることができます。
 SDK は .zip 形式です。 サポートされているバージョンは、aem-sdk-2022.7.8085.20220725T140323Z-220700.zip 以降です。
 
    ![ソフトウェア配布ポータルからの AEM Cloud Service SDK のダウンロード](assets/software-distribution.png)
@@ -101,11 +102,11 @@ SDK は .zip 形式です。 サポートされているバージョンは、aem
 
 番号の後に PRERELEASE と表示されていない場合は、サーバーを停止して `[AEM SDK installation]/crx-quickstart folder` を削除し、`-r prerelease` スイッチを付けて AEM SDK の .jar ファイルを再起動します。 その他のオプションについては、[トラブルシューティング](/help/troubleshooting.md)を参照してください。
 
-### &#x200B;2. AEM Forms アーカイブ（AEM Forms Cloud Service アドオン）のAEM SDKへの追加 {#add-forms-archive}
+### &#x200B;2. AEM Forms アーカイブ（AEM Forms Cloud Service アドオン）をAEM SDKに追加する {#add-forms-archive}
 
 AEM Forms as a Cloud Service 機能アーカイブ（AEM Forms Cloud Service アドオン）には、ローカル開発環境でヘッドレスアダプティブフォームを作成するためのツールが用意されています。 機能アーカイブをインストールするには、次の手順を実行します。
 
-1. 最新の [!DNL AEM Forms] 機能アーカイブ（AEM Forms アドオン）を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20)からダウンロードして展開します。 「公開日」列を使用すると、ファイルを並べ替えて最新の SDK を簡単に見つけることができます。 サポートされているバージョンは、aem-forms-addon-2022.07.06.02-220600 以降です。
+1. 最新の [!DNL AEM Forms] 機能アーカイブ（AEM Forms アドオン）を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20)からダウンロードして展開します。 「公開日」列を使用すると、並べ替えて最新の SDK を簡単に見つけることができます。 サポートされているバージョンは、aem-forms-addon-2022.07.06.02-220600 以降です。
 
 1. crx-quickstart/install ディレクトリに移動します。 フォルダーが存在しない場合は作成します。
 1. AEM SDK インスタンスを停止します。 AEM SDK インスタンスを実行しているコマンドプロンプトウィンドウを終了すると、AEM を停止できます。
