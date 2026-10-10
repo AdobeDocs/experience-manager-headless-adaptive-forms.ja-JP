@@ -9,35 +9,46 @@ level: Beginner, Intermediate
 keywords: ヘッドレス CMS, アダプティブフォーム, ヘッドレス UI, ヘッドフル CMS, 音声アシスタント, Alexa, チャットボット, WhatsApp アーキテクチャ
 index: true
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-TQID: https://experienceleague.adobe.com/ohy-aaFe-yZDL8uQFFps1jKHFRW5ZxB77GVsOvRZDy4
+TQID: 'https://experienceleague.adobe.com/ohy-aaFe-yZDL8uQFFps1jKHFRW5ZxB77GVsOvRZDy4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Beginner
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: '361'
 ht-degree: 90%
-
 ---
-
 # はじめに
 
-Adobe Experience Manager（AEM）ヘッドレスアダプティブフォームは、Adobe Experience Manager プラットフォーム内でヘッドレス web フォームを作成および管理するためのソリューションです。 この機能により、組織は、従来のグラフィカルユーザーインターフェイスの代わりに API を使用してアクセスおよび操作できるインタラクティブフォームを作成、公開および管理できるようになります。 AEM ヘッドレスアダプティブフォームを使用すると、フォームの開発とデプロイメントにおける柔軟性とスケーラビリティが高まると共に、フォームのデザインと機能を特定のニーズに合わせてカスタマイズできるので、ユーザーエクスペリエンスを向上させることができます。 このソリューションでは、AEM とヘッドレステクノロジーの機能を使用して、様々なユースケースやアプリケーションに合わせて web フォームを作成、管理およびデプロイできる堅牢なプラットフォームを提供します。
+Adobe Experience Manager（AEM）ヘッドレスアダプティブフォームは、Adobe Experience Manager プラットフォーム内でヘッドレス web フォームを作成および管理するためのソリューションです。 この機能により、組織は、従来のグラフィカルユーザーインターフェイスの代わりに API を使用してアクセスおよび操作できるインタラクティブフォームを作成、公開および管理できるようになります。 AEM Headless Adaptive Forms を使用すると、フォームの開発とデプロイメントにおける柔軟性とスケーラビリティが高まると共に、フォームのデザインと機能を特定のニーズに合わせてカスタマイズできるので、ユーザーエクスペリエンスを向上させることができます。 このソリューションでは、AEM とヘッドレステクノロジーの機能を使用して、様々なユースケースやアプリケーションに合わせて web フォームを作成、管理およびデプロイできる堅牢なプラットフォームを提供します。
 
 ![任意の web サイト、アプリケーションまたは非視覚的なインタラクション内にフォームを作成し、ネイティブにレンダリングする](/help/assets/headless-forms-for-any-device.jpeg)
 
 ヘッドレスアダプティブフォームは、次の操作に役立ちます。
 
-* 高品質のマルチチャネルフォームを好みのプログラミング言語で作成。
+* 高品質のマルチチャネルフォームを好みのプログラミング言語で作成します。
 * デスクトップおよびモバイルアプリ、web サイト、チャットアプリケーションにフォームをネイティブに統合。
 * フォームアプリケーションで独自の UI コンポーネントを再利用。
 * [Adobe Experience Manager Forms の機能](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)を活用。
@@ -46,11 +57,11 @@ Adobe Experience Manager（AEM）ヘッドレスアダプティブフォーム�
 
 さらに、任意の UI フレームワークとプログラミング言語を使用して、フォームをレンダリングする独自のコンポーネントを自由に開発できます。 すぐに利用可能な React コンポーネントを使用して、ヘッドレスアダプティブフォームをレンダリングすることもできます。
 
-## ヘッドレスアダプティブフォームを使用できるユーザー {#who-can-use-headless-adaptive-forms}
+## ヘッドレスアダプティブフォームは誰が使用できますか？ {#who-can-use-headless-adaptive-forms}
 
 最新の JavaScript フレームワークに精通しているすべてのフロントエンド開発者が、ヘッドレスアダプティブフォームを使用できます。 開発者は、React などのフロントエンド言語に関する既存の専門知識を活用して、エンタープライズクラスの優れたデータキャプチャエクスペリエンスを作成できます。
 
-ヘッドレスアダプティブフォームを開発するために、Adobe Experience Manager の事前知識は必要ありません。
+ヘッドレスアダプティブフォームを開発するために、Adobe Experience Manager に関する事前知識は必要ありません。
 
 <!-- 
 ## How to join the early adopter program? {#how-to-join-early-adopter-forms}

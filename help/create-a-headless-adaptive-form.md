@@ -8,25 +8,36 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+TQID: 'https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Content structure
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1328
+source-wordcount: '1328'
 ht-degree: 100%
-
 ---
-
 # アダプティブフォームエディターを使用したヘッドレスアダプティブフォームの作成 {#create-a-headless-adaptive-form-using-adaptive-forms-editor}
 
 AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォームを作成するための使いやすいエディターを提供しています。 24 を超えるコアコンポーネントを使用できるので、エディターでコンポーネントをドラッグ＆ドロップするだけで、フォームを簡単に作成できます。 また、ルールエディターを使用すると、フォームフィールドに検証を追加できます。
@@ -59,10 +70,10 @@ AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォーム
 
 * [AEM Forms as a Cloud Service オーサーインスタンス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service)または[ローカル AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) 環境へのアクセス
 
-* **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。 また、テーマを定義してアクションを送信するオプションも提供します。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
+* **アダプティブフォームテンプレート**：テンプレートは基本構造を提供し、アダプティブフォームのアピアランス（レイアウトとスタイル）を定義します。 これには、特定のプロパティやコンテンツ構造を有するフォーマット済みのコンポーネントが含まれます。 また、テーマと送信アクションを定義するオプションも提供します。 テーマは、ルックアンドフィールと送信アクションを定義し、アダプティブフォームの送信時に実行するアクションを定義します。 例えば、収集したデータをデータソースに送信する場合などです。 クラウドサービスでは、空白という名前の OOTB テンプレートが提供されます。
 
-   * `blank Adaptive Forms (Core Components)` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
-   * 最初から[新しいアダプティブフォーム（コアコンポーネント）テンプレートを作成する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)こともできます。
+  * `blank Adaptive Forms (Core Components)` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
+  * 最初から[新しいアダプティブフォーム（コアコンポーネント）テンプレートを作成する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)こともできます。
 
 * **アダプティブフォームのテーマ**：テーマには、コンポーネントとパネル向けのスタイル設定の詳細が含まれます。 スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。 テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。  `Canvas` テンプレートは、すべての新しい AEM Forms as a Cloud Service プログラムに含まれています。
 
@@ -103,7 +114,7 @@ AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォーム
 
 1. （オプション）「**[!UICONTROL 配信]**」タブで、アダプティブフォームの公開日または非公開日を指定することができます。
 
-1. 「**[!UICONTROL 作成]**」をタップします。 アダプティブフォームのタイトル、名前、保存場所を指定するダイアログボックスが表示されます。
+1. 「**[!UICONTROL 作成]**」をタップします。 アダプティブフォームのタイトル、名前、保存場所を指定するダイアログが表示されます。
 
    * **[!UICONTROL タイトル]**：フォームの表示名を指定します。 タイトルを指定すると、[!DNL Experience Manager Forms] ユーザーインターフェイス内のフォームを特定しやすくなります。
    * **[!UICONTROL 名前：]**&#x200B;フォームの名前を指定します。 指定された名前のノードがリポジトリーに作成されます。 タイトルを入力し始めると、名前フィールドの値が自動的に生成されます。 候補として入力された値は変更可能です。 「ドキュメント名」フィールドには、英数字、ハイフン、アンダースコアのみを使用できます。 無効な入力は、すべてハイフンに置き換えられます。
@@ -116,7 +127,7 @@ AEM Forms as a Cloud Service は、ヘッドレスアダプティブフォーム
 
 ## アダプティブフォームの JSON レンディションの表示 {#preview-form}
 
-アダプティブフォームを選択し、「**プレビュー**」をタップします。 フォームのプレビューが表示されます。 フォームのフォーム定義（JSON）を表示するには、URLの .html 拡張子を .model.json に置き換えます。
+アダプティブフォームを選択し、「**プレビュー**」をタップします。 フォームのプレビューが表示されます。 フォーム定義（JSON）を表示するには、URL の .html 拡張子を .model.json に置き換えます。
 
 例：http://[author-server]:[port]/editor.html/content/forms/af/contact-us.model.json
 

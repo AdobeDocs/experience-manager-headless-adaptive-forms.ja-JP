@@ -1,26 +1,27 @@
 ---
-title: AEM ヘッドレスアダプティブフォームの概要
-description: AEM ヘッドレスアダプティブフォームの概要。
+title: AEM Forms ヘッドレスアダプティブフォームの概要
+description: AEM Forms ヘッドレスアダプティブフォームの概要。
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
-
 ---
-
 
 # リリースノート
 
-Experience Manager ヘッドレスアダプティブフォームの早期導入リリースへようこそ。 リソースと手順に目を通して、このリリースの基本を理解し、リリースを最大限に活用してください。
+Adobe Experience Manager Forms ヘッドレスアダプティブフォームのアーリーアダプター向けリリースへようこそ。 リソースと手順に目を通して、このリリースの利用を開始し、最大限に活用してください。
 
-Adobe Experience Manager ヘッドレスアダプティブフォームを使用して、React、Angular などのフロントエンドフレームワークでフォームアプリケーションを作成します。 状態管理、検証、追加のタッチポイントとの統合には、アダプティブフォーム Web SDK を使用します。
+Adobe Experience Manager Forms のヘッドレスアダプティブフォームを使用して、React や Angular などのフロントエンドフレームワークでフォームアプリケーションを作成します。 状態管理、検証、追加のタッチポイントとの統合には、Adobe Experience Manager Forms のアダプティブフォーム Web SDK を使用します。
 
 
-この早期導入リリースでは、[ローカル開発環境](setup-development-environment.md)でヘッドレスアダプティブフォームを使用できるようになります。 ローカル開発環境を使用して、ヘッドレスアダプティブフォームを作成およびテストできます。
+この早期導入リリースでは、[ローカル開発環境](setup-development-environment.md)でヘッドレスアダプティブフォームを使用できるようになります。 ローカル開発環境を使用して、Adobe Experience Manager Forms のヘッドレスアダプティブフォームを作成およびテストできます。
 
-ヘッドレスアダプティブフォームは継続的に改善されています。 最新の開発状況を確認するには、このページに定期的にアクセスしてください。 このページでは、次の情報が確認できます。
+Adobe Experience Manager Forms のヘッドレスアダプティブフォームは継続的に改善されています。 最新の開発状況を確認するには、このページに定期的にアクセスしてください。 このページでは、次の情報が確認できます。
 
 * 早期アクセス
 * 最新リリース
@@ -55,7 +56,7 @@ Adobe Experience Manager ヘッドレスアダプティブフォームを使用�
 
 Adobe Experience Manager のヘッドレスアダプティブフォームを提供する過程で、次のアーティファクトが早期導入リリースで利用可能になります。
 
-### AEM Forms as a Cloud Service SDK
+### AEM Forms as a Cloud Service SDK（クラウドサービス版 AEM Forms SDK）
 
 AEM Forms as a Cloud Service SDK は、ヘッドレスアダプティブフォームの作成、保存および取得に役立ちます。 また、ヘッドレスアダプティブフォームの事前入力、サーバーサイドのルール検証および送信サービスの提供にも役立ちます。
 
@@ -77,11 +78,11 @@ Forms Web SDK は、フォームの様々なフィールドに適用される制
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-コアコンポーネントは、フォームの開発時間の短縮とメンテナンスコストの削減に役立つ、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。 Forms コンテナコンポーネントはコアコンポーネントです。 Forms as a Cloud Service SDK のアダプティブフォームエディターでヘッドレスアダプティブフォームの JSON 構造を埋め込んでレンダリングするのに役立ちます。
+コアコンポーネントは、フォームの開発時間の短縮とメンテナンスコストの削減に役立つ、標準化された web コンテンツ管理（WCM）コンポーネントのセットです。 Forms コンテナコンポーネントはコアコンポーネントです。 Adobe Experience Manager Forms as a Cloud Service SDK のアダプティブフォームエディターで、Headless アダプティブフォームの JSON 構造を埋め込んでレンダリングするのに役立ちます。
 
-### アダプティブフォーム V2 仕様
+### Adobe Experience Manager Forms アダプティブフォーム V2 仕様
 
-ヘッドレスアダプティブフォームの仕様では、ヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約およびメソッドに関する詳細情報が提供されます。 仕様は [PDF](/help/assets/headless-adaptive-forms-specification.pdf) 形式で入手可能です。
+ヘッドレスアダプティブフォーム仕様では、Adobe Experience Manager Forms のヘッドレスアダプティブフォームの定義に使用できるすべてのコンポーネント、制約およびメソッドに関する詳細情報が提供されます。 仕様は [PDF](/help/assets/headless-adaptive-forms-specification.pdf) 形式で入手可能です。
 
 ### HTTP API と JS API
 
@@ -89,7 +90,7 @@ Forms Web SDK は、フォームの様々なフィールドに適用される制
 
 ### Visual Studio Code 拡張機能
 
-[Visual Studio Code 拡張機能](visual-studio-code-extension-for-headless-adaptive-forms.md)は、有効な JSON 構造の作成に役立ちます。 これは、JSON 構造のコンポーネントの追加、削除、名前変更などの一般的な機能に加えて、IntelliSense のサポートやフォームの JSON 構造の検証も提供します。
+[Visual Studio Code 拡張機能](visual-studio-code-extension-for-headless-adaptive-forms.md)は、有効な JSON 構造の作成に役立ちます。 これは、JSON 構造のコンポーネントの追加、削除、名前変更などの一般的な機能に加えて、Adobe Experience Manager Forms の JSON 構造に対する IntelliSense のサポートや検証も提供します。
 
 <!-- 
 ## What's next
